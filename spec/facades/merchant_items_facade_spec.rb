@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe MerchantItemsFacade do
-  it 'constructs item objects for a merchant' do
+  it 'constructs item objects for a merchant', :vcr do
     merchant_id = 1
     items = MerchantItemsFacade.find_all(1)
     expect(items.first).to be_an Item
