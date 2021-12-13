@@ -26,4 +26,10 @@ RSpec.describe 'Merchants Facade' do
     expect(response.first.merchant_id).to eq(1)
   end
 
+  it 'gets all merchants by name string' do
+    response = MerchantsFacade.find_all_merchants_by_name('ILL')
+
+    expect(response.count).to eq(5)
+    expect(response.first.name).to eq('Schiller, Barrows and Parker')
+  end
 end

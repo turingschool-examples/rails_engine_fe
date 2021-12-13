@@ -13,4 +13,11 @@ RSpec.describe 'Merchants Index' do
 
     expect(current_path).to eq(merchant_path(1))
   end
+
+  it 'shows a form to enter a search term' do
+    expect(page).to have_content('Name')
+    expect(page).to have_button('Submit')
+
+    
+  end
 end

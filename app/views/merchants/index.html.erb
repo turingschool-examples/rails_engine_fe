@@ -1,3 +1,9 @@
+<%= form_with url: merchants_find_all_path, method: :get, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.submit "Submit" %>
+<% end %>
+
 <h3>Merchants Index</h3>
 
 <% @merchants.each do |merchant| %>
