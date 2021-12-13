@@ -12,4 +12,10 @@ RSpec.describe 'Merchant Facade' do
     
     expect(item).to be_a Item
   end
+
+  it '.search_for_merchants' do
+    merchant = MerchantFacade.search_for_merchants("sOn").first
+    
+    expect(merchant).to be_a Merchant
+  end
 end
