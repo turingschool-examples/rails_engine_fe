@@ -16,4 +16,13 @@ RSpec.describe 'Merchant Index' do
     expect(page).to have_link(@merchant_3.name)
     expect(page).to have_link(@merchant_4.name)
   end
+
+  it 'links to a merchants show page from index' do
+    visit '/merchants'
+
+    within("#merchant-#{@merchant_1.id}") do
+      click_link("Bobs Burgers")
+      expect(current_path).to eq("/merchant/#{@merchant_1.id}")
+    end
+  end
 end
