@@ -20,7 +20,7 @@ class MerchantService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.search_for_merchant(search_term)
+  def self.search_for_merchants(search_term)
     conn = Faraday.new(url: "http://localhost:3000") 
     response = conn.get("/api/v1/merchants/find_all?name=#{search_term}")
     

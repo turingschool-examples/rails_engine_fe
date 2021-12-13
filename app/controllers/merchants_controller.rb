@@ -9,6 +9,6 @@ class MerchantsController < ApplicationController
   end
 
   def search
-    @merchants = MerchantFacade.search_for_merchant(params[:search])
+    @merchants = MerchantFacade.search_for_merchants(params[:search])
   end
 end

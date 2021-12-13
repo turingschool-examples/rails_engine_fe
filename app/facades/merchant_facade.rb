@@ -19,9 +19,9 @@ class MerchantFacade
     MerchantService.find_merchant_name(merchant_id)[:data][:attributes][:name]
   end
 
-  def self.search_for_merchant(search_term)
-    results = MerchantService.search_for_merchant(search_term)
-    
+  def self.search_for_merchants(search_term)
+    results = MerchantService.search_for_merchants(search_term)
+
     results[:data].map do |merchant_data|
       Merchant.new(merchant_data)
     end
