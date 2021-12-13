@@ -1,0 +1,19 @@
+require 'rails_helper'
+
+RSpec.describe MerchantsService do
+
+  it 'returns data coming from merchants' do
+
+    path = "/api/v1/merchants"
+    response = MerchantsService.call_api(path)
+
+    expect(response).to be_a Hash
+    expect(response[:data]).to be_an Array
+    expect(response[:data][0]).to have_key :id
+    expect(response[:data][0]).to have_key :type
+    expect(response[:data][0]).to have_key :attributes
+    expect(response[:data][0][:attributes]).to have_key :name
+    
+  end
+
+end
