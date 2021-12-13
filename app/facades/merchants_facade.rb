@@ -10,7 +10,7 @@ class MerchantsFacade
 
     def merchant_by_id(id)
       data = MerchantsService.get_data("merchants/#{id}")[:data]
-
+      
       Merchant.new(data)
     end
 

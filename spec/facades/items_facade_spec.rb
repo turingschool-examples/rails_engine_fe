@@ -8,10 +8,10 @@ RSpec.describe 'Items Facade' do
   end
 
   it 'gets one item' do
-    response = ItemsFacade.item_by_id(179)
-require "pry"; binding.pry
+    response = ItemsFacade.item_by_id(4)
+
     expect(response).to be_a(Item)
-    expect(response.id).to eq(179)
-    expect(response.name).to eq('Item Qui Veritatis')
+    expect(response.id).to eq(4)
+    expect(response.name).to eq('Item Nemo Facere')
   end
 end

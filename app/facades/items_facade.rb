@@ -9,7 +9,8 @@ class ItemsFacade
     end
 
     def item_by_id(id)
-      data = ItemsService.get_data("items/#{id}")
+      data = ItemsService.get_data("items/#{id}")[:data]
+
       Item.new(data)
     end
   end

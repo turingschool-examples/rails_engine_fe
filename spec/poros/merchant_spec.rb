@@ -2,8 +2,10 @@ require 'rails_helper'
 
 RSpec.describe Merchant do
   let(:data) do
-    { id: 1,
-      name: 'Jingle Bells Sells'}
+    { :id=>"1",
+      :type=>"merchant",
+      :attributes=>
+        {:name=>"Schroeder-Jerde"}}
   end
 
   let(:merchant) { Merchant.new(data) }
@@ -14,6 +16,6 @@ RSpec.describe Merchant do
 
   it 'has attributes' do
     expect(merchant.id).to eq(1)
-    expect(merchant.name).to eq('Jingle Bells Sells')
+    expect(merchant.name).to eq('Schroeder-Jerde')
   end
 end

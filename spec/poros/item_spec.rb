@@ -1,13 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe Item do
-  merchant1 = Merchant.new(name: "Cats R Us")
   let(:data) do
-    { id: 1,
-      name: 'Cat Scratcher 2000',
-      description: 'cat stress reliever',
-      unit_price: 26.32,
-      merchant_id: "#{merchant1.id}"}
+    { :id=>4,
+      :type=>"item",
+      :attributes=>
+        { :name=>"Item Nemo Facere",
+          :description=>"Sunt eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut ab. Ducimus in est id voluptas autem.",
+          :unit_price=>42.91,
+          :merchant_id=>1}}
   end
 
   let(:item) { Item.new(data) }
@@ -17,10 +18,10 @@ RSpec.describe Item do
   end
 
   it 'has attributes' do
-    expect(item.id).to eq(1)
-    expect(item.name).to eq('Cat Scratcher 2000')
-    expect(item.description).to eq('cat stress reliever')
-    expect(item.unit_price).to eq(26.32)
-    expect(item.merchant_id).to eq("#{merchant1.id}")
+    expect(item.id).to eq(4)
+    expect(item.name).to eq('Item Nemo Facere')
+    expect(item.description).to eq('Sunt eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut ab. Ducimus in est id voluptas autem.')
+    expect(item.unit_price).to eq(42.91)
+    expect(item.merchant_id).to eq(1)
   end
 end
