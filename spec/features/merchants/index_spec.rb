@@ -22,7 +22,7 @@ RSpec.describe 'Merchant Index' do
 
     within("#merchant-#{@merchant_1.id}") do
       click_link("Bobs Burgers")
-      expect(current_path).to eq("/merchant/#{@merchant_1.id}")
+      expect(current_path).to eq("/merchants/#{@merchant_1.id}")
     end
   end
 end

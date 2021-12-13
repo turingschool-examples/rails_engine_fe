@@ -10,7 +10,7 @@ RSpec.describe 'Item Show Page' do
   end
 
   it 'displays a single items information' do
-    visit "/item/#{@item_1.id}"
+    visit "/items/#{@item_1.id}"
 
     expect(page).to have_content(@item_1.name)
     expect(page).to have_content(@item_1.unit_price)

@@ -3,6 +3,6 @@
 <h3>This merchant's current items:</h3>
 <% @merchant.items.each do |item| %>
   <section id="item-<%= item.id  %>">
-  <p><%= link_to item.name, "/item/#{item.id}" %></p>
+  <p><%= link_to item.name, "/items/#{item.id}" %></p>
   </section>
 <% end %>

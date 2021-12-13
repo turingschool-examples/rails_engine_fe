@@ -10,7 +10,7 @@ RSpec.describe 'Merchant Show Page' do
   end
 
   it 'displays a merchants name and items' do
-    visit "/merchant/#{@merchant_1.id}"
+    visit "/merchants/#{@merchant_1.id}"
 
     expect(page).to have_content(@merchant_1.name)
     within("#item-#{@item_1.id}") do
@@ -20,11 +20,11 @@ RSpec.describe 'Merchant Show Page' do
   end
 
   it 'links to the items show page' do
-    visit "/merchant/#{@merchant_1.id}"
+    visit "/merchants/#{@merchant_1.id}"
 
     within("#item-#{@item_1.id}") do
       click_link(@item_1.name)
     end
-    expect(current_path).to eq("/item/#{@item_1.id}")
+    expect(current_path).to eq("/items/#{@item_1.id}")
   end
 end

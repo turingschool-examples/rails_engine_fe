@@ -4,6 +4,6 @@
 <br>
 <% @items.each do |item| %>
 <section id="item-<%= item.id  %>">
-<p><%= link_to "#{item.name}", "/item/#{item.id}" %></p>
+<p><%= link_to "#{item.name}", "/items/#{item.id}" %></p>
 </section>
 <% end %>
