@@ -2,27 +2,24 @@ require 'rails_helper'
 
 RSpec.describe 'Merchant Index' do
   before :each do
-    @merchant_1 = Merchant.create({name: 'Bobs Burgers'})
-    @merchant_2 = Merchant.create({name: 'Jimmy Pestos Pizza'})
-    @merchant_3 = Merchant.create({name: 'Teddys Handyman Service'})
-    @merchant_4 = Merchant.create({name: 'Annie Get Your Gum'})
+    @merchants = MerchantFacade.merchants
+    @merchant = MerchantFacade.merchant(1)
   end
 
   it 'displays a list of merchants' do
     visit '/merchants'
 
-    expect(page).to have_link(@merchant_1.name)
-    expect(page).to have_link(@merchant_2.name)
-    expect(page).to have_link(@merchant_3.name)
-    expect(page).to have_link(@merchant_4.name)
+    @merchants.each do |merchant|
+      expect(page).to have_link(merchant.name)
+    end
   end
 
   it 'links to a merchants show page from index' do
     visit '/merchants'
 
-    within("#merchant-#{@merchant_1.id}") do
-      click_link("Bobs Burgers")
-      expect(current_path).to eq("/merchants/#{@merchant_1.id}")
+    within("#merchant-#{@merchant.id}") do
+      click_link(@merchant.name)
+      expect(current_path).to eq("/merchants/#{@merchant.id}")
     end
   end
 end
