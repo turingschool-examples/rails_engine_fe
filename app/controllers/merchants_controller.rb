@@ -8,6 +8,6 @@ class MerchantsController < ApplicationController
   end
 
   def show
-    @merchant = MerchantFacade.find_one_merchant(params[:id])
+    @merchant = MerchantFacade.find_one_merchant(params[:id].to_i)
   end
 end
