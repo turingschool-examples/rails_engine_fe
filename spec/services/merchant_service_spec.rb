@@ -1,28 +1,19 @@
 require 'rails_helper'
-
+# ber spec/services/merchant_service_spec.rb
 RSpec.describe MerchantService, :vcr do
   it 'gets data from rails engine backend' do
-    response = MerchantService.get_data('/merchants')
+    # response = MerchantService.get_data(api_v1_merchants_path)
+    response = MerchantService.get_data('')
+
     expect(response).to be_a(Hash)
-    expect(response[:results]).to be_an(Array)
-    expect(response).to have_key(:page)
-    expect(response).to have_key(:results)
-    expect(response).to have_key(:total_pages)
-    expect(response).to have_key(:total_results)
-  end
+    expect(response[:data]).to be_an(Array)
 
-  xit 'gets one merchant' do
-    response = MerchantService.get_data("merchants/#{merchant.id}")
-
-    response[:results].each do |merchant|
-      expect(merchant).to have_key(:backdrop_path)
-      expect(merchant).to have_key(:genre_ids)
+    response[:data].each do |merchant|
       expect(merchant).to have_key(:id)
-      expect(merchant).to have_key(:original_title)
-      expect(merchant).to have_key(:overview)
-      expect(merchant).to have_key(:poster_path)
-      expect(merchant).to have_key(:title)
-      expect(merchant).to have_key(:vote_average)
+      expect(merchant).to have_key(:type)
+      expect(merchant).to have_key(:attributes)
+      expect(merchant[:attributes]).to have_key(:name)
     end
   end
+
 end
