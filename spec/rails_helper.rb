@@ -61,4 +61,21 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  config.include Capybara::DSL
+end
+
+def merchant_data
+  {:id=>"1",
+   :type=>"merchant",
+   :attributes=>{:name=>"Schroeder-Jerde"}}
+end
+
+def item_data
+  {:id=>"4",
+  :type=>"item",
+  :attributes=>
+   {:name=>"Item Nemo Facere",
+    :description=>"Sunt eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut ab. Ducimus in est id voluptas autem.",
+    :unit_price=>42.91,
+    :merchant_id=>1}}
 end
