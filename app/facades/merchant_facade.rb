@@ -1,10 +1,5 @@
 class MerchantFacade
 
-  def initialize(merchant)
-    @merchant = merchant
-    @items = merchant.items
-  end
-
   def self.merchants
     merchants = MerchantService.all_merchants[:data]
     merchants.map do |merchant|
