@@ -1,18 +1,7 @@
 require 'rails_helper'
 
-# As a visitor,
-# When I visit '/merchants'
-# I should see a list of merchants by name
-# and when I click the merchant's name
-# I should be on page '/merchants/:id'
-# And I should see a list of items that merchant sells.
-
-
-
 RSpec.describe 'Merchants index page' do
   before(:each) do
-    # merchants = Faraday.get "http://localhost:3000/api/v1/merchants"
-    
     visit '/merchants'
   end
 

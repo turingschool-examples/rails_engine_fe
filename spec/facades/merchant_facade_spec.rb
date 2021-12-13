@@ -9,7 +9,7 @@ RSpec.describe 'Merchant Facade' do
 
   it '.merchant_items' do
     item = MerchantFacade.merchant_items("1").first
-
+    
     expect(item).to be_a Item
   end
 end

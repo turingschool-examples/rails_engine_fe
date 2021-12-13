@@ -12,4 +12,11 @@ class MerchantService
     
     JSON.parse(response.body, symbolize_names: true)[:data]
   end
+
+  def self.find_merchant_name(merchant_id)
+    conn = Faraday.new(url: "http://localhost:3000") 
+    response = conn.get("/api/v1/merchants/#{merchant_id}")
+    
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
