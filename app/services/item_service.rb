@@ -1,5 +1,10 @@
 class ItemService
   class << self
+    def get_all_items 
+      response = conn.get('api/v1/items')
+      parse_data(response)
+    end 
+
     def get_single_item(item_id)
       response = conn.get("api/v1/items/#{item_id}")
       parse_data(response)
