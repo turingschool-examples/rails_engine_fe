@@ -1,5 +1,5 @@
 <h1>Item List</h1>
 
-<% @items[:data].each do |item| %>
-  <%= link_to item[:attributes][:name], "/items/#{item[:id]}" %><br>
+<% @items.each do |item| %>
+  <%= link_to item.item_name, "/items/#{item.item_id}" %><br>
 <% end %>

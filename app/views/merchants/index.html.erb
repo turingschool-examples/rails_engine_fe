@@ -1,5 +1,5 @@
 <h1>Merchant List</h1>
 
-<% @merchants[:data].each do |merchant| %>
-  <%= link_to merchant[:attributes][:name], "/merchants/#{merchant[:id]}" %><br>
+<% @merchants.each do |merchant| %>
+  <%= link_to merchant.merchant_name, "/merchants/#{merchant.merchant_id}" %><br>
 <% end %>
