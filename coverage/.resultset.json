@@ -7,12 +7,20 @@
           null
         ]
       },
-      "/Users/jacobyarborough/turing/3module/projects/rails_engine_fe/app/poros/merchant.rb": {
+      "/Users/jacobyarborough/turing/3module/projects/rails_engine_fe/app/poros/merchant_item.rb": {
         "lines": [
           1,
           1,
           null,
           null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -37,6 +45,32 @@
           1,
           0,
           0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jacobyarborough/turing/3module/projects/rails_engine_fe/app/services/item_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -133,20 +167,12 @@
         "branches": {
         }
       },
-      "/Users/jacobyarborough/turing/3module/projects/rails_engine_fe/app/poros/merchant_item.rb": {
+      "/Users/jacobyarborough/turing/3module/projects/rails_engine_fe/app/poros/merchant.rb": {
         "lines": [
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
           null,
-          0,
-          0,
-          0,
-          0,
           0,
           0,
           0,
@@ -202,34 +228,6 @@
         "branches": {
         }
       },
-      "/Users/jacobyarborough/turing/3module/projects/rails_engine_fe/app/services/item_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/jacobyarborough/turing/3module/projects/rails_engine_fe/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
@@ -251,6 +249,6 @@
         }
       }
     },
-    "timestamp": 1639454833
+    "timestamp": 1639455875
   }
 }
