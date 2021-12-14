@@ -12,27 +12,19 @@ RSpec.describe 'Merchant show page' do
 
       expect(current_path).to eq(merchant_path("#{merchant.id}"))
     end
-  end
 
-  describe 'One Merchants Items' do
     let(:items) { MerchantsFacade.merchant_items(2) }
 
     it 'has merchant attributes and items' do
       visit merchant_path(2)
-      require "pry"; binding.pry
 
       expect(page).to have_content(merchant.name)
-      expect(page).to have_content(item[0].name)
-      # expect(page).to have_content(merchant.items)
-      # require "pry"; binding.pry
-      # expect(page).to_not have_content()
+
+      items.each do |item|
+        expect(page).to have_content(item.name)
+        expect(page).to_not have_content(item.description)
+        expect(page).to_not have_content(item.unit_price)
+      end
     end
   end
 end
-
-# As a visitor,
-# When I visit '/merchants'
-# I should see a list of merchants by name
-# and when I click the merchant's name
-# I should be on page '/merchants/:id'
-# And I should see a list of items that merchant sells.
