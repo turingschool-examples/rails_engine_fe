@@ -1,12 +1,12 @@
 class MerchantsController < ApplicationController
   def index
-    @merchants = MerchantService.all_merchants
+    @merchants = MerchantsFacade.all_merchants
 
   end
 
   def show
-    @merchant = MerchantService.merchant_details(params[:id])
-    @items = MerchantService.merchants_items(params[:id])
+    @merchant = MerchantsFacade.merchant_details(params[:id])
+    @items = MerchantsFacade.merchants_items(params[:id])
   end
 
 end

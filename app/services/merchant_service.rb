@@ -4,9 +4,7 @@ class MerchantService
 
     results = (parse_response(content.body))[:data]
 
-    results.map do |merchant|
-      Merchant.new(merchant)
-    end
+    results
   end
 
   def self.merchant_details(id)
@@ -14,7 +12,7 @@ class MerchantService
 
     results = (parse_response(content.body))[:data]
 
-    Merchant.new(results)
+    results
   end
 
   def self.merchants_items(merchant_id)
@@ -22,9 +20,7 @@ class MerchantService
 
     results = (parse_response(content.body))[:data]
 
-    results.map do |item|
-      Item.new(item)
-    end
+    results
   end
 
   def self.find_all(name)

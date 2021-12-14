@@ -1,9 +1,10 @@
 class ItemsController < ApplicationController
   def index
-    @items = ItemService.all_items
+    @items = ItemsFacade.all_items
+
   end
 
   def show
-    @item = ItemService.item_details(params[:id])
+    @item = ItemsFacade.item_details(params[:id])
   end
 end

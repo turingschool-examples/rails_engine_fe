@@ -4,9 +4,7 @@ class ItemService
 
     results = (parse_response(content.body))[:data]
 
-    results.map do |item|
-      Item.new(item)
-    end
+    results
   end
 
   def self.item_details(id)
@@ -14,7 +12,7 @@ class ItemService
 
     results = (parse_response(content.body))[:data]
 
-    Item.new(results)
+    results
   end
 
   def self.parse_response(response)
