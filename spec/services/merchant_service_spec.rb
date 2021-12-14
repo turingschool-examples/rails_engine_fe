@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 RSpec.describe 'Rails-Engine merchant service' do 
   it 'can get all merchants' do 
     response = MerchantService.get_all_merchants
@@ -17,9 +18,9 @@ RSpec.describe 'Rails-Engine merchant service' do
     expect(response).to be_a(Hash)
     expect(response[:data]).to be_a(Hash)
 
-    first_merchant = response[:data]
+    merchant = response[:data]
 
-    expect(first_merchant[:attributes][:name]).to be_a(String)
+    expect(merchant[:attributes][:name]).to be_a(String)
   end 
 
   it 'can get a merchants items' do 
@@ -34,6 +35,5 @@ RSpec.describe 'Rails-Engine merchant service' do
     expect(first_item[:attributes][:description]).to be_a(String)
     expect(first_item[:attributes][:unit_price]).to be_a(Float)
     expect(first_item[:attributes][:merchant_id]).to be_an(Integer)
-    
   end 
 end
