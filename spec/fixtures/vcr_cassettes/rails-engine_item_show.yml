@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0b10eca09b4f185dba1ee09934b0e1d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e2a9da73-3546-4241-a80f-9c1e59df5e02
+      X-Runtime:
+      - '0.033509'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"item","attributes":{"name":"Item Quidem
+        Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium. Eligendi
+        veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}}}'
+  recorded_at: Tue, 14 Dec 2021 03:40:27 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 596fa022-7237-43a8-a607-05bda56b9abd
+      X-Runtime:
+      - '0.004735'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Tue, 14 Dec 2021 03:40:27 GMT
+recorded_with: VCR 6.0.0
