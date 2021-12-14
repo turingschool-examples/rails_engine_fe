@@ -25,3 +25,4 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+spec/features/merchants/show_spec.rb
