@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'merchants show page' do 
-  describe 'happy path' do 
+  context 'happy path' do 
     it 'shows list of merchants' do 
       VCR.use_cassette('rails-engine_merchants', re_record_interval: 7.days) do 
         visit "/merchants"
