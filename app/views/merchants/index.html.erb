@@ -1,0 +1,4 @@
+<h1>Merchants Index</h1>
+<% @merchants.each do |m| %>
+<%= link_to "#{m.name}", "/merchants/#{m.id}" %><br>
+<% end %>

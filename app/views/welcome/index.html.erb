@@ -1,0 +1,15 @@
+<h1>Welcome page</h1>
+<hr>
+
+<%= form_with url: "/", method: :get, local: true do |f| %>
+  <%= f.label "Search for a merchant:" %>
+  <%= f.text_field :name, required: true  %><br>
+  <%= f.submit %>
+<% end %>
+
+<% if @searched_merchants.nil? == false %>
+  <h3>Merchants matching '<%= params[:name] %>'</h3>
+  <% @searched_merchants.each do |m| %>
+  <%= link_to "#{m.name}", "/merchants/#{m.id}" %><br>
+  <% end %>
+<% end %>

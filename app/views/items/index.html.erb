@@ -1,0 +1,4 @@
+<h1>Items Index</h1>
+<% @items.each do |i| %>
+<%= link_to "#{i.name}", "/items/#{i.id}" %><br>
+<% end %>
