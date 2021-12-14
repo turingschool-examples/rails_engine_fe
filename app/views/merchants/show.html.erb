@@ -1,0 +1,5 @@
+<h1><%= @merchant_name[:data][:attributes][:name] %></h1>
+
+<% @merchant_items[:data].each do |item| %>
+  <%= link_to item[:attributes][:name], "/items/#{item[:id]}" %><br>
+<% end %>
