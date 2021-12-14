@@ -9,7 +9,7 @@ class MerchantService
   end
 
   def self.merchant_items(id)
-    call_api("/api/v1/merchants/#{id}/items")
+    call_api("/api/v1/merchants/#{id}/items")[:data]
   end
 
   private

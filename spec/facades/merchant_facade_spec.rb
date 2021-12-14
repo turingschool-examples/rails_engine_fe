@@ -7,4 +7,10 @@ RSpec.describe 'Merchant Facade' do
     expect(merchants).to be_an(Array)
     expect(merchants.first).to be_a(Merchant)
   end
+
+  it '.merchant_items', :vcr do
+    item = MerchantFacade.merchant_items(1).first
+
+    expect(item).to be_a Item
+  end
 end
