@@ -1,9 +1,10 @@
 
 <h1>Welcome to <%= @merchant.name %>'s Show Page!</h1>
 <h1>Here are list of all items:</h1>
-
+<p>
 <% @items.each do |item| %>
-<%= item.name %>
-<%= item.description %>
-<%= item.unit_price %><br><br><br>
+Item's Name: <%= item.name %><br>
+Item's Description: <%= item.description %><br>
+Item's Price Per Unit: $<%= item.unit_price %><br><br><br>
 <% end %>
+</p>

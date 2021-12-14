@@ -1,0 +1,7 @@
+<h1>Item's Index Page</h1>
+
+<p>
+<% @items.each do |item| %>
+  Item: <%= link_to "#{item.name}", item_path(item.id), method: :get %><br>
+<% end %>
+</p>
