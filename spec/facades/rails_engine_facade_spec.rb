@@ -36,7 +36,7 @@ RSpec.describe 'Rails Engine Facade' do
   end
 
   describe 'get_item' do
-    let!(:id) { "1" }
+    let!(:id) { "4" }
     let!(:item) { RailsEngineFacade.get_item(id) }
 
     it "returns an item object" do
