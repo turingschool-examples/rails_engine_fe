@@ -495,6 +495,7 @@
       "/Users/chrishewitt/Turing/3mod/rails_engine_fe/app/controllers/merchants_controller.rb": {
         "lines": [
           1,
+          null,
           1,
           2,
           null,
@@ -531,6 +532,6 @@
         ]
       }
     },
-    "timestamp": 1644874552
+    "timestamp": 1644877385
   }
 }

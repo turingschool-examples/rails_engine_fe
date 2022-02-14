@@ -26,5 +26,4 @@ RSpec.describe "the merchant service" do
         expect(item[:attributes][:merchant_id]).to eq(1)
       end
     end
-
 end

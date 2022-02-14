@@ -17,5 +17,4 @@ class MerchantFacade
       Item.new(result)
     end
   end
-
 end
