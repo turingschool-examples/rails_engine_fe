@@ -8,8 +8,13 @@ class ItemFacade
 
   def self.find_items(merchant_id)
     items = all_items.select do |i|
-      # require "pry"; binding.pry
       i.merchant_id.to_s == merchant_id
+    end
+  end
+
+  def self.find_item(item_id)
+    all_items.find do |i|
+      i.id == item_id
     end
   end
 

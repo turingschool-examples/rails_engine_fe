@@ -4,7 +4,7 @@
 
 <h3>Items:</h3>
 <% @items.each do |item| %>
-  <p><%= item.name %>,</p>
+  <p><%= link_to "#{item.name}", "/items/#{item.id}" %>,</p>
   <p>Merchant_id: <%= item.merchant_id %></p>
   <br>
   <br>

@@ -23,4 +23,10 @@ RSpec.describe ItemFacade do
     expect(ItemFacade.find_items(merchant.id.to_s).length).to eq(15)
   end
 
+  it 'can find a specific item' do
+    item = ItemFacade.all_items.last
+
+    expect(ItemFacade.find_item(item.id).description).to eq(item.description)
+  end
+
 end
