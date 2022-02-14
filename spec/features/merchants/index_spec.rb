@@ -9,7 +9,6 @@ RSpec.describe 'Merchant Index Page' do
 
       click_link("Schroeder-Jerde")
       expect(current_path).to eq("/merchants/1")
-      expect(page).to have_content(merchant.items.first.name)
     end
   end
 end
