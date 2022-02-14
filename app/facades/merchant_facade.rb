@@ -5,4 +5,10 @@ class MerchantFacade
       Merchant.new(merchant)
     end
   end
+
+  def self.one_merchant(merchant_id)
+    json_data = MerchantService.one_merchant(merchant_id)
+
+    merchant = Merchant.new(json_data[:data])
+  end
 end

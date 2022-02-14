@@ -9,4 +9,10 @@ RSpec.describe MerchantFacade do
       expect(merchant).to be_a Merchant
     end
   end
+  it 'one_merchant' do
+    merchant_id = 1
+    merchant = MerchantFacade.one_merchant(merchant_id)
+
+    expect(merchant).to be_a Merchant
+  end
 end
