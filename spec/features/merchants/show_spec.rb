@@ -6,8 +6,8 @@ RSpec.describe 'Merchant index page' do
 
       visit "/merchants/1"
 
-      expect(page).to have_content("Item Nemo Facere")
-
+      expect(page).to have_content("Merchant name: Schroeder-Jerde")
+      expect(page).to have_content("Item name: Item Nemo Facere")
     end
   end
 end
