@@ -5,7 +5,6 @@ class MerchantService
   def find_all_merchants
     response = conn.get("/api/v1/merchants")
     body = parse_json(response)
-    
   end
 
   private
