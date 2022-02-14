@@ -1,0 +1,10 @@
+<%= form_with url: "/", method: :get, local: true do |f| %>
+  <%= f.label "Search Merchants" %>
+  <%= f.text_field "Search Merchants" %>
+  <%= f.submit "Submit" %>
+<% end %>
+
+<!-- <h1>Merchants matching </h1> -->
+<% @merchants.each do |merchant| %>
+  <p> <%= merchant.name %> </p>
+<% end %>
