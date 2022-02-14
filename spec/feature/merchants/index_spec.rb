@@ -13,7 +13,7 @@ RSpec.describe 'Merchants Index Page', type: :feature do
     end
   end
 
-  it 'has a link to the merchant show page' do 
+  it 'has a link to the merchant show page' do
     visit merchants_path 
 
     click_on 'Schroeder-Jerde'
