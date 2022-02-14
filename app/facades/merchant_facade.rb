@@ -6,6 +6,16 @@ class MerchantFacade
     end
   end
 
+  def find_merchant(id)
+    Merchant.new(service.find_merchant(id)[:data])
+  end
+
+  def find_merchant_items(id)
+    service.find_merchant_items(id)[:data].map do |item_data|
+      Item.new(item_data)
+    end
+  end
+
   def service
     MerchantService.new
   end
