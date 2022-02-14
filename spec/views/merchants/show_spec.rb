@@ -6,7 +6,7 @@ RSpec.describe 'the merchant show page' do
     visit "/merchants/#{merchant.id}"
 
     within('#merchant-header') do
-      expect(page).to have_content("Merchant id: #{merchant.id}")
+      expect(page).to have_content("Id: #{merchant.id}")
     end
   end
 
