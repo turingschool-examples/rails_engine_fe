@@ -20,6 +20,6 @@ RSpec.describe do
       within "div.item_#{item.id}" do
         expect(page).to have_content(item.name)
       end
-    end
+    end    
   end
 end
