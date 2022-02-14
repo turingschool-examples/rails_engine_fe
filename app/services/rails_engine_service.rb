@@ -3,6 +3,14 @@ class RailsEngineService
     get_url('merchants')
   end
 
+  def self.merchant(merchant_id)
+    get_url("merchants/#{merchant_id}")
+  end
+
+  def self.merchant_items(merchant_id)
+    get_url("merchants/#{merchant_id}/items")
+  end
+
   def self.get_url(url)
     @request_urls ||= {}
 

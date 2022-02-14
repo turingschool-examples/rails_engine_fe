@@ -4,8 +4,14 @@ RSpec.describe 'Merchants Index Page' do
   before(:each) do
 
     merchants_json = File.read('./spec/fixtures/merchants.json')
+    merchant_99_json = File.read('./spec/fixtures/merchant_99.json')
+    merchant_99_items_json = File.read('./spec/fixtures/merchant_99_items.json')
     stub_request(:get, "http://localhost:3000/api/v1/merchants").
          to_return(status: 200, body: merchants_json, headers: {})
+    stub_request(:get, "http://localhost:3000/api/v1/merchants/99").
+         to_return(status: 200, body: merchant_99_json, headers: {})
+    stub_request(:get, "http://localhost:3000/api/v1/merchants/99/items").
+         to_return(status: 200, body: merchant_99_items_json, headers: {})
 
     visit '/merchants'
   end
@@ -17,14 +23,6 @@ RSpec.describe 'Merchants Index Page' do
   end
 
   context 'takes you to correct path when clicking a merchant link' do
-    it 'link id-1' do
-      click_on("Schroeder-Jerde")
-      expect(current_path).to eq("/merchants/1")
-    end
-    it 'link id-3' do
-      click_on("Willms and Sons")
-      expect(current_path).to eq("/merchants/3")
-    end
     it 'link id-99' do
       click_on("Fahey-Stiedemann")
       expect(current_path).to eq("/merchants/99")
