@@ -7,6 +7,10 @@ class HeaderFacade
     OneMerchant.new(service.one_merchant(id)[:data])
   end
 
+  def merchant_items(id)
+    service.merchant_items(id)[:data].map {|item| MerchantItems.new(item)}
+  end
+
   def service
     RailsEngineService.new
   end
