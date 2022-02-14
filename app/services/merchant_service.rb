@@ -7,6 +7,16 @@ class MerchantService
     body = parse_json(response)
   end
 
+  def find_merchant(id)
+    response = conn.get("/api/v1/merchants/#{id}")
+    body = parse_json(response)
+  end
+
+  def find_merchant_items(id)
+    response = conn.get("/api/v1/merchants/#{id}/items")
+    body = parse_json(response)
+  end
+
   private
 
   def conn
