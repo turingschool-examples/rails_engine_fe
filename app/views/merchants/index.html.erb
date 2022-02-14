@@ -1,4 +1,4 @@
 <h1>Merchants: </h1>
 <% @merchants[:data].each do |m| %>
-  <%= m[:attributes][:name] %>
+  <p><%= link_to m[:attributes][:name], "/merchants/#{m[:id]}" %></p>
 <% end  %>
