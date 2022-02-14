@@ -1,0 +1,11 @@
+<div id="merchant-header">
+  <h1><%= @merchant.name %>, Merchant id: <%= @merchant.id %></h1>
+</div>
+
+<h3>Items:</h3>
+<% @items.each do |item| %>
+  <p><%= item.name %>,</p>
+  <p>Merchant_id: <%= item.merchant_id %></p>
+  <br>
+  <br>
+<% end %>

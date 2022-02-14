@@ -4,6 +4,14 @@ class MerchantsController < ApplicationController
   end
 
   def show
+    @merchant = MerchantFacade.find_merchant(merchant_params[:id])
+    @items = ItemFacade.find_items(@merchant.id)
+  end
 
+
+  private
+
+  def merchant_params
+    params.permit(:id)
   end
 end
