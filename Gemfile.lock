@@ -215,7 +215,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
-  faraday
+  faraday (>= 1.8.0)
   figaro
   jbuilder (~> 2.5)
   json

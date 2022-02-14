@@ -1,5 +1,5 @@
 <h1>Merchants</h1>
 
-<% @merch_names.each do |merchant| %>
+<% @merchants.each do |merchant| %>
 <p><%= link_to merchant.name, merchant_path(merchant.id) %></p>
 <% end %>
