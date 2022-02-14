@@ -4,12 +4,7 @@ class MerchantsController < ApplicationController
   end
 
   def show
-    index.map do |merchant|
-      if params[:id] == merchant.id
-        @merchant = merchant
-      end
-    end
-
+    @merchant = MerchantFacade.merchant_info(params[:id])
     @items = MerchantFacade.item_info(params[:id])
   end
 end
