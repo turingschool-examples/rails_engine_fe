@@ -21,6 +21,20 @@ class MerchantFacade
       json = MerchantService.one_merchant(id)
       merchant = json[:data]
       name = merchant[:attributes][:name]
-  
+
     end
+
+    def self.merchant_search(search)
+    merchant_data = MerchantService.merchants_info
+      # merchants = merchant_data[:data][0][:attributes]
+      found_merchants = merchant_data[:data].find_all { |m| m[:attributes][:name] == search  }
+
+      return nil unless found_merchants.present?
+
+      # Merchant.new(found_merchants.first)
+      found_merchants.each do |merch|
+        Merchant.new(merch)
+      end
+
+  end
 end

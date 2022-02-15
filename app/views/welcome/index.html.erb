@@ -1,0 +1,11 @@
+<%= form_with url: find_all_path, method: :post, local: true do |form| %>
+  <%= form.label :search, 'Search For Merchants:' %>
+  <%= form.text_field :search %>
+  <%= form.submit 'Search' %>
+<% end %>
+
+<% if @merchants != nil %>
+  <% @merchants.each do |merchant|%>
+  <p><%= merchant[:attributes][:name] %></p>
+  <% end %>
+  <% end %>
