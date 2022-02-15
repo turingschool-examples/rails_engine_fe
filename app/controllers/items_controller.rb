@@ -6,6 +6,5 @@ class ItemsController < ApplicationController
 
   def show
     @item = ItemFacade.item(params[:id])
-    # binding.pry
   end
 end

@@ -2,9 +2,9 @@ class ItemFacade
 
   def self.items 
     json = ItemService.items[:data]
-
+    # binding.pry
     @items = json.map do |item|
-      Item.new(id: item[:id], name: item[:name], description: item[:description], unit_price: item[:unit_price], merchant_id: item[:merchant_id])
+      Item.new(id: item[:id], name: item[:attributes][:name], description: item[:attributes][:description], unit_price: item[:attributes][:unit_price], merchant_id: item[:attributes][:merchant_id])
     end
   end
 

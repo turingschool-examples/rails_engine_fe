@@ -1,0 +1,7 @@
+<h1>Items Index </h1>
+
+<% @items.each do |item| %>
+<div class="item-<%= item.id %>">
+  <p><%= link_to "#{item.name}", "/items/#{item.id}", method: :get %></p>
+  <% end %>
+  </div>

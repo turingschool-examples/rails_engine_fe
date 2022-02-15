@@ -9,6 +9,5 @@ RSpec.describe "Item show page", type: :feature do
     expect(page).to have_content("Item ID: 4")
     expect(page).to have_content("Item Description: Sunt eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut ab. Ducimus in est id voluptas autem.")
     expect(page).to have_content("Merchant ID: 1")
-  
   end
 end
