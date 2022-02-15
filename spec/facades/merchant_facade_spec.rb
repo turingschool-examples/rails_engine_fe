@@ -8,4 +8,12 @@ RSpec.describe MerchantFacade do
     expect(merchants).to be_an Array 
     expect(merchants.first).to be_a Merchant
   end
+
+  it '.items' do 
+    merchant = MerchantFacade.merchants.first
+    items = MerchantFacade.items(merchant.id) 
+
+    expect(items).to be_an Array 
+    expect(items.first).to be_an Item 
+  end
 end

@@ -2,6 +2,6 @@
 
 <% @merchants.each do |merchant| %>
 <div class="merchant-<%= merchant.id%>">
-  <%= link_to "#{merchant.name}", "/merchants/#{merchant.id}", method: :get %>
+  <p><%= link_to "#{merchant.name}", "/merchants/#{merchant.id}", method: :get %></p>
   <% end %>
   </div>

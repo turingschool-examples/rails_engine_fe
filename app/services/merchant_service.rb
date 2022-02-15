@@ -9,4 +9,16 @@ class MerchantService
 
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.merchant(id)
+    response = connection.get("merchants/#{id}")
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.merchants_items(merchant_id)
+    response = connection.get("merchants/#{merchant_id}/items")
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
