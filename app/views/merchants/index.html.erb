@@ -1,0 +1,9 @@
+<h1>Merchants</h1>
+
+<section id='#merchant-list'>
+  <ul>
+    <% @merchants.each_with_index do |merch, index| %>
+      <li id='merchant-<%= index %>'><%= link_to merch.name, merchant_path(merch.id) %></li>
+    <% end %>
+  </ul>
+</section>
