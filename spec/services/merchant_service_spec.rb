@@ -22,9 +22,9 @@ RSpec.describe MerchantService do
       merchant = MerchantService.merchant(50)
       
       expect(merchant).to be_a Hash
-      expect(merchant[:data]). to have_key :id
-      expect(merchant[:data]). to have_key :attributes
-      expect(merchant[:data][:attributes]). to have_key :name
+      expect(merchant[:data]).to have_key :id
+      expect(merchant[:data]).to have_key :attributes
+      expect(merchant[:data][:attributes]).to have_key :name
     end
 
     it '.merchants_items' do 

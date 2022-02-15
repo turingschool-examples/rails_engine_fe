@@ -19,5 +19,4 @@ RSpec.describe "Items Index page", type: :feature do
     expect(current_path).to eq("/items/4")
   end
 
-
 end
