@@ -1,0 +1,10 @@
+<!-- counter to identify unique merchant divs -->
+<% counter = 1 %>
+
+<% @merchant_facade.merchants.each do |merchant| %>
+  <div id="merchant-<%= counter %>">
+    <p><%= link_to merchant.name, merchant_path(merchant.id) %></p>
+  </div>
+   <!-- update counter at end of each loop -->
+  <% counter += 1 %>
+<% end %>

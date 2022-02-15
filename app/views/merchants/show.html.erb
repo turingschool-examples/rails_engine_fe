@@ -1,0 +1,17 @@
+<h1><%= @merchant.name %></h1>
+
+
+<div id="merchant-items">
+  <h3>Merchant Items:</h3>
+
+  <% count = 1 %>
+  <% @items.each do |item| %>
+    <div id="item-<%= count %>">
+      <p>Name: <%= link_to item.name, item_path(item.id) %></p>
+      <p>Description: <%= item.description %></p>
+      <p>Unit Price: $<%= item.unit_price %></p>
+    </div><br><br>
+    <% count += 1 %>
+  <% end %>
+
+</div>
