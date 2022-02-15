@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Merchant Show Page' do
   it 'shows all of the items for a merchant' do
-    merchant_1 = Merchant.new({:id=>"7",
+   merchant_1 = Merchant.new({:id=>"7",
                              :attributes=>{:name=>"Schroeder-Jerde"}})
 
    item_1 = Item.new({:id=>"105",
