@@ -1,0 +1,17 @@
+<h1>Rails Engine Landing Page</h1>
+
+<div id='form'>
+  <%= form_with url: '/', method: :get, local: true do |f| %>
+    <%= f.label :search %>
+    <%= f.text_field :search %><br><br>
+    <%= f.submit 'Search' %>
+  <% end %>
+</div><br><br>
+
+<div id="merchant-present">
+  <% if @merchant.present? %>
+    <div id="merchant-1">
+      <%= link_to @merchant.name, merchant_path(@merchant.id) %>
+    </div>
+  <% end %>
+</div>
