@@ -3,6 +3,14 @@ class MerchantService
     response = parsed_response("/api/v1/merchants")
   end
 
+  def self.merchant(merchant_id)
+    response = parsed_response("/api/v1/merchants/#{merchant_id}")
+  end
+
+  def self.merchant_items(merchant_id)
+    item_response = parsed_response("/api/v1/merchants/#{merchant_id}/items")
+  end
+
   def self.conn
     Faraday.new(url: "http://localhost:3000")
   end
