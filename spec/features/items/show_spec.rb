@@ -12,9 +12,11 @@ RSpec.describe 'item show page' do
     end
   end
 
-  context 'sad path: item does nto exist' do
+  context 'sad path: item does not exist' do
+    let!(:id) { "1" }
+    let!(:item) { RailsEngineFacade.get_item(id) }
     it "shows error message on page" do
-      visit "/items/#{item.id}"
+      visit "/items/#{id}"
 
       expect(page).to have_content("Item not found")
     end

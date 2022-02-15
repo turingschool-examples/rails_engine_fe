@@ -21,6 +21,6 @@ class RailsEngineService
   end
 
   def self.get_item(id)
-    get_url("/items/#{id}")    
+    get_url("/items/#{id}")
   end
 end

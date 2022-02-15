@@ -1,4 +1,8 @@
-<h1><%= "Item #{@item.id}" %></h1>
-<h3><%= "Name: #{@item.name}" %></h3>
-<h3><%= "Description: #{@item.description}" %></h3>
-<h3><%= "Unit Price: #{@item.unit_price}" %></h3>
+<% if @item %>
+  <h1><%= "Item #{@item.id}" %></h1>
+  <h3><%= "Name: #{@item.name}" %></h3>
+  <h3><%= "Description: #{@item.description}" %></h3>
+  <h3><%= "Unit Price: #{@item.unit_price}" %></h3>
+<% else %>
+  <h3><%= "Error: Item not found" %></h3>
+<% end %>

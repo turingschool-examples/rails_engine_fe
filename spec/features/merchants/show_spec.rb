@@ -33,7 +33,7 @@ RSpec.describe do
     it "returns error on page" do
       visit "/merchants/#{id}"
 
-      expect(page).to have_content("Merchant not found")
+      expect(page).to have_content("Merchant Not Found")
     end
   end
 
