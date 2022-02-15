@@ -3,6 +3,9 @@ class MerchantsController < ApplicationController
     response = Faraday.get('http://localhost:3000/api/v1/merchants')
     body = response.body
     @merchants = JSON.parse(body, symbolize_names: true)
+
+
+    @merchants = MerchantFacade.merchants
   end
 
   def show
