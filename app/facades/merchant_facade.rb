@@ -5,4 +5,16 @@ class MerchantFacade
       Merchant.new(merchant_data)
     end
   end
+
+  def self.merchant(merchant_id)
+    data = MerchantService.merchant(merchant_id)
+    merchant = Merchant.new(data)
+  end
+
+  def self.items(merchant_id)
+    all_items = MerchantService.merchant_items(merchant_id)
+    all_items.map do |item|
+      Item.new(item)
+    end
+  end
 end
