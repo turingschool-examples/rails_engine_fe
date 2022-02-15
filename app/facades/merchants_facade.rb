@@ -6,5 +6,12 @@ class MerchantsFacade
         Merchant.new(merchant)
       end
     end
+
+    def get_merchant_items(id)
+      items = MerchantService.merchant_items(id)
+      items.map do |item|
+        Item.new(item)
+      end
+    end
   end
 end

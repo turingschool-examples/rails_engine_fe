@@ -1,10 +1,6 @@
-class MerchantService
-  def self.all_merchants
-    get_data('/api/v1/merchants')
-  end
-
-  def self.merchant_items(id)
-    get_data("/api/v1/merchants/#{id}/items")
+class ItemService
+  def self.all_items
+    get_data('/api/v1/items')
   end
 
   private
