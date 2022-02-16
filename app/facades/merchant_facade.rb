@@ -2,8 +2,7 @@ class MerchantFacade
   def self.merchants_info
     json = MerchantService.merchants_info
 
-      json[:data].map do |merchant_info|
-
+    json[:data].map do |merchant_info|
       Merchant.new(merchant_info)
     end
   end
@@ -31,7 +30,6 @@ class MerchantFacade
 
       return nil unless found_merchants.present?
 
-      # Merchant.new(found_merchants.first)
       found_merchants.each do |merch|
         Merchant.new(merch)
       end

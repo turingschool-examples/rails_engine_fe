@@ -1,8 +1,8 @@
-class MerchantService
+class MerchantService < FaradayService
 
-  def self.conn
-    Faraday.new(url: "http://localhost:3000")
-  end
+  # def self.conn
+  #   Faraday.new(url: "http://localhost:3000")
+  # end
 
   def self.merchants_info
     response = conn.get("/api/v1/merchants")
