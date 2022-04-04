@@ -5,7 +5,7 @@
 <% @merchants.each do |merchant| %>
   <li>
   <div id="name">
-  <%= link_to merchant.name, merchant_path(merchant) %>
+  <%= link_to merchant.name, merchant_path(merchant.id) %>
   </div>
   </li>
 <% end %>
