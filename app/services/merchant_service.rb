@@ -1,4 +1,4 @@
-class ApiService 
+class MerchantService 
 
   def self.get_url(url, param = nil)
     conn = Faraday.new(url: "http://localhost:3000/") do |faraday|
