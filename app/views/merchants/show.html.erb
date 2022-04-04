@@ -1,5 +1,11 @@
 <%= "Merchant #{@merchant.id}"%>
 
 <section id="items">
-  <%= %>
+  <% @items.each do |item| %>
+    <p>
+      Name: <%= item.name %><br>
+      Description: <%= item.description %><br>
+      Unit Price: <%= item.unit_price %><br>
+    </p>
+  <% end %>
 </section>
