@@ -19,4 +19,9 @@ class MerchantService
     response = conn.get("merchants/#{merchant_id}/items")
     json = JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.find_all_merchants(query)
+    response = conn.get("merchants/find_all?name=#{query}")
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
 end
