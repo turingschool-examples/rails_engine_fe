@@ -14,10 +14,10 @@
 #
 require 'simplecov'
 require 'shoulda/matchers'
-require 'webmock/rspec'
+# require 'webmock/rspec'
 SimpleCov.start 'rails'
 SimpleCov.add_filter ['spec', 'config']
-WebMock.disable_net_connect!
+# WebMock.disable_net_connect!
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
