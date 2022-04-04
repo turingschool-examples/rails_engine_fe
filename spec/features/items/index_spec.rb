@@ -12,14 +12,14 @@ RSpec.describe 'Item Index Page' do
     end
   end
   
-  xit 'each merchant name is a link to merchant show page' do 
+  it 'each item name is a link to item show page' do 
     visit items_path
-    first_merchant = ItemFacade.all_items.first
+    first_item = ItemFacade.all_items.first
 
     within(first("#name")) do 
       click_link
     end
 
-    expect(current_path).to eq(merchant_path(first_merchant.id))
+    expect(current_path).to eq(item_path(first_item.id))
   end
 end
