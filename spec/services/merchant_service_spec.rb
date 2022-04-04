@@ -31,7 +31,6 @@ RSpec.describe 'The rails engine API Service' do
     it '.get_merchant_items' do 
       VCR.use_cassette('get_merchant_items') do 
         one_merchant_items = MerchantService.get_merchant_items("1")
-
         expect(one_merchant_items).to be_an(Array)
         expect(one_merchant_items.count).to eq(15)
 

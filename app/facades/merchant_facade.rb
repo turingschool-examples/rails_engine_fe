@@ -9,4 +9,10 @@ class MerchantFacade
     Merchant.new(MerchantService.get_merchant(id))
   end 
 
+  def self.merchant_items(merchant_id)
+    MerchantService.get_merchant_items(merchant_id) do |data|
+      Item.new(data)
+    end 
+  end
+
 end 
