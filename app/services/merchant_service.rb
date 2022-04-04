@@ -22,7 +22,7 @@ class MerchantService
     end 
 
     def parse_data(response)
-      data = JSON.parse(response.body, symbolize_keys: true)
+      data = JSON.parse(response.body, symbolize_names: true)
     end 
   end 
 end 

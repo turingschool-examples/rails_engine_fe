@@ -15,20 +15,19 @@ class MerchantFacade
       create_items(results)
     end 
     
-    
     def create_merchants(results) 
-      results["data"].map do |merchant| 
-        Merchant.new(id: merchant["id"].to_i, name: merchant["attributes"]["name"])
+      results[:data].map do |merchant| 
+        Merchant.new(id: merchant[:id].to_i, name: merchant[:attributes][:name])
       end 
     end 
 
     def create_a_merchant(results) 
-      Merchant.new(id: results["data"]["id"].to_i, name: results["data"]["attributes"]["name"])
+      Merchant.new(id: results[:data][:id].to_i, name: results[:data][:attributes][:name])
     end 
 
     def create_items(results)
-      results["data"].map do |item| 
-        Item.new(id: item["id"].to_i, name: item["attributes"]["name"])
+      results[:data].map do |item| 
+        Item.new(id: item[:id].to_i, name: item[:attributes][:name])
       end 
     end 
   end 
