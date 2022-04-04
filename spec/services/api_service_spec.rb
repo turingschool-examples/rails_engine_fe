@@ -7,6 +7,11 @@ RSpec.describe 'The rails engine API Service' do
         all_merchants = ApiService.get_merchants 
 
         expect(all_merchants).to be_an(Array)
+        expect(all_merchants.first).to be_an(Hash)
+        expect(all_merchants.first[:id]).to be_an(String)
+        expect(all_merchants.first[:type]).to eq("merchant")
+        expect(all_merchants.first[:attributes]).to be_an(Hash)
+        expect(all_merchants.first[:attributes][:name]).to be_an(String)
       end
     end 
   end
