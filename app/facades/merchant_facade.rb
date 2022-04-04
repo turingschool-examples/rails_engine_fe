@@ -21,4 +21,12 @@ class MerchantFacade
       Item.new(item)
     end
   end
+
+  def self.find_all_merchants(query)
+    json = MerchantService.find_all_merchants(query)
+    
+    @merchants = json[:data].map do |merchant_data|
+      Merchant.new(merchant_data)
+    end
+  end
 end
