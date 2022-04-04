@@ -1,8 +1,8 @@
 class MerchantsController < ApplicationController
 
   def index 
-    if params[:query]
-      @merchants = MerchantFacade.find_all_merchants(params[:query])
+    if params[:query] == "merchant_search"
+      @merchants = MerchantFacade.find_all_merchants(params[:search])
     else 
       @merchants = MerchantFacade.all_merchants
     end
