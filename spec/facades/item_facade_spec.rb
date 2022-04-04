@@ -25,29 +25,32 @@ RSpec.describe ItemFacade do
       
       it 'item has all attributes' do 
         item = ItemFacade.item_info(5)
-
+        
         expect(item.id).to be_a String
         expect(item.id.nil?).to be false
-
+        
         expect(item.merchant_id).to be_an Integer 
         expect(item.merchant_id.nil?).to be false 
-
+        
         expect(item.name).to be_a String
         expect(item.name.nil?).to be false
         
         expect(item.description).to be_a String
         expect(item.description.nil?).to be false
-
+        
         expect(item.unit_price).to be_a Float
         expect(item.unit_price.nil?).to be false 
       end
     end
-
+    
     context '#item_merchant(item_id)' do 
       it 'creates a Item and Merchant object' do
+        item = ItemFacade.item_info(5)
         merchant = ItemFacade.item_merchant(5)
 
         expect(merchant).to be_a Merchant
+
+        expect(item.merchant_id.to_s).to eq(merchant.id)
 
         expect(merchant.id).to be_a String
         expect(merchant.name).to be_a String        
