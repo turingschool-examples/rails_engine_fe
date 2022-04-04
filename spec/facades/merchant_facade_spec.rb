@@ -22,17 +22,14 @@ RSpec.describe 'The Merchant Facade' do
     it '.merchant_items' do 
       VCR.use_cassette('merchant_items') do 
         one_merchant_items = MerchantFacade.merchant_items("1")
-
         expect(one_merchant_items).to be_an(Array)
-        expect(one_merchant_items.first).to be_an(Hash)
-        expect(one_merchant_items.first[:id]).to be_an(String)
-        expect(one_merchant_items.first[:type]).to eq("item")
-        expect(one_merchant_items.first[:attributes]).to be_an(Hash)
-        attributes = one_merchant_items.first[:attributes]
-        expect(attributes[:name]).to be_an(String)
-        expect(attributes[:description]).to be_an(String)
-        expect(attributes[:unit_price]).to be_an(Float)
-        expect(attributes[:merchant_id]).to be_an(Integer)
+        expect(one_merchant_items.first).to be_an(Item)
+        expect(one_merchant_items.first.name).to be_an(String)
+        expect(one_merchant_items.first.description).to be_an(String)
+        expect(one_merchant_items.first.id).to be_an(String)
+        expect(one_merchant_items.first.unit_price).to be_an(Float)
+        expect(one_merchant_items.first.merchant_id).to be_an(Integer)
+
       end 
     end
   end

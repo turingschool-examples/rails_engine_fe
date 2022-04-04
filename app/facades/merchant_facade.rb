@@ -10,7 +10,7 @@ class MerchantFacade
   end 
 
   def self.merchant_items(merchant_id)
-    MerchantService.get_merchant_items(merchant_id) do |data|
+    MerchantService.get_merchant_items(merchant_id).map do |data|
       Item.new(data)
     end 
   end
