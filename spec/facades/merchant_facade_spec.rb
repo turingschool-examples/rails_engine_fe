@@ -29,7 +29,14 @@ RSpec.describe 'The Merchant Facade' do
         expect(one_merchant_items.first.id).to be_an(String)
         expect(one_merchant_items.first.unit_price).to be_an(Float)
         expect(one_merchant_items.first.merchant_id).to be_an(Integer)
+      end 
+    end
 
+    it '.single_merchant_search' do 
+      VCR.use_cassette('single_merchant_search') do 
+        one_merchant = MerchantFacade.single_merchant_search("ill")
+        expect(one_merchant.id).to be_an(String)
+        expect(one_merchant.name).to be_an(String)
       end 
     end
   end

@@ -1,0 +1,9 @@
+<section id="search">
+<br>
+    <p>
+  <%= form_with url: "/merchants/results", method: :post, local: true do |form| %>
+    <%= form.label :name, 'Search For Merchant' %>
+    <%= form.text_field :name %>
+    <%= form.submit 'Search' %>
+  <% end %>
+  </p>

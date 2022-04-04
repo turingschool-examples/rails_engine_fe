@@ -7,4 +7,8 @@ class MerchantsController < ApplicationController
     @merchant = MerchantFacade.merchant(params[:id])
     @items = MerchantFacade.merchant_items(params[:id])
   end
+
+  def results 
+    @merchant = MerchantFacade.single_merchant_search(params[:name])
+  end
 end

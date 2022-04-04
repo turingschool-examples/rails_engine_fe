@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/items/4
+    uri: http://localhost:3000/api/v1/merchants/find?name=ill
     body:
       encoding: US-ASCII
       string: ''
@@ -21,19 +21,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ea1d59bea0442421960da290dcded583"
+      - W/"10d07a6607192555a239d36282a24d5c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c2ce844b-da75-40ef-811c-bd0f7445d361
+      - 608712c2-9afd-49d7-b367-29e2929491e7
       X-Runtime:
-      - '0.008360'
+      - '0.003047'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
-        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
-        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}}}'
-  recorded_at: Mon, 04 Apr 2022 22:16:48 GMT
+      string: '{"data":{"id":"3","type":"merchant","attributes":{"name":"Willms and
+        Sons"}}}'
+  recorded_at: Mon, 04 Apr 2022 21:57:00 GMT
 recorded_with: VCR 6.1.0

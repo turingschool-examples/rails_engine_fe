@@ -43,5 +43,17 @@ RSpec.describe 'The rails engine Merchant Service' do
         expect(one_merchant_items.first[:attributes][:merchant_id]).to be_an(Integer)
       end
     end 
+
+    it '.one_merchant_search' do 
+      VCR.use_cassette('one_merchant_search') do 
+        one_merchant = MerchantService.one_merchant_search("il")
+
+        expect(one_merchant).to be_an(Hash)
+        expect(one_merchant[:id]).to be_an(String)
+        expect(one_merchant[:type]).to eq("merchant")
+        expect(one_merchant[:attributes]).to be_an(Hash)
+        expect(one_merchant[:attributes][:name]).to be_an(String)
+      end
+    end 
   end
 end 

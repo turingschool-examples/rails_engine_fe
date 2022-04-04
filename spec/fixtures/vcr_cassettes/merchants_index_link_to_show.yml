@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7df738fc-4a4e-47ab-b76e-ab19901800d8
+      - 31bc3389-1350-4401-a50c-fc1c162d54c0
       X-Runtime:
-      - '0.004948'
+      - '0.070176'
       Transfer-Encoding:
       - chunked
     body:
@@ -96,7 +96,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Mon, 04 Apr 2022 19:56:54 GMT
+  recorded_at: Mon, 04 Apr 2022 19:56:20 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -122,15 +122,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5cda1d06-e08c-4156-ae35-3a13d494320b
+      - '09a2084f-55f5-408b-a6bb-e8db7725266b'
       X-Runtime:
-      - '0.001694'
+      - '0.003214'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Mon, 04 Apr 2022 19:56:54 GMT
+  recorded_at: Mon, 04 Apr 2022 19:56:20 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -156,9 +156,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f805fb1d-ac07-476a-afbe-f7d1ff0d4ccb
+      - e99c2e6b-6fb3-4ad5-8823-471c6d205977
       X-Runtime:
-      - '0.003052'
+      - '0.019240'
       Transfer-Encoding:
       - chunked
     body:
@@ -204,5 +204,5 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Mon, 04 Apr 2022 19:56:54 GMT
+  recorded_at: Mon, 04 Apr 2022 19:56:20 GMT
 recorded_with: VCR 6.1.0
