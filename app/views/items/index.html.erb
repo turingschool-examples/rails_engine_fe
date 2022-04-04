@@ -1,0 +1,5 @@
+<section id="items">
+  <% @items.each do |item| %>
+    <p>Item: <%= link_to "#{item.name}", item_path(item.id) %></p>
+  <% end %>
+</section>

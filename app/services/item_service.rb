@@ -13,7 +13,7 @@ class ItemService
     get_url("api/v1/items/#{item_id}")[:data]
   end 
 
-  # def self.all_items
-  #   get_url("api/v1/items")
-  # end 
+  def self.all_items
+    get_url("api/v1/items")[:data]
+  end 
 end
