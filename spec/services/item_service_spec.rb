@@ -54,7 +54,7 @@ RSpec.describe ItemService do
       end
     end
     context '#item_merchant(item_id)' do 
-      xit 'returns the merchant info for a single item' do 
+      it 'returns the merchant info for a single item' do 
         first_item = ItemFacade.all_items.first
         search = ItemService.item_merchant(first_item.id)
 
