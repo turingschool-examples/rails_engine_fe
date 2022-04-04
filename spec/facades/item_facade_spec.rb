@@ -44,8 +44,13 @@ RSpec.describe ItemFacade do
     end
 
     context '#item_merchant(item_id)' do 
-      xit 'returns the merchant info for a single item' do 
-        
+      it 'creates a Item and Merchant object' do
+        merchant = ItemFacade.item_merchant(5)
+
+        expect(merchant).to be_a Merchant
+
+        expect(merchant.id).to be_a String
+        expect(merchant.name).to be_a String        
       end
     end
   end
