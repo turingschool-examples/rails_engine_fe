@@ -14,6 +14,16 @@ RSpec.describe 'Merchant Show Page' do
     end
   end
   
-  xit 'each item name is a link to item show page' do 
+  it 'each item name is a link to item show page' do 
+    first_merchant = MerchantFacade.all_merchants.first
+    first_item = MerchantFacade.merchant_items(first_merchant.id).first
+
+    visit merchant_path(first_merchant.id)    
+
+    within(first("#name")) do 
+      click_link
+    end
+
+    expect(current_path).to eq(item_path(first_item.id))
   end
 end
