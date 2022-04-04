@@ -19,8 +19,10 @@ RSpec.describe MerchantService do
       end
     end
     context '#merchant_info(id)' do 
-      xit 'returns data for a single merchant' do 
-        search = MerchantService.all_merchants
+      it 'returns data for a single merchant' do 
+        first_merchant = MerchantFacade.all_merchants.first
+        search = MerchantService.merchant_info(first_merchant.id)
+
         expect(search).to be_a Hash
 
         expect(search.count).to eq(1)
