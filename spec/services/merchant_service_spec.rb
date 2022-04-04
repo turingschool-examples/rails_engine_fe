@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'The rails engine API Service' do 
+RSpec.describe 'The rails engine Merchant Service' do 
   context 'Class methods' do 
     it '.get_merchants' do 
       VCR.use_cassette('get_merchants') do 

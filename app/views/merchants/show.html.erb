@@ -3,7 +3,7 @@
 <section id="items">
   <% @items.each do |item| %>
     <p>
-      Name: <%= item.name %><br>
+      Name: <%= link_to "#{item.name}", item_path(item.id) %><br>
       Description: <%= item.description %><br>
       Unit Price: <%= item.unit_price %><br>
     </p>
