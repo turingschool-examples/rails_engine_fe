@@ -7,7 +7,12 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
-
+#gem 'jquery-rails'
+gem 'sass-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'turbolinks', '~> 5'
+gem 'coffee-rails', '~> 4.2'
+gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -18,6 +23,7 @@ group :development, :test do
   gem 'faraday'
   gem 'simplecov'
   gem 'shoulda-matchers'
+
 end
 
 group :development do

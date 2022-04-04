@@ -1,0 +1,10 @@
+
+<%#binding.pry %>
+<%= @merchant.name %>
+<br><br>
+
+<% @merch_items.each do |item|%>
+
+<li>name: <%= item.name%>, ID: <%= item.id%>,  Description: <%= item.description%>, Price: <%= item.unit_price%></li>
+
+<%end%>

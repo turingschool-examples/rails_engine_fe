@@ -3,6 +3,7 @@ class MerchantPoro
 
   def initialize(data)
     @id = data[:id]
+    #binding.pry
     @name = data[:name]
   end
 end
