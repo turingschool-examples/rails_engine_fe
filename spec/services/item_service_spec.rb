@@ -51,12 +51,24 @@ RSpec.describe ItemService do
 
         expect(item_data[:attributes]).to have_key(:unit_price)
         expect(item_data[:attributes][:unit_price]).to be_a(Float)
-
       end
     end
     context '#item_merchant(item_id)' do 
       xit 'returns the merchant info for a single item' do 
+        first_item = ItemFacade.all_items.first
+        search = ItemService.item_merchant(first_item.id)
 
+        expect(search).to be_a Hash
+
+        expect(search.count).to eq(1)
+
+        merchant_data = search[:data]
+
+        expect(merchant_data).to have_key(:id)
+        expect(merchant_data[:id]).to be_a(String)
+        
+        expect(merchant_data[:attributes]).to have_key(:name)
+        expect(merchant_data[:attributes][:name]).to be_a(String)
       end
     end
   end
