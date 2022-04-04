@@ -5,4 +5,8 @@ class MerchantFacade
     end 
   end 
 
+  def self.merchant(id)
+    Merchant.new(MerchantService.get_merchant(id))
+  end 
+
 end 

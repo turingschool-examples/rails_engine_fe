@@ -9,5 +9,15 @@ RSpec.describe 'The Merchant Facade' do
         expect(all_merchants.first).to be_an(Merchant)
       end 
     end
+
+    it '.merchant' do 
+      VCR.use_cassette('merchant') do 
+        one_merchant = MerchantFacade.merchant("1")
+
+        expect(one_merchant).to be_an(Merchant)
+        expect(one_merchant.id).to eq("1")
+        expect(one_merchant.name).to be_an(String)
+      end 
+    end
   end
 end
