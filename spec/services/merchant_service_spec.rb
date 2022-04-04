@@ -19,11 +19,11 @@ RSpec.describe 'The rails engine API Service' do
       VCR.use_cassette('get_merchant') do 
         one_merchant = MerchantService.get_merchant("1")
 
-        expect(one_merchant[:data]).to be_an(Hash)
-        expect(one_merchant[:data][:id]).to be_an(String)
-        expect(one_merchant[:data][:type]).to eq("merchant")
-        expect(one_merchant[:data][:attributes]).to be_an(Hash)
-        expect(one_merchant[:data][:attributes][:name]).to be_an(String)
+        expect(one_merchant).to be_an(Hash)
+        expect(one_merchant[:id]).to be_an(String)
+        expect(one_merchant[:type]).to eq("merchant")
+        expect(one_merchant[:attributes]).to be_an(Hash)
+        expect(one_merchant[:attributes][:name]).to be_an(String)
       end
     end 
   end
