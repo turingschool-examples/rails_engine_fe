@@ -16,7 +16,7 @@ class ItemService
   end
 
   def self.item_merchant(item_id)
-    response = conn.get("items/#{id}/merchant")
+    response = conn.get("items/#{item_id}/merchant")
     json = JSON.parse(response.body, symbolize_names: true)
   end
 end
