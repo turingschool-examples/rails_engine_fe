@@ -1,15 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe 'Movie Index Page' do
+RSpec.describe 'Merchant Index Page' do
   it 'has list of all merchants' do 
     visit merchants_path
     merchants = MerchantFacade.all_merchants
     
     expect(page).to have_css("#merchants")
-    expect(page).to have_css("#name, merchants.count")
     
     within("#merchants") do
-      expect(page).to have_css("#name")
+      expect(page).to have_css("#name, merchants.count")
     end
   end
   
