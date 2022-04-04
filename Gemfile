@@ -45,6 +45,10 @@ group :development, :test do
   gem 'simplecov'
   gem 'pry'
   gem 'launchy'
+  gem 'faraday'
+end
+
+group :test do
   gem 'vcr'
   gem 'webmock'
 end
