@@ -1,0 +1,14 @@
+<h1><%= @item.name %></h1>
+
+<div id="attributes">
+  <div id="description">
+    <%= @item.description %>
+  </div>
+  <div id="unit_price">
+    <%= @item.unit_price %>
+  </div>
+</div>
+
+<div id="merchant">
+  Merchant: <%= link_to @merchant.name, merchant_path(@merchant.id) %>
+</div>

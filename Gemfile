@@ -63,8 +63,6 @@ group :test do
   gem 'launchy'
   gem 'orderly'
   gem 'simplecov'
-  gem 'vcr', '~> 6.1.0'
-  gem 'webmock', '~> 3.14'
   gem 'shoulda-matchers'
 end 
 
