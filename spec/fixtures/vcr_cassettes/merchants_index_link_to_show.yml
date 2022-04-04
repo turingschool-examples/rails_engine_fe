@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 960272e3-1084-4bd4-847b-ae2266852d4a
+      - '0898d968-1ff4-4cb0-84a3-f00a4a6ce9c0'
       X-Runtime:
-      - '0.037711'
+      - '0.005144'
       Transfer-Encoding:
       - chunked
     body:
@@ -96,7 +96,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Mon, 04 Apr 2022 19:00:52 GMT
+  recorded_at: Mon, 04 Apr 2022 19:04:10 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -122,13 +122,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b64ab37a-8bdc-4a65-8a8f-4dd06d258cac
+      - d8bed028-702a-49ba-af8f-e5d57ffa3904
       X-Runtime:
-      - '0.002326'
+      - '0.001613'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Mon, 04 Apr 2022 19:00:52 GMT
+  recorded_at: Mon, 04 Apr 2022 19:04:10 GMT
 recorded_with: VCR 6.1.0
