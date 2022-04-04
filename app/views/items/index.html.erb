@@ -1,0 +1,13 @@
+<h1>Items</h1>
+
+<ul>
+<div id="items">
+<% @items.each do |item| %>
+  <li>
+  <div id="name">
+  <%= link_to item.name, item_path(item.id) %>
+  </div>
+  </li>
+<% end %>
+</div>
+</ul>
