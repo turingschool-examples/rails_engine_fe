@@ -44,6 +44,8 @@ group :development, :test do
   gem 'figaro'
   gem 'faraday'
   gem 'shoulda-matchers' # requires config
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :test do
