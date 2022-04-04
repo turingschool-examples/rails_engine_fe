@@ -16,6 +16,23 @@ RSpec.describe MerchantFacade do
       end
     end
 
-   
+    context '#merchant_info(id)' do 
+      it 'creates a single merchant object' do 
+        merchant = MerchantFacade.merchant_info(5)
+        
+        expect(merchant).to be_a Merchant
+      end 
+      
+      it 'merchant has all attributes' do 
+        merchant = MerchantFacade.merchant_info(5)
+        
+        expect(merchant.id).to be_a String
+        expect(merchant.id.nil?).to be false
+                
+        expect(merchant.name).to be_a String
+        expect(merchant.name.nil?).to be false
+      end
+    end
+    
   end
 end 
