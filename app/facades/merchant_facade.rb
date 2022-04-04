@@ -16,11 +16,9 @@ class MerchantFacade
 
   def self.merchant_items(merchant_id)
     json = MerchantService.merchant_items(merchant_id)
-
+    @merchant = merchant_info(merchant_id)
     @items = json[:data].map do |item|
       Item.new(item)
     end
-
-    @merchant = merchant_info(attributes[:merchant_id])
   end
 end
