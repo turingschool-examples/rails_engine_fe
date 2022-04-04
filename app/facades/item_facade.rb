@@ -13,4 +13,10 @@ class ItemFacade
 
     @item = Item.new(json[:data])
   end
+
+  def self.item_merchant(item_id)
+    json = ItemService.item_merchant(item_id)
+    @item = item_info(item_id)
+    @merchant = Merchant.new(json[:data])
+  end
 end
