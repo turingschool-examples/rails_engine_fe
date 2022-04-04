@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'The merchants index page' do 
-  it 'displays all merchants from the exposes api endpoint' do
+  it 'displays all merchants from API endpoint' do
 
     VCR.use_cassette('merchants_index') do 
       visit merchants_path
