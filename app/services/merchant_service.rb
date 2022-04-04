@@ -13,4 +13,8 @@ class MerchantService
     get_url("api/v1/merchants")[:data]
   end 
 
+  def self.get_merchant(id)
+    get_url("api/v1/merchants/#{id}")
+  end 
+
 end
