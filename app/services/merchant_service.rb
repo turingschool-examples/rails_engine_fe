@@ -4,8 +4,17 @@ class MerchantService
       response = conn.get("/api/v1/merchants")
       parse_data(response)
     end 
-    
 
+    def call_for_a_merchant(merchant_id)
+      response = conn.get("/api/v1/merchants/#{merchant_id}")
+      parse_data(response)
+    end 
+
+    def call_for_items(merchant_id)
+      response = conn.get("/api/v1/merchants/#{merchant_id}/items")
+      parse_data(response)
+    end 
+    
     private 
 
     def conn 
