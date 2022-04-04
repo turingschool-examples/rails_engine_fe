@@ -61,4 +61,22 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  # filters sensitive data for us. Each API key will need it's own line 
+  config.filter_sensitive_data('api_key') { ENV['api_key'] }
+  # allows us to use the names of our tests to name cassettes rather than having to manually wrap each test in a block
+  # add :vcr do to our test block after the first one
+  config.configure_rspec_metadata!
+  # re-record default configuration block (instead of in specific test)
+  config.default_cassette_options = { re_record_interval: 2.days }
 end
