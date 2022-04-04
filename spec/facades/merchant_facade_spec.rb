@@ -14,4 +14,13 @@ RSpec.describe MerchantFacade do
       end
     end
   end
+
+  describe 'find_merchant', :vcr do
+    before :each do
+    @merchant = MerchantFacade.find_merchant(1)
+    end
+    it 'returns a merchant object' do
+      expect(@merchant).to be_a Merchant
+    end
+  end
 end
