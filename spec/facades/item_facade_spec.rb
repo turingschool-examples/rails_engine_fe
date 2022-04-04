@@ -16,6 +16,37 @@ RSpec.describe ItemFacade do
       end
     end
 
-    
+    context '#item_info(id)' do 
+      it 'creates a single item object' do 
+        item = ItemFacade.item_info(5)
+        
+        expect(item).to be_a Item
+      end 
+      
+      it 'item has all attributes' do 
+        item = ItemFacade.item_info(5)
+
+        expect(item.id).to be_a String
+        expect(item.id.nil?).to be false
+
+        expect(item.merchant_id).to be_an Integer 
+        expect(item.merchant_id.nil?).to be false 
+
+        expect(item.name).to be_a String
+        expect(item.name.nil?).to be false
+        
+        expect(item.description).to be_a String
+        expect(item.description.nil?).to be false
+
+        expect(item.unit_price).to be_a Float
+        expect(item.unit_price.nil?).to be false 
+      end
+    end
+
+    context '#item_merchant(item_id)' do 
+      xit 'returns the merchant info for a single item' do 
+        
+      end
+    end
   end
 end 
