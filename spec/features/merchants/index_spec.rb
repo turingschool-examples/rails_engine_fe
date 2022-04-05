@@ -11,9 +11,9 @@ RSpec.describe 'Merchants Index Page', type: :feature do
   end
 
   it "links to each merchant's show page" do
-    visit "/mercants"
+    visit "/merchants"
 
     click_link("Klein, Rempel and Jones")
-    expect(curren_path).to eq("/merchants/2")
+    expect(current_path).to eq("/merchants/2")
   end
 end

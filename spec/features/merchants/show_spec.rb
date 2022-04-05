@@ -4,7 +4,7 @@ RSpec.describe 'Merchant Show Page', type: :feature do
   it "shows the merchant's name" do
     visit "/merchants/3"
     expect(page).to have_content("Willms and Sons")
-  end
+  end 
 
   it "shows items belonging to the merchant" do
     visit "/merchants/3"
