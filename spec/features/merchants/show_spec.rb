@@ -17,7 +17,5 @@ RSpec.describe 'the merchant show page', :vcr do
     visit '/merchants/1'
     click_on "Item Nemo Facere"
     expect(current_path).to eq("/items/4")
-    save_and_open_page
-
   end
 end
