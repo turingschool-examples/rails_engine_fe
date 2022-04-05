@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"05df21fe763da61b898b7432b07b2cb8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 46b2828b-30dc-45e3-95a0-d46f61f439ba
+      X-Runtime:
+      - '0.067169'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"25","type":"item","attributes":{"name":"Item Non In","description":"Error
+        sit qui assumenda. Eius qui nostrum ducimus aut. Expedita et exercitationem
+        deserunt quia aut voluptatem.","unit_price":618.98,"merchant_id":2}}}'
+  recorded_at: Tue, 05 Apr 2022 00:13:52 GMT
+recorded_with: VCR 6.1.0
