@@ -5,6 +5,6 @@
 
 <% @merch_items.each do |item|%>
 
-<li>name: <%= item.name%>, ID: <%= item.id%>,  Description: <%= item.description%>, Price: <%= item.unit_price%></li>
+<li>name: <%=link_to "#{item.name}", "/items/#{item.id}"%>, ID: <%= item.id%>,  Description: <%= item.description%>, Price: <%= item.unit_price%></li>
 
 <%end%>
