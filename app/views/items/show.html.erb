@@ -1,0 +1,21 @@
+<div class="content">
+  <h1><%= @item.name %></h1>
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table table-bordered table-striped mb-0">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Unit Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= @item.name %></td>
+          <td><%= @item.description %></td>
+          <td><%= @item.unit_price%></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

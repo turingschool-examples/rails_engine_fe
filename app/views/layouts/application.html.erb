@@ -4,11 +4,32 @@
   .title {
     text-align: center
   }
+  .content {
+    text-align: center
+  }
+  .my-custom-scrollbar {
+    text-align: center
+    position: relative;
+    height: 500px;
+    width: 50% !important;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .table-wrapper-scroll-y {
+    text-align: center
+    display: block;
+}
+  .search_bar {
+    position:absolute;
+    right:25px;
+    top:25px;
+}
 </style>
   <head>
     <%= render 'layouts/navbar' %>
     <div class="title">
-      
+
   </div>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>

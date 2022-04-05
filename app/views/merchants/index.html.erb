@@ -1,0 +1,20 @@
+
+<div class="content">
+  <h1>All Merchants</h1>
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table table-bordered table-striped mb-0">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @merchants.each do |merchant| %>
+        <tr>
+          <td><%= link_to "#{merchant.name}", merchant_path(merchant.id) %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
