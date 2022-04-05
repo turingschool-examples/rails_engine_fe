@@ -7,10 +7,13 @@ class MerchantFacade
   end
 
   def self.one_merchant(id)
-    merchant = MerchantService.get_one_merchant
+    merchant = MerchantService.get_one_merchant(id)
   end
 
-  def all_merchant_items(id)
-    all_items = MerchantService.get_all_merchant_items
+  def self.all_merchant_items(id)
+    all_items = MerchantService.get_all_merchant_items(id)
+    all_items[:data].map do |item|
+      Item.new(item)
+    end
   end
 end
