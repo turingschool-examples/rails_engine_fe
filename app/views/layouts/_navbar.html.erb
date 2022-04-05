@@ -1,7 +1,12 @@
 <nav class="navbar navbar-dark bg-dark">
-  <form class="form-inline">
-    <button class="btn btn-outline-success" type="button">Home</button>
-    <button class="btn btn-sm btn-outline-secondary" type="button">Merchants</button>
-    <button class="btn btn-sm btn-outline-secondary" type="button">Items</button>
+  <a class="navbar-brand" href="/">Home</a>
+  <a class="navbar-brand" href="/merchants">Merchants</a>
+  <a class="navbar-brand" href="/items">Items</a>
+
+  <form class="form-inline my-2 my-lg-0">
+    <div class="search_bar">
+      <a class="navbar=brand" <%= render 'layouts/search' %></a>
+    </div>
   </form>
+
 </nav>
