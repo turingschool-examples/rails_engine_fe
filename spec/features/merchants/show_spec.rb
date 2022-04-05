@@ -7,7 +7,7 @@ RSpec.describe 'Merchant Item show  page' do
     visit merchant_path(first_merchant.id)
     within '#merchant'
     expect(page).to have_content(first_merchant.name)
-save_and_open_page
+
     within '#item_id_1'
     expect(page).to have_content(first_merchant_item.name)
     expect(page).to have_content(first_merchant_item.description)

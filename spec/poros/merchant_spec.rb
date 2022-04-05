@@ -10,6 +10,6 @@ RSpec.describe Merchant do
     }
     merchant_poro = Merchant.new(merchant_data)
     expect(merchant_poro).to be_a Merchant
-    expect(merchant_poro.name).to eq('Schroeder-Jerde')
+    expect(merchant_poro.name).to eq(merchant_data[:attributes][:name])
   end
 end
