@@ -18,4 +18,9 @@ class MerchantService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.find_item(id)
+    response = conn.get("items/#{id}")
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
 end
