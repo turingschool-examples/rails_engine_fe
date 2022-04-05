@@ -5,6 +5,10 @@ RSpec.describe 'merchant show page' do
     visit merchant_path(1)
 
     expect(page).to have_content("Schroeder-Jerde's Items")
+
+    visit merchant_path(2)
+
+    expect(page).to have_content("Klein, Rempel and Jones")
   end
 
   it 'displays a list of the merchant items' do
