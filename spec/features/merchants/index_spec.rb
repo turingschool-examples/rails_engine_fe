@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'merchants index page' do
   it 'displays a list of merchants' do
-    visit "/merchants"
+    visit merchants_path
 
     expect(page).to have_content("Merchants")
     within("#merchants_id_1") do

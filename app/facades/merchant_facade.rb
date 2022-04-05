@@ -13,7 +13,6 @@ class MerchantFacade
 
   def self.find_merchant_items(merchant_id)
     items = MerchantService.get_merchant_items(merchant_id)
-
     items[:data].map do |item_data|
       Item.new(item_data)
     end
