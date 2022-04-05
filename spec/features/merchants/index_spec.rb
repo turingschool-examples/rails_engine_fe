@@ -14,7 +14,6 @@ RSpec.describe 'merchant index page', :vcr  do
     within("#merchants_index_id_2") do
       expect(page).to have_content("Name: Klein, Rempel and Jones")
     end
-    save_and_open_page
   end
 end
 

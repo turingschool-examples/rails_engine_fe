@@ -3,6 +3,6 @@
 <% @merchants.each do |merchant| %>
   <section id="merchants_index_id_<%=merchant.id%>">
     <h3>Name: <%=link_to "#{merchant.name}", "/merchants/#{merchant.id}" %></h3>
-    <p>______</p>
+    <p>
   </section>
 <% end %>
