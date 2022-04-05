@@ -1,0 +1,10 @@
+<div class="merchant">
+  <h1><%= @merchant[:attributes][:name] %>'s Show Page'</h1>
+  <% @merchant_items.each do  |item| %>
+<section id="item_id_<%= item.id %>">
+name: <%= item.name %>
+description: <%= item.description %>
+unit price: <%= item.unit_price %>
+</section>
+<% end %>
+</div>
