@@ -1,4 +1,8 @@
+<div class="merchants">
 <h1>All Merchants</h1>
-<% @merchants.each do |merchant| %>
-<%= merchant.name %><br>
-<% end  %>
+  <% @merchants.each do |merchant| %>
+  <section id='index_id<%= merchant.id %>'>
+Name: <%= link_to merchant.name, merchant_path(merchant.id) %>
+  </section>
+  <% end  %>
+</div>
