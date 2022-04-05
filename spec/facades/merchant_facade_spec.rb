@@ -11,11 +11,11 @@ RSpec.describe MerchantFacade do
 
     it 'will return one merchant' do
       merchant = MerchantFacade.one_merchant(1)
-        expect(merchant.count).to eq 1
-        expect(merchant[:data][:id]).to eq('1')
-        expect(merchant[:data][:type]).to eq('merchant')
-        expect(merchant[:data][:attributes][:name]).to_not be_nil
-      end
+      expect(merchant.count).to eq 1
+      expect(merchant[:data][:id]).to eq('1')
+      expect(merchant[:data][:type]).to eq('merchant')
+      expect(merchant[:data][:attributes][:name]).to_not be_nil
+    end
 
     it "will return all of a merchant's items" do
       merchant_items = MerchantFacade.all_merchant_items(1)

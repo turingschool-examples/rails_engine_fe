@@ -1,3 +1,2 @@
-    class MerchantItemsController < ApplicationController
-
-    end
+class MerchantItemsController < ApplicationController
+end

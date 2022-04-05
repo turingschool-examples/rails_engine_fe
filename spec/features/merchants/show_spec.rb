@@ -5,14 +5,12 @@ RSpec.describe 'Merchant Item show  page' do
     first_merchant_item = MerchantFacade.all_merchant_items(1).first
 
     visit merchant_path(first_merchant.id)
-    within "#merchant"
+    within '#merchant'
     expect(page).to have_content(first_merchant.name)
 
-
-    within  "#item_id_1"
+    within '#item_id_1'
     expect(page).to have_content(first_merchant_item.name)
     expect(page).to have_content(first_merchant_item.description)
     expect(page).to have_content(first_merchant_item.unit_price)
-
   end
 end

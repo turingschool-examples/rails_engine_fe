@@ -4,9 +4,9 @@ RSpec.describe 'Merchant index page' do
     first_merchant = MerchantFacade.all_merchants.first
 
     visit merchants_path
-    within "#merchants"
+    within '#merchants'
     expect(page).to have_content('All Merchants')
-    within  "#index_id_1"
+    within '#index_id_1'
     expect(page).to have_content(first_merchant.name)
     expect(page).to have_link(first_merchant.name)
     click_link(first_merchant.name)
