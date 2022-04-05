@@ -1,0 +1,5 @@
+<h1><%= @merchant.name %></h1>
+
+<% @items.each do |item| %>
+  <p><%= link_to item.name, "/items/#{item.id}" %> $<%= item.unit_price %></p>
+<% end %>
