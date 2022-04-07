@@ -12,7 +12,7 @@ RSpec.describe "merchants index" do
 
       click_link("Schroeder-Jerde")
 
-      expect(current_path).to eq("")
+      expect(current_path).to eq("/merchants/1")
     end
   end
 end

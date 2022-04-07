@@ -13,5 +13,10 @@ class MerchantService
       response = connection.get("merchants")
       parse_json(response)
     end
+
+    def merchant_items(id)
+      response = connection.get("merchants/#{id}/items")
+      parse_json(response)
+    end
   end
 end

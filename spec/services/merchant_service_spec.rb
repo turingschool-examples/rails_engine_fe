@@ -12,4 +12,10 @@ RSpec.describe "merchant service" do
       expect(merchant[:attributes]).to have_key(:name)
     end
   end
+
+  it "can get all the items for a merchant" do
+    merchant_items = MerchantService.merchant_items(1)
+
+    expect(merchant_items[:data]).to be_an Array
+  end
 end
