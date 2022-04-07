@@ -1,4 +1,5 @@
 require 'rails_helper'
+require './app/poros/merchant'
 
 RSpec.describe 'Merchant PORO' do 
     it 'can store data' do
@@ -14,7 +15,7 @@ RSpec.describe 'Merchant PORO' do
 
         }
 
-        poro = MerchantPoro.new(data)
+        poro = MerchantPoro.new(test_data)
 
         expect(poro.name).to eq(test_data[:attributes][:name])
         expect(poro.id).to eq(test_data[:id])
