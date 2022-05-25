@@ -1,0 +1,117 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/sandiszthieme/turing/3module/projects/rails_engine_fe/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/projects/rails_engine_fe/app/controllers/merchants_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/projects/rails_engine_fe/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/projects/rails_engine_fe/app/facades/rails_engine_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          200,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          42,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/projects/rails_engine_fe/app/services/rails_engine_service.rb": {
+        "lines": [
+          1,
+          1,
+          6,
+          6,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/projects/rails_engine_fe/app/poros/merchant.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          203,
+          203,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/3module/projects/rails_engine_fe/app/poros/item.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          43,
+          43,
+          43,
+          43,
+          43,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1653519881
+  }
+}
