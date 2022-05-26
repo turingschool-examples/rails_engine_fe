@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'The Merchant Show page' do
   it 'displays the name of the merchant' do
     stub_merchant_show
+    stub_merchant_items
 
     visit '/merchants/1'
 
@@ -12,10 +13,11 @@ RSpec.describe 'The Merchant Show page' do
 
   it 'displays all items related to the merchant' do
     stub_merchant_show
+    stub_merchant_items
 
     visit '/merchants/1'
 
-    expect(page).to have_css('.item', count: 11)
+    expect(page).to have_css('.item', count: 12)
 
     within '#item-4' do
       expect(page).to have_content 'Item Nemo Facere'

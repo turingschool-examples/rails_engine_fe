@@ -43,11 +43,13 @@ RSpec.describe MerchantService do
     end
 
     it '.get_merchant_items(merchant_id) returns all items related to the merchant as JSON' do
+      stub_merchant_items
+
       items = MerchantService.get_merchant_items(1)
 
       expect(items).to have_key :data
       expect(items[:data]).to be_an Array
-      expect(items[:data].count).to eq 11
+      expect(items[:data].count).to eq 12
 
       items[:data].each do |item|
         expect(item).to have_key :id

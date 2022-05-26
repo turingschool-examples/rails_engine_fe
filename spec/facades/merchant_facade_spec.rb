@@ -23,11 +23,13 @@ RSpec.describe MerchantFacade do
     end
 
     it '.merchant_items(merchant_id) returns item POROs related to the merchant' do
+      stub_merchant_items
+
       items = MerchantFacade.merchant_items(1)
 
       expect(items).to be_an Array
       expect(items).to be_all Item
-      expect(items.count).to eq(11)
+      expect(items.count).to eq 12
 
       items.each do |item|
         expect(item.merchant_id).to eq 1

@@ -15,6 +15,7 @@ RSpec.describe 'The Merchants index page' do
 
   it 'each name is a link to the merchant show page' do
     stub_merchant_show
+    stub_merchant_items
 
     click_on 'Schroeder-Jerde'
 
