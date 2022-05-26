@@ -1,0 +1,4 @@
+<h2>Merchants</h2>
+<% @merchants.each do |merchant| %>
+  <p>Name: <%= link_to merchant.name, "/merchants/#{merchant.id}", method: :get %></p>
+<% end %>
