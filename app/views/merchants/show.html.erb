@@ -1,0 +1,16 @@
+<h2><%= @merchant.name %></h2>
+<p>Here you can find all the relevant information you'd want about <%= @merchant.name %> and the items they sell!</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>unit_price</th>
+    <th>description</th>
+  </tr>
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.name %></td>
+    <td><%= item.unit_price %></td>
+    <td><%= item.description %></td>
+  </tr>
+<% end %>
+</table>
