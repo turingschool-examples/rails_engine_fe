@@ -1,4 +1,15 @@
 module MerchantsStubHelper
   def stub_merchant_index
+    merchant_index_response = File.read('spec/fixtures/merchant_index_stub.json')
+
+    stub_request(:get, "http://localhost:3000/api/v1/merchants")
+      .with(
+        headers: {
+          'Accept'=>'*/*',
+          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'User-Agent'=>'Faraday v2.3.0'
+        }
+      )
+        .to_return(status: 200, body: merchant_index_response, headers: {})
   end
 end

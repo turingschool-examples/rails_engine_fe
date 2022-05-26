@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'The Merchants index page' do
   before :each do
+    stub_merchant_index
     visit '/merchants'
   end
 
