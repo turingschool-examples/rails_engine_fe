@@ -13,6 +13,8 @@ RSpec.describe MerchantFacade do
     end
 
     it '.merchant(merchant_id) returns a single merchant PORO' do
+      stub_merchant_show
+
       merchant = MerchantFacade.merchant(1)
 
       expect(merchant).to be_a Merchant

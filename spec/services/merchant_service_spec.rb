@@ -25,6 +25,8 @@ RSpec.describe MerchantService do
     end
 
     it '.get_merchant(merchant_id) returns a single merchant as JSON' do
+      stub_merchant_show
+
       merchant = MerchantService.get_merchant(1)
 
       expect(merchant).to have_key :data

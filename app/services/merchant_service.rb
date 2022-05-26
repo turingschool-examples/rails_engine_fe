@@ -5,6 +5,12 @@ class MerchantService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.get_merchant(merchant_id)
+    response = conn.get("/api/v1/merchants/#{merchant_id}")
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new('http://localhost:3000') do |f|
       f.adapter Faraday.default_adapter

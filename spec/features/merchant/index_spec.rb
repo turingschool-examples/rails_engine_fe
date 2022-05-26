@@ -14,6 +14,8 @@ RSpec.describe 'The Merchants index page' do
   end
 
   it 'each name is a link to the merchant show page' do
+    stub_merchant_show
+
     click_on 'Schroeder-Jerde'
 
     expect(current_path).to eq '/merchants/1'
