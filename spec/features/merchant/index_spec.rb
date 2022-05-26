@@ -7,7 +7,6 @@ RSpec.describe 'merchant index page' do
 
     expect(page).to have_content("Name: Schroeder-Jerde")
     expect(page).to have_link("Schroeder-Jerde")
-    save_and_open_page
     click_link("Schroeder-Jerde")
     expect(current_path).to eq("/merchants/1")
   end
