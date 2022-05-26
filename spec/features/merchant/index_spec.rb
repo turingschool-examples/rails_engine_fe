@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe 'The Merchants index page' do
+RSpec.describe 'The Merchants index page' do
   before :each do
     visit '/merchants'
   end
