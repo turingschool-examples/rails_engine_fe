@@ -1,0 +1,5 @@
+<h2>All Merchants</h2>
+
+<% @merchants.each do |merchant| %>
+  <%= link_to "#{merchant.name}", "/merchants/#{merchant.id}", class: 'merchant' %>
+<% end %>
