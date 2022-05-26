@@ -11,5 +11,13 @@ RSpec.describe MerchantFacade do
       expect(merchants).to be_all Merchant
       expect(merchants.count).to eq 15
     end
+
+    it '.merchant(merchant_id) returns a single merchant PORO' do
+      merchant = MerchantFacade.merchant(1)
+
+      expect(merchant).to be_a Merchant
+      expect(merchant.id).to eq 1
+      expect(merchant.name).to eq 'Schroeder-Jerde' 
+    end
   end
 end
