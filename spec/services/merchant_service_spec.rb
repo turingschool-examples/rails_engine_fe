@@ -7,11 +7,11 @@ RSpec.describe MerchantService do
 
       merchants = MerchantService.get_all_merchants
 
-      expect(merchants).to be_an Array
-      expect(merchants.count).to eq 15
-      expect(merchants).to be_all Hash
+      expect(merchants).to have_key :data
+      expect(merchants[:data].count).to eq 15
+      expect(merchants[:data]).to be_all Hash
 
-      merchants.each do |merchant|
+      merchants[:data].each do |merchant|
         expect(merchant).to have_key :id
         expect(merchant[:id]).to be_a String
 
@@ -19,7 +19,7 @@ RSpec.describe MerchantService do
         expect(merchant[:attributes]).to be_a Hash
         
         expect(merchant[:attributes]).to have_key :name
-        expect(merchat[:attributes][:name]).to be_a String
+        expect(merchant[:attributes][:name]).to be_a String
       end
     end
   end
