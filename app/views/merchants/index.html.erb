@@ -1,0 +1,11 @@
+<h2>All The Merchants</h2>
+  <p>Welcome to the merchants' index! You can scroll through the list of merchants below, or click on that merchants' name to see more about their invintory!</p>
+  <hr>
+  <div id="merchants_index_merchants_list" style="overflow:auto">
+  <table>
+      <tr><th>Found <%= @merchants.length %> Results</th></tr>
+    <% @merchants.each do |merchant| %>
+      <tr><td><%= link_to merchant.name, "/merchants/#{merchant.id}" %></td></tr>
+    <% end %>
+  </table>
+  </div>
