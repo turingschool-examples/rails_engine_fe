@@ -8,6 +8,7 @@ RSpec.describe MerchantService do
       merchants = MerchantService.get_all_merchants
 
       expect(merchants).to have_key :data
+      expect(merchants[:data]).to be_an Array
       expect(merchants[:data].count).to eq 15
       expect(merchants[:data]).to be_all Hash
 
@@ -21,6 +22,22 @@ RSpec.describe MerchantService do
         expect(merchant[:attributes]).to have_key :name
         expect(merchant[:attributes][:name]).to be_a String
       end
+    end
+
+    it '.get_merchant(merchant_id) returns a single merchant as JSON' do
+      merchant = MerchantService.get_merchant(1)
+
+      expect(merchant).to have_key :data
+      expect(merchant[:data]).to be_a Hash
+
+      expect(merchant[:data]).to have_key :id
+      expect(merchant[:data][:id]).to eq '1'
+
+      expect(merchant[:data]).to have_key :attributes
+      expect(merchant[:data][:attributes]).to be_a Hash
+
+      expect(merchant[:data][:attributes]).to have_key :name
+      expect(merchant[:data][:attributes][:name]).to eq('Schroeder-Jerde')
     end
   end
 end
