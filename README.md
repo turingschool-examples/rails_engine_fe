@@ -8,15 +8,14 @@ I learned some simple Bootstrap CSS and was able to implement some more advanced
 
 
 ## Getting Started
-
+### *_Both the FE and BE rails servers must be running in order to the FE app to work_*
 * Clone the project down
 * Run `rails s` in your terminal from the project directory for the FE
 * Clone down the [Rails Engine API](github.com/aspeth/rails-engine).
 * Run `rails s` in your terminal from the project directory for the BE
 * Visit `localhost:5000/merchants` in your browser
-### *_Both the FE and BE rails servers must be running in order to the FE app to work_*
 
-#Below is the user story provided as a guideline for the frontend app
+# Below is the user story provided as a guideline for the frontend app
 
 ## The Challenge
 
