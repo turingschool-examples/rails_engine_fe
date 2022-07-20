@@ -1,7 +1,6 @@
 require "rails_helper"
 
 RSpec.describe Merchant, type: :feature do
-  it 'lists all merchants as links to their respective show page' do
-    merchant1 = Merchant.create!()
+  it 'lists all merchants as links to their respective show page', :vcr do
   end
 end
