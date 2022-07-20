@@ -1,1 +1,10 @@
 <%= @merchant.name %> Merchant Page
+
+<% @items.each do |item| %>
+    <div id=<%="item-#{item.id}"%>>
+        <%= item.name %><br>
+        <%= item.id %>
+        <%= item.description %><br>
+        <%= item.unit_price %><br><br>
+    </div>
+<% end%>
