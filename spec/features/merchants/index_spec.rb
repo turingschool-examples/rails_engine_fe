@@ -21,13 +21,13 @@ describe 'Merchant index API page', :vcr do
         end
     end
 
-    xit 'has a link to a merchants show page fro the index', :vcr do
+    it 'has a link to a merchants show page fro the index', :vcr do
         visit '/merchants'
 
         click_on 'Willms and Sons'
 
         expect(current_path).to eq('/merchants/3')
 
-        expect(page).to have_content
+        expect(page).to have_content("Wiilims and Sons Merchant Page")
     end
 end
