@@ -1,0 +1,10 @@
+
+
+<h1><p style="color:darkred;text-align:center;"><%= @merchant.name %></p></h1>
+<br>
+<h2><p style="color:darkred;text-align:left;">Items</p></h2>
+<% @merchant_items.each do |item|%>
+<dt><strong><%= item.name %></strong></dt>
+<dd><i>$<%= item.unit_price%></i></dd>
+<% end %>
+

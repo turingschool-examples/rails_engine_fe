@@ -1,0 +1,5 @@
+<h1><p style="color:darkred;text-align:center;">Merchants</p></h1><br>
+<% @merchants.each do |merchant|%>
+
+<p style="text-align:center;color:firebrick;"><%= link_to "#{merchant.name}", "/merchant/#{merchant.id}" %></p>
+<% end %>
