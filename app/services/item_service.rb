@@ -11,4 +11,9 @@ class ItemService
         json = JSON.parse(response.body, symbolize_names: true)
     end 
 
+    def self.item_show(id)
+        response = conn.get("/api/v1/items/#{id}")
+        json = JSON.parse(response.body, symbolize_names: true)
+    end 
+
 end 

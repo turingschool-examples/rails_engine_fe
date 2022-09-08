@@ -51,6 +51,6 @@ RSpec.describe "merchants index page", type: :feature do
        
         click_on("Item Nemo Facere")
 
-        expect(current_path).to eq("/items/1")
+        expect(current_path).to eq("/items/4")
     end 
 end 

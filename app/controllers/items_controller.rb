@@ -4,4 +4,8 @@ class ItemsController < ApplicationController
         @items = ItemIndexFacade.service 
     end 
 
+    def show  
+        @item = ItemShowFacade.service(params[:id])
+    end 
+
 end 
