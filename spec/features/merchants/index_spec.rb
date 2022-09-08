@@ -8,9 +8,8 @@ RSpec.describe "Merchants Index", :vcr do
   end
 
   it "links to each merchant's show page", :vcr do 
+    
     visit "/merchants"
-
-    click_link("Schroeder-Jerde")
 
     expect(page).to have_link("Schroeder-Jerde")
   end
