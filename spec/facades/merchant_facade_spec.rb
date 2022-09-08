@@ -10,11 +10,21 @@ RSpec.describe MerchantFacade do
       expect(merchant[0].name).to be_a(String)
     end
   end  
-  
+
   describe '::create_merchant' do
-    it 'instantiates a merchant object by id with the correct attributes' do
+    it 'instantiates a merchant object by id with attributes' do
       merchant = MerchantFacade.create_merchant(1)
 
+      expect(merchant).to be_a(Merchant)
+      expect(merchant.id).to be_a(String)
+      expect(merchant.name).to be_a(String)
+    end
+  end
+
+  describe '::create_merchant_items' do
+    it 'instantiates a merchant object by id with attributes' do
+      merchant = MerchantFacade.create_merchant_items(1)
+      
       expect(merchant).to be_a(Merchant)
       expect(merchant.id).to be_a(String)
       expect(merchant.name).to be_a(String)

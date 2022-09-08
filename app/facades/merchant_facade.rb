@@ -8,7 +8,14 @@ class MerchantFacade
   end
 
   def self.create_merchant(merchant_id)
-    response = MerchantService.get_merchant(merchant_id)
-    Merchant.new(response)
+    merchant = MerchantService.get_merchant(merchant_id)
+    Merchant.new(merchant)
   end
+  
+  def self.create_merchant_items(merchant_id)
+    items = MerchantService.get_merchant_items(merchant_id)
+    items[:data].map do |item|
+      Item.new(item)
+    end
+  end  
 end 
