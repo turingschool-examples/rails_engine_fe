@@ -10,4 +10,11 @@ class MerchantFacade
     response = MerchantService.get_merchant(merchant_id)
     Merchant.new(response)
   end
+
+  def self.create_items(merchant_id)
+    items = MerchantService.get_items(merchant_id)
+    items.map do |item|
+      Item.new(item)
+    end
+  end
 end

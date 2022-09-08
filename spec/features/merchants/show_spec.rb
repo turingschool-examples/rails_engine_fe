@@ -26,5 +26,6 @@ RSpec.describe "Merchant Show" do
     visit "/merchants/#{merchant.id}"
 
     expect(page).to have_content("Merchant Items")
+    expect(page).to have_content("Item Nemo Facere")
   end
 end

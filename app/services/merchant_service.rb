@@ -12,4 +12,9 @@ class MerchantService
     response = conn.get("/api/v1/merchants/#{merchant_id}")
     parsed = JSON.parse(response.body, symbolize_names: true)[:data]
   end
+
+  def self.get_items(merchant_id)
+    response = conn.get("/api/v1/merchants/#{merchant_id}/items")
+    parsed = JSON.parse(response.body, symbolize_names: true)[:data]
+  end
 end
