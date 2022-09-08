@@ -21,7 +21,5 @@ RSpec.describe MerchantService do
       expect(response[:attributes]).to have_key(:name)    
     end
   end
-
-  
 end
     

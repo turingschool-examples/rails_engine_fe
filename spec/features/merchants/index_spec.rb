@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Merchants Index' do
-
   before do
     visit '/merchants'
   end
