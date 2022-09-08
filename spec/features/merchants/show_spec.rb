@@ -15,4 +15,16 @@ RSpec.describe "Merchant Show" do
     expect(merchant.id).to eq(1)
     expect(merchant.name).to eq("Bob")
   end
+
+  it "displays a list of items that merchant sells", :vcr do 
+    merchant = Merchant.new(
+                            {id: 1, 
+                            attributes: 
+                            {name: 'Bob'}
+                            }
+                          )
+    visit "/merchants/#{merchant.id}"
+
+    expect(page).to have_content("Merchant Items")
+  end
 end

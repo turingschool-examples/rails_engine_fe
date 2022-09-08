@@ -8,6 +8,13 @@ RSpec.describe MerchantService do
     expect(merchants[0]).to be_a(Hash)
     expect(merchants[0]).to have_key(:attributes)
     expect(merchants[0][:attributes]).to have_key(:name)
-    expect(merchants[0][:attributes][:name]).to eq("Schroeder-Jerde")
+  end
+
+  it "gets data for one specific merchant", :vcr do 
+    merchant = MerchantService.get_merchant(1)
+    # require 'pry'; binding.pry 
+    expect(merchant).to be_a(Hash)
+    expect(merchant).to have_key(:attributes)
+    expect(merchant[:attributes][:name]).to eq("Schroeder-Jerde")
   end
 end
