@@ -1,9 +1,9 @@
 class MerchantFacade
 
-  def self.create_merchants
-    merchant_data = MerchantService.get_merchants
-    merchant_data[0..19].map do |merchant|
-      Merchant.new(merchant_data)
+  def self.create_all_merchants
+    merchants = MerchantService.get_all_merchants
+    merchants.map do |merchant|
+      Merchant.new(merchant)
     end
   end
 
