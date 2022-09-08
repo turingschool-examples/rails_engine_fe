@@ -8,15 +8,6 @@ RSpec.describe "Merchant index page" do
     expect(page).to have_link("Hand-Spencer")
     expect(page).to have_link("Hickle-Hessel")
   end
-  it "merchants name should link to merchants show page" do
-   
-    visit "/merchants"
-    click_on "Hand-Spencer"
-
-    expect(page).to have_content("Hand-Spencer")
-    expect(page).to have_content("Items")
-    expect(page).to_not have_content("Schroeder-Jerde")
-  end
 end
 
 # As a visitor,
