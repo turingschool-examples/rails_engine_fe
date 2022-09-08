@@ -11,5 +11,11 @@ RSpec.describe 'merchants index page', :vcr do
     expect(page).to have_link('Willms and Sons')
   end
 
-  it ' '
+  it 'each merchant name links to the merchant show page' do
+    visit "/merchants"
+
+    click_on('Schroeder-Jerde')
+    expect(page).to have_content('Schroeder-Jerde')
+    expect(current_path).to eq('/mercahnts/1')
+  end
 end
