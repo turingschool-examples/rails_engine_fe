@@ -16,6 +16,6 @@ RSpec.describe 'merchants index page', :vcr do
 
     click_on('Schroeder-Jerde')
     expect(page).to have_content('Schroeder-Jerde')
-    expect(current_path).to eq('/mercahnts/1')
+    expect(current_path).to eq('/merchants/1')
   end
 end

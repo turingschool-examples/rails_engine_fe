@@ -7,7 +7,7 @@ RSpec.describe 'merchants show page', :vcr do
     visit "/merchants/1"
 
     expect(page).to have_content('Schroeder-Jerde')
-    expect(page).to have_content('Klein, Rempel and Jones')
-    expect(page).to have_content('Willms and Sons')
+    expect(page).to have_content('Item Nemo Facere')
+    expect(page).to have_content('Item Expedita Aliquam')
   end
 end
