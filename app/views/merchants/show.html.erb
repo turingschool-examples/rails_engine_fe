@@ -1,8 +1,8 @@
-<center> <h1><%= @merchant.name %></h1> </center>
+<center> <h1 style="color:orange;"><%= @merchant.name %></h1> </center>
 
-<h2>Items:</h2>
+<h2 style="color:red;">Items:</h2>
 <% @items.each do |item| %>
  <div id="merchant_items">
-   <h4><%= item.name %></h4>
+   <h4  style="color:green;"><%= item.name %></h4>
   </div>
 <% end %>
