@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe MerchantService do
   describe '::get_merchants' do
     it 'gets data for all merchants' do
-      response = MerchantService.get_merchants
+      response = MerchantService.get_all_merchants
       
       expect(response.count).to eq(100)    
       expect(response[0]).to include(:id, :type, :attributes)
@@ -21,5 +21,7 @@ RSpec.describe MerchantService do
       expect(response[:attributes]).to have_key(:name)    
     end
   end
+
+  
 end
     
