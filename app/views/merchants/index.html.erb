@@ -1,4 +1,4 @@
-Merchants Index
+Merchants 
 <% @merchants.each do |merchant| %>
-  <%= merchant.name %>
+  <p><%= merchant.id %>: <%= link_to merchant.name %><p>
 <% end %>
