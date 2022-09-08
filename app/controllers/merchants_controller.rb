@@ -4,6 +4,6 @@ class MerchantsController < ApplicationController
   end
 
   def show 
-    @merchant = MerchantFacade
+    @merchant = MerchantFacade.create_merchant_search(params[:id])
   end
 end

@@ -6,8 +6,8 @@ class MerchantFacade
     end
   end
 
-  def self.create_merchant_search(id)
-    response = MerchantService.get_merchant(id)
+  def self.create_merchant_search(merchant_id)
+    response = MerchantService.get_merchant(merchant_id)
     Merchant.new(response)
   end
 end
