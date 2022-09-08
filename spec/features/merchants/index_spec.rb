@@ -2,13 +2,14 @@
 
 require 'rails_helper'
 
-RSpec.describe 'user merchants index page', :vcr do
+RSpec.describe 'merchants index page', :vcr do
   it 'has a list of merchants by name' do
     visit "/merchants"
 
-    expect(page).to have_link('Top Movies')
-    expect(page).to have_link('Shawshank Redemption')
-    expect(page).to have_no_content('Paul Blart')
-    expect(page).to have_no_content('Movie results for: ')
+    expect(page).to have_link('Schroeder-Jerde')
+    expect(page).to have_link('Klein, Rempel and Jones')
+    expect(page).to have_link('Willms and Sons')
   end
+
+  it ' '
 end
