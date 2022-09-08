@@ -6,7 +6,7 @@ class MerchantService
 
   def self.get_merchants
     response = conn.get('/api/v1/merchants')
-    JSON.parse(response.body, symbolize_names: true)[:data][0]
+    JSON.parse(response.body, symbolize_names: true)[:data]
   end
 
   def self.get_merchant(merchant_id)
