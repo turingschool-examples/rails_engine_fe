@@ -11,4 +11,13 @@ RSpec.describe "Merchant show page" do
     expect(page).to have_content("Items:")
     expect(page).to_not have_content("Schroeder-Jerde")
   end
+  it "merchants should list items" do
+   
+    visit "/merchants/9"
+   
+    expect(page).to have_content("Item Dicta Est")
+    expect(page).to have_content("Item Ut Perferendis")
+    expect(page).to have_content("Item Quo Doloribus")
+
+  end
 end
