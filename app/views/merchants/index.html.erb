@@ -1,0 +1,13 @@
+<section id='merchants'>
+  <ol class="list-group list-group-numbered">
+    <% @merchants.each do |merchant| %>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold"><%= link_to merchant.name, merchant_path(merchant.id) %></div>
+          Merchant
+        </div>
+        <span class="badge bg-primary rounded-pill">Item Count: <%= merchant.item_count %></span>
+      </li>
+  <% end %>
+  </ol>
+</section>
