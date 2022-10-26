@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c1dbdb0e-310f-4441-9fed-b501a861b66f
+      - 2bf5b8fa-39f5-4cb2-a89c-71ec415f3176
       X-Runtime:
-      - '0.001284'
+      - '0.001239'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -59,9 +59,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9f1aaaa7-111b-4f9b-bdbd-b7f793098fce
+      - 60da9ed2-75e8-4eb7-8170-60d6cb4dfdba
       X-Runtime:
-      - '0.003239'
+      - '0.001950'
       Transfer-Encoding:
       - chunked
     body:
@@ -107,5 +107,5 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 recorded_with: VCR 6.1.0

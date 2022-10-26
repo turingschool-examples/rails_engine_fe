@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e7f8312a-0cbb-4f19-90e9-868be161e8ee
+      - 58497e91-0f81-4a69-abc9-267539283c85
       X-Runtime:
-      - '0.001226'
+      - '0.001185'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -59,9 +59,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - eea5c34d-597a-4e2e-9596-c92500080114
+      - 68c38ff7-c30d-436e-9f98-82f6d39f173a
       X-Runtime:
-      - '0.003078'
+      - '0.001940'
       Transfer-Encoding:
       - chunked
     body:
@@ -107,7 +107,43 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ea1d59bea0442421960da290dcded583"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5f7540d3-324c-4596-bc08-2ca710042ab6
+      X-Runtime:
+      - '0.001327'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -133,15 +169,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 951f2f2a-1d01-4662-b663-09aa1edd2e62
+      - b1fa7221-4edb-499f-b5b2-f011ee2ec028
       X-Runtime:
-      - '0.001330'
+      - '0.001331'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -167,9 +203,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8529b875-9e6a-4d0c-aa48-924e61ca6bf5
+      - c8aa9267-0662-40fb-be50-69d23d05279d
       X-Runtime:
-      - '0.002782'
+      - '0.002198'
       Transfer-Encoding:
       - chunked
     body:
@@ -215,7 +251,44 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6139a8a0caf4d49468e527befe1c5393"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4371f64e-5300-48a1-a0a1-e449b35d92b1
+      X-Runtime:
+      - '0.001222'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"item","attributes":{"name":"Item Expedita
+        Aliquam","description":"Voluptate aut labore qui illum tempore eius. Corrupti
+        cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -241,15 +314,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4ac6b287-e6bf-4314-a0ac-73f943d70f1d
+      - f501c885-9194-4f33-aaf8-c2e99087a479
       X-Runtime:
-      - '0.001191'
+      - '0.001155'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -275,9 +348,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 46fb266c-1036-4afd-bcad-c4030ae772d0
+      - e7eaaa3e-2544-49df-bdb5-7d13ab887cc3
       X-Runtime:
-      - '0.002652'
+      - '0.002051'
       Transfer-Encoding:
       - chunked
     body:
@@ -323,7 +396,43 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7ef85c27e3a8834a1d81c4a6c30cf5c7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 73440223-40f3-4346-b367-c37a5bb00b6b
+      X-Runtime:
+      - '0.001121'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8","type":"item","attributes":{"name":"Item Est Consequuntur","description":"Reprehenderit
+        est officiis cupiditate quia eos. Voluptatem illum reprehenderit quo vel eligendi.
+        Et eum omnis id ut aliquid veniam.","unit_price":343.55,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -349,15 +458,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 56ede808-6659-4866-b07a-b1e02542251f
+      - 0657ae0e-e917-4115-b13a-16dc13235559
       X-Runtime:
-      - '0.001132'
+      - '0.001255'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -383,9 +492,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9a841a8e-294b-4f8e-98cb-bf0bdd1e06e8
+      - c58956d4-01a4-4d0f-9e7e-18342e323d46
       X-Runtime:
-      - '0.002258'
+      - '0.001747'
       Transfer-Encoding:
       - chunked
     body:
@@ -431,7 +540,44 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6ee11c23f74c6fc71b2eb244078d6b6f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 07dcb118-97cc-4bf3-9c2e-e0e3096c731b
+      X-Runtime:
+      - '0.001268'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"9","type":"item","attributes":{"name":"Item Quo Magnam","description":"Culpa
+        deleniti adipisci voluptates aut. Sed eum quisquam nisi. Voluptatem est rerum
+        est qui id reprehenderit. Molestiae laudantium non velit alias. Ipsa consequatur
+        modi quibusdam.","unit_price":225.82,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -457,15 +603,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7101ea8c-3c67-45e3-ab4f-cef4a230e419
+      - 68e17d3e-f583-4d7d-a9a8-10fc73e6d428
       X-Runtime:
-      - '0.001336'
+      - '0.001207'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -491,9 +637,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - edffc85f-f8c1-46a9-907c-9414973419dc
+      - 84847fb6-2d9f-4ba6-a426-8f09a62f5dba
       X-Runtime:
-      - '0.003236'
+      - '0.002284'
       Transfer-Encoding:
       - chunked
     body:
@@ -539,7 +685,43 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0b10eca09b4f185dba1ee09934b0e1d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a8ed2954-96e1-49dc-9fbe-d0003293b3a1
+      X-Runtime:
+      - '0.001306'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"item","attributes":{"name":"Item Quidem
+        Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium. Eligendi
+        veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -565,15 +747,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ea971d56-9ab0-4cab-9fa8-6cb12a64180a
+      - 6e02187f-e44b-4218-baed-5b146b13a0b5
       X-Runtime:
-      - '0.001473'
+      - '0.001337'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:24 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -599,9 +781,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 76b8bcc1-f090-47ff-8a77-c512b6b9b45d
+      - cf86f086-c7fe-4512-b867-a21cbd37c131
       X-Runtime:
-      - '0.001797'
+      - '0.002205'
       Transfer-Encoding:
       - chunked
     body:
@@ -647,7 +829,43 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:24 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"54d27111a2be836e6ed6be52f821ce46"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 35e589f8-2990-4e2f-b292-328ed8130e0d
+      X-Runtime:
+      - '0.001266'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"11","type":"item","attributes":{"name":"Item Rerum Magni","description":"Iusto
+        ratione illum. Adipisci est perspiciatis temporibus. Ducimus id dolorem voluptas
+        eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -673,15 +891,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14b49b3b-5605-41d1-b572-c463bdfa1475
+      - 3a38ba86-7ff6-4232-93e8-e8cfe91ea928
       X-Runtime:
-      - '0.001219'
+      - '0.001141'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:24 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -707,9 +925,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4a7e8e17-60a6-4b11-9c9a-400414814282
+      - 066a95e1-f005-457d-ba5e-5b0625ccbe25
       X-Runtime:
-      - '0.003069'
+      - '0.001703'
       Transfer-Encoding:
       - chunked
     body:
@@ -755,5 +973,5 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:24 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 recorded_with: VCR 6.1.0

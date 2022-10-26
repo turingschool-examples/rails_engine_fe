@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7ea43482-ecef-4ed7-a1b7-4420153386e8
+      - d56cd509-5e1b-4901-81ad-b1112a2d648a
       X-Runtime:
-      - '0.006724'
+      - '0.003429'
       Transfer-Encoding:
       - chunked
     body:
@@ -96,7 +96,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1
@@ -122,15 +122,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2c757517-2bd2-465c-a003-d83face57ddf
+      - 525b7f0c-bca0-4e1b-9e28-e5a22366158a
       X-Runtime:
-      - '0.001340'
+      - '0.001481'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
@@ -156,9 +156,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 60b80290-8277-4474-8b79-bef4aef3fdb4
+      - 6a87f592-ae4d-4d02-833b-0383e0a32f34
       X-Runtime:
-      - '0.007695'
+      - '0.002495'
       Transfer-Encoding:
       - chunked
     body:
@@ -204,7 +204,7 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants
@@ -230,9 +230,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1de8d956-6dee-43ae-a2ea-843c5429a004
+      - da702648-a9c0-4904-b905-dd6752853486
       X-Runtime:
-      - '0.002777'
+      - '0.006384'
       Transfer-Encoding:
       - chunked
     body:
@@ -301,7 +301,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/2
@@ -327,16 +327,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 22bbe165-76c1-4a16-bcbe-6b260a606b61
+      - 28fd72d9-b9c9-46b6-96cc-78070a569085
       X-Runtime:
-      - '0.001253'
+      - '0.001562'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"merchant","attributes":{"name":"Klein, Rempel
         and Jones"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/2/items
@@ -362,9 +362,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c5b2f5fe-8b11-48f0-ad2c-77f3b2b20ead
+      - 517b840d-9845-4e02-ba21-c8e7cd71a055
       X-Runtime:
-      - '0.003082'
+      - '0.003056'
       Transfer-Encoding:
       - chunked
     body:
@@ -476,7 +476,7 @@ http_interactions:
         Sunt Nesciunt","description":"Magni eos cupiditate animi. Ea consequatur saepe
         quo earum. In magni dolorem maxime tempora. Inventore iure ad delectus quo
         neque voluptates. Optio repellat occaecati.","unit_price":711.98,"merchant_id":2}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants
@@ -502,9 +502,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ff1cdc86-3611-4aba-8d26-ba85be37583f
+      - f7df049a-c4e3-43e0-b451-cd246272255b
       X-Runtime:
-      - '0.003528'
+      - '0.002933'
       Transfer-Encoding:
       - chunked
     body:
@@ -573,7 +573,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/3
@@ -599,16 +599,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 486b4b18-f7e2-4686-ae22-371f61e7c290
+      - 5813c6ea-a20c-41f7-a114-201c2c422e6e
       X-Runtime:
-      - '0.002918'
+      - '0.001235'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"3","type":"merchant","attributes":{"name":"Willms and
         Sons"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/3/items
@@ -634,9 +634,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 99c54f3c-e5a5-4fef-8511-63e97ffae96e
+      - f423ae23-eb27-4f0c-8c56-8908f4d7ac07
       X-Runtime:
-      - '0.002072'
+      - '0.003349'
       Transfer-Encoding:
       - chunked
     body:
@@ -717,7 +717,7 @@ http_interactions:
         et quis.","unit_price":47.95,"merchant_id":3}},{"id":"79","type":"item","attributes":{"name":"Item
         Ut Iusto","description":"Vel veniam quia. Et nemo eum expedita sit. Aut id
         ut est necessitatibus magnam.","unit_price":368.23,"merchant_id":3}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants
@@ -743,9 +743,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 302270dc-b064-4860-9d2c-26de18d87e14
+      - 152771c1-01fb-491d-ab6b-eac1902125d1
       X-Runtime:
-      - '0.003162'
+      - '0.002821'
       Transfer-Encoding:
       - chunked
     body:
@@ -814,7 +814,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/4
@@ -840,15 +840,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b6fd5002-bbb6-4b4a-8ac1-bc68f2bab54f
+      - 055d9c51-62b8-4a2b-9d17-170a14ed5d4f
       X-Runtime:
-      - '0.004722'
+      - '0.001257'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"4","type":"merchant","attributes":{"name":"Cummings-Thiel"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/4/items
@@ -874,9 +874,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f1a33c17-885b-4d97-94ab-11110544432c
+      - 0c31c3b6-8b19-4e42-883e-e032c4fca65d
       X-Runtime:
-      - '0.001957'
+      - '0.002289'
       Transfer-Encoding:
       - chunked
     body:
@@ -914,7 +914,7 @@ http_interactions:
         Voluptate Quo","description":"Sapiente dolorem numquam perspiciatis eaque
         placeat. Architecto ut deserunt maiores. Saepe neque sunt quis cupiditate
         provident non ut. Beatae velit dolor dignissimos id placeat voluptatibus.","unit_price":586.37,"merchant_id":4}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants
@@ -940,9 +940,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0ffaf74c-1bab-4791-a58c-5954e778d46d
+      - 5e356c3d-1152-4b71-9127-8d04b6199dd4
       X-Runtime:
-      - '0.003029'
+      - '0.003331'
       Transfer-Encoding:
       - chunked
     body:
@@ -1011,7 +1011,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/17
@@ -1037,15 +1037,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8cbaf272-ee12-4d0e-a830-c2383cacebc3
+      - c177ec00-fc78-41e3-877c-6b75803a25cd
       X-Runtime:
-      - '0.002443'
+      - '0.001327'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"17","type":"merchant","attributes":{"name":"Ullrich-Moen"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/17/items
@@ -1071,9 +1071,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a781398a-049d-496c-978e-ee4ba79d8311
+      - 27ec5c31-ebc2-4d5d-a27c-3199569f868e
       X-Runtime:
-      - '0.002034'
+      - '0.001602'
       Transfer-Encoding:
       - chunked
     body:
@@ -1091,7 +1091,7 @@ http_interactions:
         aliquam. Aut non eaque.","unit_price":144.06,"merchant_id":17}},{"id":"285","type":"item","attributes":{"name":"Item
         Quis Ea","description":"Accusamus dicta dignissimos quia possimus velit dolor
         harum. Quia neque explicabo. Amet qui et corporis.","unit_price":660.98,"merchant_id":17}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants
@@ -1117,9 +1117,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ecc21aee-9130-4b04-b018-0ae36b67425b
+      - a347f519-f0c6-4844-bdab-b0ec3c72c6da
       X-Runtime:
-      - '0.003133'
+      - '0.003242'
       Transfer-Encoding:
       - chunked
     body:
@@ -1188,7 +1188,7 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/10
@@ -1214,16 +1214,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1ae889a3-2563-429e-918b-221f0a994441
+      - 184307f3-af39-4734-bd8c-88de7907dcf1
       X-Runtime:
-      - '0.001096'
+      - '0.001256'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"10","type":"merchant","attributes":{"name":"Bechtelar,
         Jones and Stokes"}}}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants/10/items
@@ -1249,9 +1249,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8f818cbd-ba8b-4ca5-a9ec-fc012cde3c63
+      - 89f6ecaf-5f33-436e-8f9c-f3f7631d286a
       X-Runtime:
-      - '0.003570'
+      - '0.001969'
       Transfer-Encoding:
       - chunked
     body:
@@ -1274,7 +1274,7 @@ http_interactions:
         Laboriosam Sequi","description":"Quasi id vel. Et non et asperiores ut tempora
         aut odit. Et eum porro consequatur consequatur non autem. Fugit iure porro
         tenetur exercitationem. Quod quos in quo ut consequatur delectus modi.","unit_price":786.12,"merchant_id":10}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/merchants
@@ -1300,9 +1300,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d7f57d69-71e9-4fde-a226-7b5f3b58326e
+      - f0e14f30-c828-43bf-a56b-d0178ffe48de
       X-Runtime:
-      - '0.002553'
+      - '0.003073'
       Transfer-Encoding:
       - chunked
     body:
@@ -1371,5 +1371,5 @@ http_interactions:
         Prohaska and Rolfson"}},{"id":"100","type":"merchant","attributes":{"name":"Wisozk,
         Hoeger and Bosco"}},{"id":"99","type":"merchant","attributes":{"name":"Fahey-Stiedemann"}},{"id":"42","type":"merchant","attributes":{"name":"Glover
         Inc"}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
 recorded_with: VCR 6.1.0
