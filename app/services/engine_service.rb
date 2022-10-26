@@ -9,6 +9,10 @@ class EngineService
     parse(conn.get("/api/v1/merchants/#{id}"))
   end
 
+  def self.merchant_items(id)
+    parse(conn.get("/api/v1/merchants/#{id}/items"))
+  end
+
   def self.items
     parse(conn.get('/api/v1/items'))
   end

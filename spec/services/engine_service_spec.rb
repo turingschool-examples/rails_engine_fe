@@ -24,6 +24,17 @@ RSpec.describe EngineService, type: :service do
       end
     end
 
+    describe '.merchant_items(:id)' do
+      it 'returns the merchants items' do
+        response = EngineService.merchant_items(1)
+
+        expect(response[:data]).to be_an Array
+        response[:data].each do |item|
+          item_attributes(item)
+        end
+      end
+    end
+
     describe '.items' do
       it 'returns an index of all Items' do
         response = EngineService.items
@@ -37,7 +48,7 @@ RSpec.describe EngineService, type: :service do
 
     describe '.item(:id)' do
       it 'returns a single ItemObject' do
-        response = EngineService.item(1)
+        response = EngineService.item(4)
 
         expect(response[:data]).to be_an Hash
         item_attributes(response[:data])
