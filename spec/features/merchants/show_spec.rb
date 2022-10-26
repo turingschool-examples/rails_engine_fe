@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'Merchants | Show', :vcr, type: :feature do
   describe 'As a visitor, when I visit /merchant/:id;' do
-    let!(:visit) { visit merchant_path(1) }
+    before(:each) { visit merchant_path(1) }
     items = { 'Item Nemo Facere': 4, 'Item Expedita Aliquam': 5, 'Item Est Consequuntur': 8, 'Item Quo Magnam': 9,
               'Item Quidem Suscipit': 10, 'Item Rerum Magni': 11 }
 
