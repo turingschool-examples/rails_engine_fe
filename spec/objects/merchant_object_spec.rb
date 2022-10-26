@@ -13,12 +13,12 @@ RSpec.describe MerchantObject, :vcr, type: :object do
   describe 'Attributes' do
     it 'can return required attributes' do
       merchant = EngineService.merchant(1)
-      merchant_attributes(MerchantObject.new(merchant[:data]))
+      merchant_attributes_obj(MerchantObject.new(merchant[:data]))
     end
   end
 end
 
-def merchant_attributes(merchant)
+def merchant_attributes_obj(merchant)
   expect(merchant.id).to be_an Integer
   expect(merchant.type).to eq 'merchant'
   expect(merchant.name).to be_an String

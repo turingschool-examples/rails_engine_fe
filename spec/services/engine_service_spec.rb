@@ -7,7 +7,6 @@ RSpec.describe EngineService, type: :service do
     describe '.merchants' do
       it 'returns an index of all Merchants' do
         response = EngineService.merchants
-
         expect(response[:data]).to be_an Array
         response[:data].each do |merchant|
           merchant_attributes(merchant)
@@ -27,7 +26,6 @@ RSpec.describe EngineService, type: :service do
     describe '.merchant_items(:id)' do
       it 'returns the merchants items' do
         response = EngineService.merchant_items(1)
-
         expect(response[:data]).to be_an Array
         response[:data].each do |item|
           item_attributes(item)
@@ -38,7 +36,6 @@ RSpec.describe EngineService, type: :service do
     describe '.items' do
       it 'returns an index of all Items' do
         response = EngineService.items
-
         expect(response[:data]).to be_an Array
         response[:data].each do |item|
           item_attributes(item)

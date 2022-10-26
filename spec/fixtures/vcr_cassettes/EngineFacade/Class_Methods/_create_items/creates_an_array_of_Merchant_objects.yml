@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2ac140a7-41e4-464b-a1d2-388b00efaf12
+      - 52834b9b-f1cd-4062-8c03-2fe8199a74b6
       X-Runtime:
-      - '0.130159'
+      - '0.082501'
       Transfer-Encoding:
       - chunked
     body:
@@ -6992,5 +6992,5 @@ http_interactions:
         Qui Veritatis","description":"Totam labore quia harum dicta eum consequatur
         qui. Corporis inventore consequatur. Illum facilis tempora nihil placeat rerum
         sint est. Placeat ut aut. Eligendi perspiciatis unde eum sapiente velit.","unit_price":906.17,"merchant_id":9}}]}'
-  recorded_at: Wed, 26 Oct 2022 19:54:25 GMT
+  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
 recorded_with: VCR 6.1.0

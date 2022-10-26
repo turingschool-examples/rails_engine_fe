@@ -9,7 +9,7 @@ RSpec.describe EngineFacade, type: :facade do
         merchants = EngineFacade.create_merchants
         expect(merchants).to be_an Array
         merchants.each do |merchant|
-          merchant_attributes(merchant)
+          merchant_attributes_obj(merchant)
         end
       end
     end
@@ -19,7 +19,7 @@ RSpec.describe EngineFacade, type: :facade do
         items = EngineFacade.merchant_items(1)
         expect(items).to be_an Array
         items.each do |item|
-          item_attributes(item)
+          item_attributes_obj(item)
         end
       end
     end
@@ -27,14 +27,14 @@ RSpec.describe EngineFacade, type: :facade do
     describe '.create_merchant' do
       it 'returns a Merchant object' do
         merchant = EngineFacade.create_merchant(1)
-        merchant_attributes(merchant)
+        merchant_attributes_obj(merchant)
       end
     end
 
     describe '.create_item(:id)' do
       it 'returns a Item object' do
         item = EngineFacade.create_item(4)
-        item_attributes(item)
+        item_attributes_obj(item)
       end
     end
 
@@ -43,21 +43,21 @@ RSpec.describe EngineFacade, type: :facade do
         items = EngineFacade.create_items
         expect(items).to be_an Array
         items.each do |item|
-          item_attributes(item)
+          item_attributes_obj(item)
         end
       end
     end
   end
 end
 
-def merchant_attributes(merchant)
+def merchant_attributes_obj(merchant)
   expect(merchant).to be_an_instance_of MerchantObject
   expect(merchant.id).to be_an Integer
   expect(merchant.type).to eq 'merchant'
   expect(merchant.name).to be_an String
 end
 
-def item_attributes(item)
+def item_attributes_obj(item)
   expect(item).to be_an_instance_of ItemObject
   expect(item.id).to be_an Integer
   expect(item.type).to eq 'item'

@@ -13,12 +13,12 @@ RSpec.describe ItemObject, :vcr, type: :object do
   describe 'Attributes' do
     it 'can return required attributes' do
       item = EngineService.item(4)
-      item_attributes(ItemObject.new(item[:data]))
+      item_attributes_obj(ItemObject.new(item[:data]))
     end
   end
 end
 
-def item_attributes(item)
+def item_attributes_obj(item)
   expect(item.id).to be_an Integer
   expect(item.type).to eq 'item'
   expect(item.name).to be_an String

@@ -7,5 +7,6 @@ class MerchantsController < ApplicationController
 
   def show
     @merchant = EngineFacade.create_merchant(params[:id])
+    @items = EngineFacade.merchant_items(params[:id])
   end
 end

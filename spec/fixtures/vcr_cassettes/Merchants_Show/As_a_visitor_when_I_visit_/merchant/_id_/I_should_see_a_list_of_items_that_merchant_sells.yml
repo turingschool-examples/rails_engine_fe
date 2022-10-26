@@ -2,6 +2,40 @@
 http_interactions:
 - request:
     method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c1dbdb0e-310f-4441-9fed-b501a861b66f
+      X-Runtime:
+      - '0.001284'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
+- request:
+    method: get
     uri: http://localhost:3000/api/v1/merchants/1/items
     body:
       encoding: US-ASCII
@@ -25,9 +59,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2abcec90-af5f-430c-b75c-25255bc5c173
+      - 9f1aaaa7-111b-4f9b-bdbd-b7f793098fce
       X-Runtime:
-      - '0.002325'
+      - '0.003239'
       Transfer-Encoding:
       - chunked
     body:
@@ -73,5 +107,5 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 20:11:24 GMT
+  recorded_at: Wed, 26 Oct 2022 20:11:23 GMT
 recorded_with: VCR 6.1.0
