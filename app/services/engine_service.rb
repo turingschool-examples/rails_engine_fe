@@ -10,7 +10,7 @@ class EngineService
   end
 
   def self.conn
-    con ||= Faraday.new('http://localhost:3000')
+    conn ||= Faraday.new('http://localhost:3000')
   end
 
   def self.parse(response)
