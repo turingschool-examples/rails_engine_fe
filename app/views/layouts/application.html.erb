@@ -26,18 +26,17 @@
     </div>
   </nav>
   <body class="container-fluid m-0 p-0" style="background-color: #272838">
-  <main class="container-sm mt-4">
-    <% flash.each do |name, msg| %>
-      <div id="flash" class="container alert alert-primary d-flex align-items-center" role="alert">
-        <div>
+    <main class="container-sm mt-4">
+      <% flash.each do |name, msg| %>
+        <div id="flash" class="container alert alert-primary d-flex align-items-center" role="alert">
+          <div>
             <span class="<%= name %>-flash">
-              <strong>Holy guacamole!</strong><span class="px-4 text-danger text-capitalize"><%= msg %></span>
-            </span>
+                <strong>Holy guacamole!</strong><span class="px-4 text-danger text-capitalize"><%= msg %></span>
+              </span>
+          </div>
         </div>
-      </div>
     <% end %>
-    <h1 class="text-light text-center">Welcome to the Front-End application of Rails Engine Lite!</h1>
-    <%= yield %>
-  </main>
+      <%= yield %>
+    </main>
   </body>
 </html>
