@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-class Merchant
+class MerchantObject
   def initialize(response); end
 end

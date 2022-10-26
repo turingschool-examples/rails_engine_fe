@@ -16,7 +16,7 @@ RSpec.describe EngineService, type: :service do
     end
 
     describe '.merchant(:id)' do
-      it 'returns a single Merchant' do
+      it 'returns a single MerchantObject' do
         response = EngineService.merchant(1)
 
         expect(response[:data]).to be_an Hash

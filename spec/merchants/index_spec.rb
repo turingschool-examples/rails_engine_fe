@@ -18,7 +18,7 @@ RSpec.describe 'Merchants | Index', :vcr, type: :feature do
       end
     end
 
-    it 'each Merchant should have a link to its show page' do
+    it 'each MerchantObject should have a link to its show page' do
       merchant_list.each do |merchant_name, id|
         click_on merchant_name
 
