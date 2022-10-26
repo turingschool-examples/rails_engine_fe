@@ -9,6 +9,14 @@ class EngineService
     parse(conn.get("/api/v1/merchants/#{id}"))
   end
 
+  def self.items
+    parse(conn.get('/api/v1/items'))
+  end
+
+  def self.item(id)
+    parse(conn.get("/api/v1/items/#{id}"))
+  end
+
   def self.conn
     conn ||= Faraday.new('http://localhost:3000')
   end
