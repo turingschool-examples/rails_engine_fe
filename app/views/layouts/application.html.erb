@@ -19,6 +19,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav" id="user_creation">
           <%= link_to "Home", root_path, class: "text-white mx-2 btn btn-success" %>
+          <%= link_to "Merchants", merchants_path, class: "text-white mx-2 btn btn-success" %>
+          <%= link_to "Items", items_path, class: "text-white mx-2 btn btn-success" %>
         </div>
       </div>
     </div>
@@ -34,7 +36,8 @@
         </div>
       </div>
     <% end %>
-  </main>
+    <h1 class="text-light text-center">Welcome to the Front-End application of Rails Engine Lite!</h1>
     <%= yield %>
+  </main>
   </body>
 </html>
