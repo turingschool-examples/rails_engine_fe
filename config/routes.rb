@@ -3,6 +3,6 @@
 Rails.application.routes.draw do
   root to: 'welcome#index'
 
-  resources :merchants
-  resources :items
+  resources :merchants, only: %i[index show]
+  resources :items, only: %i[index show]
 end
