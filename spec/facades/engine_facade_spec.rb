@@ -14,6 +14,16 @@ RSpec.describe EngineFacade, type: :facade do
       end
     end
 
+    describe '.merchant_items(:id)' do
+      it 'returns the merchants items' do
+        items = EngineFacade.merchant_items(1)
+        expect(items).to be_an Array
+        items.each do |item|
+          item_attributes(item)
+        end
+      end
+    end
+
     describe '.create_merchant' do
       it 'returns a Merchant object' do
         merchant = EngineFacade.create_merchant(1)
