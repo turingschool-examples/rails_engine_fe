@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class MerchantFacade
+class EngineFacade
   def self.create_merchants
     merchants = EngineService.merchants
     merchants.map do |merchant_data|
