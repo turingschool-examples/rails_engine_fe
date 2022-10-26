@@ -12,4 +12,16 @@ class EngineFacade
     merchant_data = EngineService.merchant(id)
     MerchantObject.new(merchant_data[:data])
   end
+
+  def self.create_item(id)
+    item_data = EngineService.item(id)
+    ItemObject.new(item_data[:data])
+  end
+
+  def self.create_items
+    items = EngineService.items
+    items[:data].map do |item_data|
+      ItemObject.new(item_data)
+    end
+  end
 end
