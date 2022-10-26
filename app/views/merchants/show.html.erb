@@ -1,0 +1,22 @@
+<section id='merchants' class="container d-flex justify-content-center flex-column align-items-center">
+  <h1 class="text-light pb-3"><%= @merchant.name %>>'s Items</h1>
+  <div class="row'">
+    <div class="col-m-10">
+      <ul class="list-group">
+        <% count = 1 %>
+        <% @items.each do |item| %>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold"><%= link_to item.name, item_path(item.id) %></div>
+              Type: <%= item.type %>
+              Description: <%= item.description %>
+              Unit Price: <%= item.unit_price %>
+            </div>
+            <span class="badge bg-primary rounded-pill"><%= count %></span>
+            <% count += 1 %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</section>
