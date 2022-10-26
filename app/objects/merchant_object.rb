@@ -6,7 +6,7 @@ class MerchantObject
               :name
 
   def initialize(merchant)
-    @id = merchant[:id]
+    @id = merchant[:id].to_i
     @type = merchant[:type]
     @name = merchant.dig(:attributes, :name)
   end
