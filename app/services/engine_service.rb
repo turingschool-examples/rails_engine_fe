@@ -2,11 +2,11 @@
 
 class EngineService
   def self.merchants
-    parse(conn.get('/merchants'))
+    parse(conn.get('/api/v1/merchants'))
   end
 
   def self.conn
-    con ||= Faraday.new('http://localhost:3000/api/v1/')
+    con ||= Faraday.new('http://localhost:3000')
   end
 
   def self.parse(response)
