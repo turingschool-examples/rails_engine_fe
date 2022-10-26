@@ -19,6 +19,3 @@ RSpec.describe MerchantFacade do
   end
 end
 
-#Who are you- back end software development student at Turing, went to college at UGA and got degree in financial planning, 
-#What do you do- projects, specific things I have worked on- worked in corporate finance world for a few years and decided it wasn't for me, always had interest in software development and decided on Turing after hearing about it from others and doing research
-#what do you want- to find a job where
