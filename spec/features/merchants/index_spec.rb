@@ -2,13 +2,13 @@ require 'rails_helper'
 
 RSpec.describe 'Merchant Index Page', type: :feature do
   describe 'As a visitor' do
-    describe 'When I visit "/merchants"' vcr: { record: :new_episodes } do
+    describe 'When I visit "/merchants"', vcr: { record: :new_episodes } do
       before :each do
         @merchants = MerchantFacade.all_merchants
 
         visit merchants_path
       end
-      
+
       it 'I should see a list of merchants by name' do
         
         within("#merchants") do
