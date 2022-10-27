@@ -15,8 +15,10 @@ RSpec. describe 'merchants index' do
 
     click_on 'Schroeder-Jerde'
     expect(current_path).to eq('/merchants/1')
-  end
+    expect(page).to have_content('Schroeder-Jerde')
 
+    expect(page).to have_content('Item')
+  end
 
 
 
