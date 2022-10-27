@@ -6,7 +6,7 @@ class MerchantsService
   end
 
   def self.get_merchant(merchant_id)
-    response = conn.get("/merchants/#{merchant_id}")
+    response = conn.get("/api/v1/merchants/#{merchant_id}")
     JSON.parse(response.body, symbolize_names: true)
   end
 
