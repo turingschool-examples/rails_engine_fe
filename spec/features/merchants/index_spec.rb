@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Merchants", type: :request do
+RSpec.describe "Merchants index" do
   describe "GET /index" do
     it 'I should see a list of merchant names', :vcr do
       visit merchants_path

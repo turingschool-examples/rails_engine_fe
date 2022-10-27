@@ -7,8 +7,8 @@ RSpec.describe MerchantFacade do
     expect(merchants).to all(be_a Merchant)
   end
 
-  it '#mitems', :vcr do 
-    items = MerchantFacade.items(1)
+  it '#merchant_items', :vcr do 
+    items = MerchantFacade.merchant_items(1)
     expect(items).to be_an Array
     expect(items).to all(be_an Item)
   end

@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 34bcf7fa-11c2-4de6-8ad7-d8a6f393f4d7
+      - ba84084f-6d2e-4706-92b6-f94a48f2d75e
       X-Runtime:
-      - '0.444116'
+      - '0.071446'
       Transfer-Encoding:
       - chunked
     body:
@@ -73,5 +73,5 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Wed, 26 Oct 2022 22:57:42 GMT
+  recorded_at: Thu, 27 Oct 2022 16:34:26 GMT
 recorded_with: VCR 6.1.0

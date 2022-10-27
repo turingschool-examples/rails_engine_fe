@@ -1,12 +1,22 @@
-class MerchantService
+class EngineService
 
   def self.merchants
     response = conn.get('/api/v1/merchants')
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.items(merchant_id)
+  def self.merchant_items(merchant_id)
     response = conn.get("/api/v1/merchants/#{merchant_id}/items")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.items
+    response = conn.get('/api/v1/items')
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.item(item_id)
+    response = conn.get("/api/v1/items/#{item_id}")
     JSON.parse(response.body, symbolize_names: true)
   end
 
