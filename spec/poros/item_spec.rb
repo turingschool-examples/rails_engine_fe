@@ -5,7 +5,10 @@ RSpec.describe Item do
     fake_data =  {
             id: 4,
             attributes: {
-                name: "Item Nemo Facere"
+                name: "Item Nemo Facere",
+                description: "Sunt eum id eius magni consequuntur delectus veritatis.
+                Quisquam laborum illo ut ab. Ducimus in est id voluptas autem.",
+                unit_price: 42.91
             }}
 
     item = Item.new(fake_data)

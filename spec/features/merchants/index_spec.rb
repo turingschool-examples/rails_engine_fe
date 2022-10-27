@@ -11,8 +11,8 @@ RSpec.describe "Merchant Index Page" do
       @merchants_list = File.read('./spec/fixtures/merchants.json')
       @merchant_json = JSON.parse(@merchants_list, symbolize_names: true)
 
-      @items_list = File.read('./spec/fixtures/items.json')
-      @item_json = JSON.parse(@items_list, symbolize_names: true)
+      @merchant_items_list = File.read('./spec/fixtures/merchant_items.json')
+      @item_json = JSON.parse(@merchant_items_list, symbolize_names: true)
     end
 
     it 'I see a list of all merchants by name' do
