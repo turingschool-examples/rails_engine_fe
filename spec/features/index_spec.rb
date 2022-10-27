@@ -4,22 +4,24 @@ RSpec.describe 'merchants index page', type: :feature do
   describe 'As a visitor' do
     describe 'When I visit "/merchants"' do
 
-      xit "I should see a list of merchants by name & when I click the merchant's name I should be on page '/merchants/:id' And I should see a list of items that merchant sells." do
-        merchants_list = create(:merchant, 6)
-        items_list = create(:item, 3)
-        visit '/merchants'
-        expect(page).to have_link("#{merchants_list[0].name}")
-        expect(page).to have_link("#{merchants_list[1].name}")
-        expect(page).to have_link("#{merchants_list[2].name}")
-        expect(page).to have_link("#{merchants_list[3].name}")
-        expect(page).to have_link("#{merchants_list[4].name}")
-        expect(page).to have_link("#{merchants_list[5].name}")
+      it "I should see a list of merchants by name & when I click the merchant's name I should be on page '/merchants/:id' And I should see a list of items that merchant sells.", :vcr do
 
-        click_on(merchants_list[0].name)
-        expect(current_path).to be (merchant_path(merchants_list[0]))
-        expect(page).to have_content("#{merchants_list[0].items[0]}")
-        expect(page).to have_content("#{merchants_list[0].items[1]}")
-        expect(page).to have_content("#{merchants_list[0].items[2]}")
+        merchants_list = MerchantFacade.get_merchants
+        items_list = MerchantFacade.get_merchants_items(4)
+
+        visit merchants_path #API call is happening to reach the REAL merchants, so we don't want to use factory bot or faker here
+        merchants_list.each do |merchant|
+          expect(page).to have_link("#{merchant.name}")
+        end
+
+        click_on(merchants_list[3].name)
+        merchant = merchants_list[3] #not sure how to test this dynamically
+
+        expect(current_path).to eq("/merchants/4")
+        items_list.each do |item|
+          expect(page).to have_content("#{item.name}")
+          expect(page).to have_content("#{item.description}")
+        end
       end
     end
   end
