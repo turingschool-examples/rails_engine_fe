@@ -10,8 +10,8 @@ RSpec. describe 'merchants index' do
 
   it 'retrieves a list of merchants' do
     visit merchants_path
-    expect(page).to have_content('merchants')
+    expect(page).to have_content('Merchants')
   end
 
-  
+
 end
