@@ -19,4 +19,10 @@ class MerchantsService
     response = conn.get
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.find(query)
+    conn = Faraday.new(url: "http://localhost:3000/api/v1/merchants/find?name=#{query}")
+    response = conn.get
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end

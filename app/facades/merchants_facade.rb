@@ -9,6 +9,12 @@ class MerchantsFacade
     Merchant.new(merchant_hash, merchant_items(id))
   end
 
+  def self.find(query)
+    merchant_hash = MerchantsService.find(query)[:data]
+    id = merchant_hash[:id]
+    Merchant.new(merchant_hash, merchant_items(id))
+  end
+
   private
 
   def self.merchant_items(merchant_id)
