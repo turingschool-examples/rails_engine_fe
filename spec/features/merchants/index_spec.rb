@@ -21,13 +21,14 @@ RSpec.describe 'The Merchant Index Page' do
 
  describe "As a visitor, When I visit '/merchants'" do
   it "When I click the merchant's name I should be on page '/merchants/:id'" do
+
    visit merchants_path
 
-   expect(page).to have_link(merchant.name)
+   expect(page).to have_link("Schroeder-Jerde")
 
-   click_link "Merchant Name"
+   click_link "Schroeder-Jerde"
 
-   expect(current_path).to eq(merchant_path(merchant.id))
+   expect(current_path).to eq("/merchants/1")
   end
  end
 end
