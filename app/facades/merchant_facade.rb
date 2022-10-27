@@ -12,4 +12,10 @@ class MerchantFacade
     Merchant.new(data)
   end
 
+  def self.all_items(search_id)
+    items_data = MerchantService.items_by_merchant(search_id)
+    items_data[:data].map do |item|
+      Item.new(item)
+    end
+  end
 end

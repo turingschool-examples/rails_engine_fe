@@ -20,4 +20,13 @@ RSpec.describe MerchantService do
       expect(merchant_list[:data][:attributes]).to have_key(:name)
     end
   end
+
+  describe 'returns all items by merchant' do
+    it 'items_by_merchant', :vcr do
+      items_list = MerchantService.items_by_merchant(1)
+      expect(items_list).to be_a(Hash)
+      expect(items_list).to have_key(:data)
+      expect(items_list[:data]).to be_an(Array)
+    end
+  end
 end

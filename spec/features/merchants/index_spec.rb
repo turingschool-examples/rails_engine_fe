@@ -7,20 +7,25 @@ require 'rails_helper'
 # And I should see a list of items that merchant sells.
 RSpec.describe "Merchant Index Page" do
   describe "As a visitor" do
+    before :each do
+      @merchants_list = File.read('./spec/fixtures/merchants.json')
+      @merchant_json = JSON.parse(@merchants_list, symbolize_names: true)
+
+      @items_list = File.read('./spec/fixtures/items.json')
+      @item_json = JSON.parse(@items_list, symbolize_names: true)
+    end
+
     it 'I see a list of all merchants by name' do
-      # merchants_list = File.read('./spec/fixtures/merchants.json')
-      # merchant_json = JSON.parse(merchants_list, symbolize_names: true)
-      # merchants = Merchant.new(merchant_json)
 
       visit merchants_path
 
       expect(page).to have_content("Merchants:")
+      @merchant_json.each do |merchant|
 
-      within('#merchants_list') do
-        expect(page).to have_content("Schroeder-Jerde")
-        expect(page).to have_content("Klein, Rempel and Jones")
-        expect(page).to have_content("Willms and Sons")
-        expect(page).to have_content("Cummings-Thiel")
+        within('#merchants-list') do
+          expect(page).to have_content(merchant[:attributes][:name])
+
+        end
       end
     end
 
@@ -31,6 +36,18 @@ RSpec.describe "Merchant Index Page" do
       click_on "Schroeder-Jerde"
 
       expect(current_path).to eq('/merchants/1')
-    end 
+    end
+
+    it 'When I visit the merchant show page I see a list of all items for that merchant' do
+
+      visit '/merchants/1'
+
+      @item_json.each do |item|
+
+        within('#items-list') do
+          expect(page).to have_content(item[:attributes][:name])
+        end
+      end
+    end
   end
 end
