@@ -48,6 +48,9 @@ RSpec.describe "Merchant Index Page" do
           expect(page).to have_content(item[:attributes][:name])
         end
       end
+
+      click_on "Item Nemo Facere"
+      expect(current_path).to eq('/items/4')
     end
   end
 end

@@ -3,6 +3,6 @@
 <div id="items-list">
 
 <% @items.each do |item| %>
-  <%= item.name %>
+  <p><%= link_to item.name, item_path(item.id) %></p>
 <% end %>
 </div>
