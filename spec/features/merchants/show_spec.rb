@@ -17,6 +17,15 @@ RSpec.describe 'Merchant Index Page', type: :feature do
           end
         end
       end
+
+      it 'Each item links to that Items show page' do
+
+        within("#merchant-#{@merchant.id}-items") do
+          click_link (@merchant_items[0].name)
+        end
+
+        expect(current_path).to eq item_path(@merchant_items[0].id)
+      end
     end
   end
 end
