@@ -288,4 +288,40 @@ http_interactions:
         Ut Iusto","description":"Vel veniam quia. Et nemo eum expedita sit. Aut id
         ut est necessitatibus magnam.","unit_price":368.23,"merchant_id":3}}]}'
   recorded_at: Thu, 27 Oct 2022 16:36:31 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/54
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"70f7bcd51d2e0e3718f2166045c04d7b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 99672170-19d5-4522-9287-9ad36db1325c
+      X-Runtime:
+      - '0.124021'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"54","type":"item","attributes":{"name":"Item Enim Error","description":"Odio
+        inventore quis quia nesciunt. Libero id ipsam et. Perspiciatis porro vero
+        quia aut aperiam. Quaerat rerum et sit earum ut tempore illum.","unit_price":775.96,"merchant_id":3}}}'
+  recorded_at: Thu, 27 Oct 2022 16:51:50 GMT
 recorded_with: VCR 6.1.0

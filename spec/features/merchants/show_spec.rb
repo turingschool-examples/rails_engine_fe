@@ -18,7 +18,7 @@ RSpec.describe 'Merchant Index Page', type: :feature do
         end
       end
 
-      it 'Each item links to that Items show page' do
+      it 'Each item links to that Items show page', vcr: { record: :new_episodes } do
 
         within("#merchant-#{@merchant.id}-items") do
           click_link (@merchant_items[0].name)
