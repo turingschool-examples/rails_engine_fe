@@ -4,16 +4,18 @@ RSpec.describe 'The Merchant Index Page' do
  it 'returns a list of merchants' do
   visit merchants_path
 
-  expect(page).to have_content([merchant1, merchant2, merchant3])
+  expect(page).to have_content('Merchants')
  end
  
  describe "As a visitor, When I visit '/merchants'" do
   it "I should see a list of merchants by name" do
    visit merchants_path
 
-   within("#merchants") do
-    expect(page).to have_content(merchant.name)
-   end
+   expect(page).to have_content('Williamson Group')
+   expect(page).to have_content('Osinski, Pollich and Koelpin')
+   expect(page).to have_content('Bernhard-Johns')
+   expect(page).to have_content('Pollich and Sons')
+   expect(page).to have_content('Kozey Group')
   end
  end
 
@@ -21,13 +23,11 @@ RSpec.describe 'The Merchant Index Page' do
   it "When I click the merchant's name I should be on page '/merchants/:id'" do
    visit merchants_path
 
-   within("#merchants") do
-    expect(page).to have_link(merchant.name)
+   expect(page).to have_link(merchant.name)
 
-    click_link "Merchant Name"
+   click_link "Merchant Name"
 
-    expect(current_path).to eq(merchant_path(merchant.id))
-   end
+   expect(current_path).to eq(merchant_path(merchant.id))
   end
  end
 end

@@ -4,9 +4,9 @@ RSpec.describe 'The Merchant Show Page' do
  describe 'returns a list of items per merchant' do
   describe "As a visitor, When I visit '/merchants/:id'" do
    it "I should see the name of that merchant" do
-    visit merchant_path(merchant.id)
+    visit merchant_path("/merchants/1")
 
-    expect(page).to have_content(merchant.name)
+    expect(page).to have_content("Schroeder-Jerde")
    end
   end
  end
