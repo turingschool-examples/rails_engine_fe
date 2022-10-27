@@ -1,0 +1,977 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 58497e91-0f81-4a69-abc9-267539283c85
+      X-Runtime:
+      - '0.001185'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1/items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"851439a972376807490385c5a7adefc6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 68c38ff7-c30d-436e-9f98-82f6d39f173a
+      X-Runtime:
+      - '0.001940'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}},{"id":"5","type":"item","attributes":{"name":"Item
+        Expedita Aliquam","description":"Voluptate aut labore qui illum tempore eius.
+        Corrupti cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}},{"id":"6","type":"item","attributes":{"name":"Item
+        Provident At","description":"Numquam officiis reprehenderit eum ratione neque
+        tenetur. Officia aut repudiandae eum at ipsum doloribus. Iure minus itaque
+        similique. Ratione dicta alias asperiores minima ducimus nesciunt at.","unit_price":159.25,"merchant_id":1}},{"id":"7","type":"item","attributes":{"name":"Item
+        Expedita Fuga","description":"Fuga assumenda occaecati hic dolorem tenetur
+        dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur
+        illo. Necessitatibus quis quo velit sed repellendus ut amet.","unit_price":311.63,"merchant_id":1}},{"id":"8","type":"item","attributes":{"name":"Item
+        Est Consequuntur","description":"Reprehenderit est officiis cupiditate quia
+        eos. Voluptatem illum reprehenderit quo vel eligendi. Et eum omnis id ut aliquid
+        veniam.","unit_price":343.55,"merchant_id":1}},{"id":"9","type":"item","attributes":{"name":"Item
+        Quo Magnam","description":"Culpa deleniti adipisci voluptates aut. Sed eum
+        quisquam nisi. Voluptatem est rerum est qui id reprehenderit. Molestiae laudantium
+        non velit alias. Ipsa consequatur modi quibusdam.","unit_price":225.82,"merchant_id":1}},{"id":"10","type":"item","attributes":{"name":"Item
+        Quidem Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium.
+        Eligendi veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}},{"id":"11","type":"item","attributes":{"name":"Item
+        Rerum Magni","description":"Iusto ratione illum. Adipisci est perspiciatis
+        temporibus. Ducimus id dolorem voluptas eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}},{"id":"12","type":"item","attributes":{"name":"Item
+        Et Cumque","description":"Ducimus id perferendis. Libero ullam odit aut quisquam
+        non. Rem eaque distinctio quos. Eaque nihil odit.","unit_price":395.15,"merchant_id":1}},{"id":"13","type":"item","attributes":{"name":"Item
+        Voluptatem Sint","description":"Nostrum doloribus quia. Expedita vitae beatae
+        cumque. Aut ut illo aut eum.","unit_price":594.54,"merchant_id":1}},{"id":"14","type":"item","attributes":{"name":"Item
+        Itaque Consequatur","description":"Voluptatibus omnis quo recusandae distinctio
+        voluptatem quibusdam et. Voluptas odio accusamus delectus sunt quia. Non atque
+        rerum vitae officia odit. Magnam iste occaecati in nihil autem saepe.","unit_price":398.91,"merchant_id":1}},{"id":"15","type":"item","attributes":{"name":"Item
+        Rerum Est","description":"Nemo voluptatem facere aut quo. Consequatur vel
+        voluptas et. Consequuntur quibusdam ea consectetur accusamus sit optio qui.","unit_price":426.29,"merchant_id":1}},{"id":"2488","type":"item","attributes":{"name":"Item
+        Qui Esse","description":"Nihil autem sit odio inventore deleniti. Est laudantium
+        ratione distinctio laborum. Minus voluptatem nesciunt assumenda dicta voluptatum
+        porro.","unit_price":751.07,"merchant_id":1}},{"id":"2484","type":"item","attributes":{"name":"Item
+        Autem Minima","description":"Cumque consequuntur ad. Fuga tenetur illo molestias
+        enim aut iste. Provident quo hic aut. Aut quidem voluptates dolores. Dolorem
+        quae ab alias tempora.","unit_price":670.76,"merchant_id":1}},{"id":"2500","type":"item","attributes":{"name":"Item
+        Ea Voluptatum","description":"Sunt officia eum qui molestiae. Nesciunt quidem
+        cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
+        praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
+        nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ea1d59bea0442421960da290dcded583"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5f7540d3-324c-4596-bc08-2ca710042ab6
+      X-Runtime:
+      - '0.001327'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b1fa7221-4edb-499f-b5b2-f011ee2ec028
+      X-Runtime:
+      - '0.001331'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1/items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"851439a972376807490385c5a7adefc6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c8aa9267-0662-40fb-be50-69d23d05279d
+      X-Runtime:
+      - '0.002198'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}},{"id":"5","type":"item","attributes":{"name":"Item
+        Expedita Aliquam","description":"Voluptate aut labore qui illum tempore eius.
+        Corrupti cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}},{"id":"6","type":"item","attributes":{"name":"Item
+        Provident At","description":"Numquam officiis reprehenderit eum ratione neque
+        tenetur. Officia aut repudiandae eum at ipsum doloribus. Iure minus itaque
+        similique. Ratione dicta alias asperiores minima ducimus nesciunt at.","unit_price":159.25,"merchant_id":1}},{"id":"7","type":"item","attributes":{"name":"Item
+        Expedita Fuga","description":"Fuga assumenda occaecati hic dolorem tenetur
+        dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur
+        illo. Necessitatibus quis quo velit sed repellendus ut amet.","unit_price":311.63,"merchant_id":1}},{"id":"8","type":"item","attributes":{"name":"Item
+        Est Consequuntur","description":"Reprehenderit est officiis cupiditate quia
+        eos. Voluptatem illum reprehenderit quo vel eligendi. Et eum omnis id ut aliquid
+        veniam.","unit_price":343.55,"merchant_id":1}},{"id":"9","type":"item","attributes":{"name":"Item
+        Quo Magnam","description":"Culpa deleniti adipisci voluptates aut. Sed eum
+        quisquam nisi. Voluptatem est rerum est qui id reprehenderit. Molestiae laudantium
+        non velit alias. Ipsa consequatur modi quibusdam.","unit_price":225.82,"merchant_id":1}},{"id":"10","type":"item","attributes":{"name":"Item
+        Quidem Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium.
+        Eligendi veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}},{"id":"11","type":"item","attributes":{"name":"Item
+        Rerum Magni","description":"Iusto ratione illum. Adipisci est perspiciatis
+        temporibus. Ducimus id dolorem voluptas eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}},{"id":"12","type":"item","attributes":{"name":"Item
+        Et Cumque","description":"Ducimus id perferendis. Libero ullam odit aut quisquam
+        non. Rem eaque distinctio quos. Eaque nihil odit.","unit_price":395.15,"merchant_id":1}},{"id":"13","type":"item","attributes":{"name":"Item
+        Voluptatem Sint","description":"Nostrum doloribus quia. Expedita vitae beatae
+        cumque. Aut ut illo aut eum.","unit_price":594.54,"merchant_id":1}},{"id":"14","type":"item","attributes":{"name":"Item
+        Itaque Consequatur","description":"Voluptatibus omnis quo recusandae distinctio
+        voluptatem quibusdam et. Voluptas odio accusamus delectus sunt quia. Non atque
+        rerum vitae officia odit. Magnam iste occaecati in nihil autem saepe.","unit_price":398.91,"merchant_id":1}},{"id":"15","type":"item","attributes":{"name":"Item
+        Rerum Est","description":"Nemo voluptatem facere aut quo. Consequatur vel
+        voluptas et. Consequuntur quibusdam ea consectetur accusamus sit optio qui.","unit_price":426.29,"merchant_id":1}},{"id":"2488","type":"item","attributes":{"name":"Item
+        Qui Esse","description":"Nihil autem sit odio inventore deleniti. Est laudantium
+        ratione distinctio laborum. Minus voluptatem nesciunt assumenda dicta voluptatum
+        porro.","unit_price":751.07,"merchant_id":1}},{"id":"2484","type":"item","attributes":{"name":"Item
+        Autem Minima","description":"Cumque consequuntur ad. Fuga tenetur illo molestias
+        enim aut iste. Provident quo hic aut. Aut quidem voluptates dolores. Dolorem
+        quae ab alias tempora.","unit_price":670.76,"merchant_id":1}},{"id":"2500","type":"item","attributes":{"name":"Item
+        Ea Voluptatum","description":"Sunt officia eum qui molestiae. Nesciunt quidem
+        cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
+        praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
+        nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6139a8a0caf4d49468e527befe1c5393"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4371f64e-5300-48a1-a0a1-e449b35d92b1
+      X-Runtime:
+      - '0.001222'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"item","attributes":{"name":"Item Expedita
+        Aliquam","description":"Voluptate aut labore qui illum tempore eius. Corrupti
+        cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f501c885-9194-4f33-aaf8-c2e99087a479
+      X-Runtime:
+      - '0.001155'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1/items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"851439a972376807490385c5a7adefc6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e7eaaa3e-2544-49df-bdb5-7d13ab887cc3
+      X-Runtime:
+      - '0.002051'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}},{"id":"5","type":"item","attributes":{"name":"Item
+        Expedita Aliquam","description":"Voluptate aut labore qui illum tempore eius.
+        Corrupti cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}},{"id":"6","type":"item","attributes":{"name":"Item
+        Provident At","description":"Numquam officiis reprehenderit eum ratione neque
+        tenetur. Officia aut repudiandae eum at ipsum doloribus. Iure minus itaque
+        similique. Ratione dicta alias asperiores minima ducimus nesciunt at.","unit_price":159.25,"merchant_id":1}},{"id":"7","type":"item","attributes":{"name":"Item
+        Expedita Fuga","description":"Fuga assumenda occaecati hic dolorem tenetur
+        dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur
+        illo. Necessitatibus quis quo velit sed repellendus ut amet.","unit_price":311.63,"merchant_id":1}},{"id":"8","type":"item","attributes":{"name":"Item
+        Est Consequuntur","description":"Reprehenderit est officiis cupiditate quia
+        eos. Voluptatem illum reprehenderit quo vel eligendi. Et eum omnis id ut aliquid
+        veniam.","unit_price":343.55,"merchant_id":1}},{"id":"9","type":"item","attributes":{"name":"Item
+        Quo Magnam","description":"Culpa deleniti adipisci voluptates aut. Sed eum
+        quisquam nisi. Voluptatem est rerum est qui id reprehenderit. Molestiae laudantium
+        non velit alias. Ipsa consequatur modi quibusdam.","unit_price":225.82,"merchant_id":1}},{"id":"10","type":"item","attributes":{"name":"Item
+        Quidem Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium.
+        Eligendi veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}},{"id":"11","type":"item","attributes":{"name":"Item
+        Rerum Magni","description":"Iusto ratione illum. Adipisci est perspiciatis
+        temporibus. Ducimus id dolorem voluptas eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}},{"id":"12","type":"item","attributes":{"name":"Item
+        Et Cumque","description":"Ducimus id perferendis. Libero ullam odit aut quisquam
+        non. Rem eaque distinctio quos. Eaque nihil odit.","unit_price":395.15,"merchant_id":1}},{"id":"13","type":"item","attributes":{"name":"Item
+        Voluptatem Sint","description":"Nostrum doloribus quia. Expedita vitae beatae
+        cumque. Aut ut illo aut eum.","unit_price":594.54,"merchant_id":1}},{"id":"14","type":"item","attributes":{"name":"Item
+        Itaque Consequatur","description":"Voluptatibus omnis quo recusandae distinctio
+        voluptatem quibusdam et. Voluptas odio accusamus delectus sunt quia. Non atque
+        rerum vitae officia odit. Magnam iste occaecati in nihil autem saepe.","unit_price":398.91,"merchant_id":1}},{"id":"15","type":"item","attributes":{"name":"Item
+        Rerum Est","description":"Nemo voluptatem facere aut quo. Consequatur vel
+        voluptas et. Consequuntur quibusdam ea consectetur accusamus sit optio qui.","unit_price":426.29,"merchant_id":1}},{"id":"2488","type":"item","attributes":{"name":"Item
+        Qui Esse","description":"Nihil autem sit odio inventore deleniti. Est laudantium
+        ratione distinctio laborum. Minus voluptatem nesciunt assumenda dicta voluptatum
+        porro.","unit_price":751.07,"merchant_id":1}},{"id":"2484","type":"item","attributes":{"name":"Item
+        Autem Minima","description":"Cumque consequuntur ad. Fuga tenetur illo molestias
+        enim aut iste. Provident quo hic aut. Aut quidem voluptates dolores. Dolorem
+        quae ab alias tempora.","unit_price":670.76,"merchant_id":1}},{"id":"2500","type":"item","attributes":{"name":"Item
+        Ea Voluptatum","description":"Sunt officia eum qui molestiae. Nesciunt quidem
+        cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
+        praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
+        nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7ef85c27e3a8834a1d81c4a6c30cf5c7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 73440223-40f3-4346-b367-c37a5bb00b6b
+      X-Runtime:
+      - '0.001121'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8","type":"item","attributes":{"name":"Item Est Consequuntur","description":"Reprehenderit
+        est officiis cupiditate quia eos. Voluptatem illum reprehenderit quo vel eligendi.
+        Et eum omnis id ut aliquid veniam.","unit_price":343.55,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0657ae0e-e917-4115-b13a-16dc13235559
+      X-Runtime:
+      - '0.001255'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1/items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"851439a972376807490385c5a7adefc6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c58956d4-01a4-4d0f-9e7e-18342e323d46
+      X-Runtime:
+      - '0.001747'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}},{"id":"5","type":"item","attributes":{"name":"Item
+        Expedita Aliquam","description":"Voluptate aut labore qui illum tempore eius.
+        Corrupti cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}},{"id":"6","type":"item","attributes":{"name":"Item
+        Provident At","description":"Numquam officiis reprehenderit eum ratione neque
+        tenetur. Officia aut repudiandae eum at ipsum doloribus. Iure minus itaque
+        similique. Ratione dicta alias asperiores minima ducimus nesciunt at.","unit_price":159.25,"merchant_id":1}},{"id":"7","type":"item","attributes":{"name":"Item
+        Expedita Fuga","description":"Fuga assumenda occaecati hic dolorem tenetur
+        dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur
+        illo. Necessitatibus quis quo velit sed repellendus ut amet.","unit_price":311.63,"merchant_id":1}},{"id":"8","type":"item","attributes":{"name":"Item
+        Est Consequuntur","description":"Reprehenderit est officiis cupiditate quia
+        eos. Voluptatem illum reprehenderit quo vel eligendi. Et eum omnis id ut aliquid
+        veniam.","unit_price":343.55,"merchant_id":1}},{"id":"9","type":"item","attributes":{"name":"Item
+        Quo Magnam","description":"Culpa deleniti adipisci voluptates aut. Sed eum
+        quisquam nisi. Voluptatem est rerum est qui id reprehenderit. Molestiae laudantium
+        non velit alias. Ipsa consequatur modi quibusdam.","unit_price":225.82,"merchant_id":1}},{"id":"10","type":"item","attributes":{"name":"Item
+        Quidem Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium.
+        Eligendi veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}},{"id":"11","type":"item","attributes":{"name":"Item
+        Rerum Magni","description":"Iusto ratione illum. Adipisci est perspiciatis
+        temporibus. Ducimus id dolorem voluptas eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}},{"id":"12","type":"item","attributes":{"name":"Item
+        Et Cumque","description":"Ducimus id perferendis. Libero ullam odit aut quisquam
+        non. Rem eaque distinctio quos. Eaque nihil odit.","unit_price":395.15,"merchant_id":1}},{"id":"13","type":"item","attributes":{"name":"Item
+        Voluptatem Sint","description":"Nostrum doloribus quia. Expedita vitae beatae
+        cumque. Aut ut illo aut eum.","unit_price":594.54,"merchant_id":1}},{"id":"14","type":"item","attributes":{"name":"Item
+        Itaque Consequatur","description":"Voluptatibus omnis quo recusandae distinctio
+        voluptatem quibusdam et. Voluptas odio accusamus delectus sunt quia. Non atque
+        rerum vitae officia odit. Magnam iste occaecati in nihil autem saepe.","unit_price":398.91,"merchant_id":1}},{"id":"15","type":"item","attributes":{"name":"Item
+        Rerum Est","description":"Nemo voluptatem facere aut quo. Consequatur vel
+        voluptas et. Consequuntur quibusdam ea consectetur accusamus sit optio qui.","unit_price":426.29,"merchant_id":1}},{"id":"2488","type":"item","attributes":{"name":"Item
+        Qui Esse","description":"Nihil autem sit odio inventore deleniti. Est laudantium
+        ratione distinctio laborum. Minus voluptatem nesciunt assumenda dicta voluptatum
+        porro.","unit_price":751.07,"merchant_id":1}},{"id":"2484","type":"item","attributes":{"name":"Item
+        Autem Minima","description":"Cumque consequuntur ad. Fuga tenetur illo molestias
+        enim aut iste. Provident quo hic aut. Aut quidem voluptates dolores. Dolorem
+        quae ab alias tempora.","unit_price":670.76,"merchant_id":1}},{"id":"2500","type":"item","attributes":{"name":"Item
+        Ea Voluptatum","description":"Sunt officia eum qui molestiae. Nesciunt quidem
+        cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
+        praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
+        nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6ee11c23f74c6fc71b2eb244078d6b6f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 07dcb118-97cc-4bf3-9c2e-e0e3096c731b
+      X-Runtime:
+      - '0.001268'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"9","type":"item","attributes":{"name":"Item Quo Magnam","description":"Culpa
+        deleniti adipisci voluptates aut. Sed eum quisquam nisi. Voluptatem est rerum
+        est qui id reprehenderit. Molestiae laudantium non velit alias. Ipsa consequatur
+        modi quibusdam.","unit_price":225.82,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 68e17d3e-f583-4d7d-a9a8-10fc73e6d428
+      X-Runtime:
+      - '0.001207'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1/items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"851439a972376807490385c5a7adefc6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 84847fb6-2d9f-4ba6-a426-8f09a62f5dba
+      X-Runtime:
+      - '0.002284'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}},{"id":"5","type":"item","attributes":{"name":"Item
+        Expedita Aliquam","description":"Voluptate aut labore qui illum tempore eius.
+        Corrupti cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}},{"id":"6","type":"item","attributes":{"name":"Item
+        Provident At","description":"Numquam officiis reprehenderit eum ratione neque
+        tenetur. Officia aut repudiandae eum at ipsum doloribus. Iure minus itaque
+        similique. Ratione dicta alias asperiores minima ducimus nesciunt at.","unit_price":159.25,"merchant_id":1}},{"id":"7","type":"item","attributes":{"name":"Item
+        Expedita Fuga","description":"Fuga assumenda occaecati hic dolorem tenetur
+        dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur
+        illo. Necessitatibus quis quo velit sed repellendus ut amet.","unit_price":311.63,"merchant_id":1}},{"id":"8","type":"item","attributes":{"name":"Item
+        Est Consequuntur","description":"Reprehenderit est officiis cupiditate quia
+        eos. Voluptatem illum reprehenderit quo vel eligendi. Et eum omnis id ut aliquid
+        veniam.","unit_price":343.55,"merchant_id":1}},{"id":"9","type":"item","attributes":{"name":"Item
+        Quo Magnam","description":"Culpa deleniti adipisci voluptates aut. Sed eum
+        quisquam nisi. Voluptatem est rerum est qui id reprehenderit. Molestiae laudantium
+        non velit alias. Ipsa consequatur modi quibusdam.","unit_price":225.82,"merchant_id":1}},{"id":"10","type":"item","attributes":{"name":"Item
+        Quidem Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium.
+        Eligendi veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}},{"id":"11","type":"item","attributes":{"name":"Item
+        Rerum Magni","description":"Iusto ratione illum. Adipisci est perspiciatis
+        temporibus. Ducimus id dolorem voluptas eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}},{"id":"12","type":"item","attributes":{"name":"Item
+        Et Cumque","description":"Ducimus id perferendis. Libero ullam odit aut quisquam
+        non. Rem eaque distinctio quos. Eaque nihil odit.","unit_price":395.15,"merchant_id":1}},{"id":"13","type":"item","attributes":{"name":"Item
+        Voluptatem Sint","description":"Nostrum doloribus quia. Expedita vitae beatae
+        cumque. Aut ut illo aut eum.","unit_price":594.54,"merchant_id":1}},{"id":"14","type":"item","attributes":{"name":"Item
+        Itaque Consequatur","description":"Voluptatibus omnis quo recusandae distinctio
+        voluptatem quibusdam et. Voluptas odio accusamus delectus sunt quia. Non atque
+        rerum vitae officia odit. Magnam iste occaecati in nihil autem saepe.","unit_price":398.91,"merchant_id":1}},{"id":"15","type":"item","attributes":{"name":"Item
+        Rerum Est","description":"Nemo voluptatem facere aut quo. Consequatur vel
+        voluptas et. Consequuntur quibusdam ea consectetur accusamus sit optio qui.","unit_price":426.29,"merchant_id":1}},{"id":"2488","type":"item","attributes":{"name":"Item
+        Qui Esse","description":"Nihil autem sit odio inventore deleniti. Est laudantium
+        ratione distinctio laborum. Minus voluptatem nesciunt assumenda dicta voluptatum
+        porro.","unit_price":751.07,"merchant_id":1}},{"id":"2484","type":"item","attributes":{"name":"Item
+        Autem Minima","description":"Cumque consequuntur ad. Fuga tenetur illo molestias
+        enim aut iste. Provident quo hic aut. Aut quidem voluptates dolores. Dolorem
+        quae ab alias tempora.","unit_price":670.76,"merchant_id":1}},{"id":"2500","type":"item","attributes":{"name":"Item
+        Ea Voluptatum","description":"Sunt officia eum qui molestiae. Nesciunt quidem
+        cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
+        praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
+        nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0b10eca09b4f185dba1ee09934b0e1d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a8ed2954-96e1-49dc-9fbe-d0003293b3a1
+      X-Runtime:
+      - '0.001306'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"item","attributes":{"name":"Item Quidem
+        Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium. Eligendi
+        veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6e02187f-e44b-4218-baed-5b146b13a0b5
+      X-Runtime:
+      - '0.001337'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1/items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"851439a972376807490385c5a7adefc6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cf86f086-c7fe-4512-b867-a21cbd37c131
+      X-Runtime:
+      - '0.002205'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}},{"id":"5","type":"item","attributes":{"name":"Item
+        Expedita Aliquam","description":"Voluptate aut labore qui illum tempore eius.
+        Corrupti cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}},{"id":"6","type":"item","attributes":{"name":"Item
+        Provident At","description":"Numquam officiis reprehenderit eum ratione neque
+        tenetur. Officia aut repudiandae eum at ipsum doloribus. Iure minus itaque
+        similique. Ratione dicta alias asperiores minima ducimus nesciunt at.","unit_price":159.25,"merchant_id":1}},{"id":"7","type":"item","attributes":{"name":"Item
+        Expedita Fuga","description":"Fuga assumenda occaecati hic dolorem tenetur
+        dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur
+        illo. Necessitatibus quis quo velit sed repellendus ut amet.","unit_price":311.63,"merchant_id":1}},{"id":"8","type":"item","attributes":{"name":"Item
+        Est Consequuntur","description":"Reprehenderit est officiis cupiditate quia
+        eos. Voluptatem illum reprehenderit quo vel eligendi. Et eum omnis id ut aliquid
+        veniam.","unit_price":343.55,"merchant_id":1}},{"id":"9","type":"item","attributes":{"name":"Item
+        Quo Magnam","description":"Culpa deleniti adipisci voluptates aut. Sed eum
+        quisquam nisi. Voluptatem est rerum est qui id reprehenderit. Molestiae laudantium
+        non velit alias. Ipsa consequatur modi quibusdam.","unit_price":225.82,"merchant_id":1}},{"id":"10","type":"item","attributes":{"name":"Item
+        Quidem Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium.
+        Eligendi veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}},{"id":"11","type":"item","attributes":{"name":"Item
+        Rerum Magni","description":"Iusto ratione illum. Adipisci est perspiciatis
+        temporibus. Ducimus id dolorem voluptas eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}},{"id":"12","type":"item","attributes":{"name":"Item
+        Et Cumque","description":"Ducimus id perferendis. Libero ullam odit aut quisquam
+        non. Rem eaque distinctio quos. Eaque nihil odit.","unit_price":395.15,"merchant_id":1}},{"id":"13","type":"item","attributes":{"name":"Item
+        Voluptatem Sint","description":"Nostrum doloribus quia. Expedita vitae beatae
+        cumque. Aut ut illo aut eum.","unit_price":594.54,"merchant_id":1}},{"id":"14","type":"item","attributes":{"name":"Item
+        Itaque Consequatur","description":"Voluptatibus omnis quo recusandae distinctio
+        voluptatem quibusdam et. Voluptas odio accusamus delectus sunt quia. Non atque
+        rerum vitae officia odit. Magnam iste occaecati in nihil autem saepe.","unit_price":398.91,"merchant_id":1}},{"id":"15","type":"item","attributes":{"name":"Item
+        Rerum Est","description":"Nemo voluptatem facere aut quo. Consequatur vel
+        voluptas et. Consequuntur quibusdam ea consectetur accusamus sit optio qui.","unit_price":426.29,"merchant_id":1}},{"id":"2488","type":"item","attributes":{"name":"Item
+        Qui Esse","description":"Nihil autem sit odio inventore deleniti. Est laudantium
+        ratione distinctio laborum. Minus voluptatem nesciunt assumenda dicta voluptatum
+        porro.","unit_price":751.07,"merchant_id":1}},{"id":"2484","type":"item","attributes":{"name":"Item
+        Autem Minima","description":"Cumque consequuntur ad. Fuga tenetur illo molestias
+        enim aut iste. Provident quo hic aut. Aut quidem voluptates dolores. Dolorem
+        quae ab alias tempora.","unit_price":670.76,"merchant_id":1}},{"id":"2500","type":"item","attributes":{"name":"Item
+        Ea Voluptatum","description":"Sunt officia eum qui molestiae. Nesciunt quidem
+        cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
+        praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
+        nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"54d27111a2be836e6ed6be52f821ce46"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 35e589f8-2990-4e2f-b292-328ed8130e0d
+      X-Runtime:
+      - '0.001266'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"11","type":"item","attributes":{"name":"Item Rerum Magni","description":"Iusto
+        ratione illum. Adipisci est perspiciatis temporibus. Ducimus id dolorem voluptas
+        eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3a38ba86-7ff6-4232-93e8-e8cfe91ea928
+      X-Runtime:
+      - '0.001141'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1/items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"851439a972376807490385c5a7adefc6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 066a95e1-f005-457d-ba5e-5b0625ccbe25
+      X-Runtime:
+      - '0.001703'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}},{"id":"5","type":"item","attributes":{"name":"Item
+        Expedita Aliquam","description":"Voluptate aut labore qui illum tempore eius.
+        Corrupti cum et rerum. Enim illum labore voluptatem dicta consequatur. Consequatur
+        sunt consequuntur ut officiis.","unit_price":687.23,"merchant_id":1}},{"id":"6","type":"item","attributes":{"name":"Item
+        Provident At","description":"Numquam officiis reprehenderit eum ratione neque
+        tenetur. Officia aut repudiandae eum at ipsum doloribus. Iure minus itaque
+        similique. Ratione dicta alias asperiores minima ducimus nesciunt at.","unit_price":159.25,"merchant_id":1}},{"id":"7","type":"item","attributes":{"name":"Item
+        Expedita Fuga","description":"Fuga assumenda occaecati hic dolorem tenetur
+        dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur
+        illo. Necessitatibus quis quo velit sed repellendus ut amet.","unit_price":311.63,"merchant_id":1}},{"id":"8","type":"item","attributes":{"name":"Item
+        Est Consequuntur","description":"Reprehenderit est officiis cupiditate quia
+        eos. Voluptatem illum reprehenderit quo vel eligendi. Et eum omnis id ut aliquid
+        veniam.","unit_price":343.55,"merchant_id":1}},{"id":"9","type":"item","attributes":{"name":"Item
+        Quo Magnam","description":"Culpa deleniti adipisci voluptates aut. Sed eum
+        quisquam nisi. Voluptatem est rerum est qui id reprehenderit. Molestiae laudantium
+        non velit alias. Ipsa consequatur modi quibusdam.","unit_price":225.82,"merchant_id":1}},{"id":"10","type":"item","attributes":{"name":"Item
+        Quidem Suscipit","description":"Reiciendis sed aperiam culpa animi laudantium.
+        Eligendi veritatis sint dolorem asperiores. Earum alias illum eos non rerum.","unit_price":340.18,"merchant_id":1}},{"id":"11","type":"item","attributes":{"name":"Item
+        Rerum Magni","description":"Iusto ratione illum. Adipisci est perspiciatis
+        temporibus. Ducimus id dolorem voluptas eligendi repellat iure sit.","unit_price":130.46,"merchant_id":1}},{"id":"12","type":"item","attributes":{"name":"Item
+        Et Cumque","description":"Ducimus id perferendis. Libero ullam odit aut quisquam
+        non. Rem eaque distinctio quos. Eaque nihil odit.","unit_price":395.15,"merchant_id":1}},{"id":"13","type":"item","attributes":{"name":"Item
+        Voluptatem Sint","description":"Nostrum doloribus quia. Expedita vitae beatae
+        cumque. Aut ut illo aut eum.","unit_price":594.54,"merchant_id":1}},{"id":"14","type":"item","attributes":{"name":"Item
+        Itaque Consequatur","description":"Voluptatibus omnis quo recusandae distinctio
+        voluptatem quibusdam et. Voluptas odio accusamus delectus sunt quia. Non atque
+        rerum vitae officia odit. Magnam iste occaecati in nihil autem saepe.","unit_price":398.91,"merchant_id":1}},{"id":"15","type":"item","attributes":{"name":"Item
+        Rerum Est","description":"Nemo voluptatem facere aut quo. Consequatur vel
+        voluptas et. Consequuntur quibusdam ea consectetur accusamus sit optio qui.","unit_price":426.29,"merchant_id":1}},{"id":"2488","type":"item","attributes":{"name":"Item
+        Qui Esse","description":"Nihil autem sit odio inventore deleniti. Est laudantium
+        ratione distinctio laborum. Minus voluptatem nesciunt assumenda dicta voluptatum
+        porro.","unit_price":751.07,"merchant_id":1}},{"id":"2484","type":"item","attributes":{"name":"Item
+        Autem Minima","description":"Cumque consequuntur ad. Fuga tenetur illo molestias
+        enim aut iste. Provident quo hic aut. Aut quidem voluptates dolores. Dolorem
+        quae ab alias tempora.","unit_price":670.76,"merchant_id":1}},{"id":"2500","type":"item","attributes":{"name":"Item
+        Ea Voluptatum","description":"Sunt officia eum qui molestiae. Nesciunt quidem
+        cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
+        praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
+        nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
+  recorded_at: Wed, 26 Oct 2022 21:27:03 GMT
+recorded_with: VCR 6.1.0
