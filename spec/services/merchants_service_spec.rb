@@ -16,4 +16,19 @@ RSpec.describe MerchantsService do
       expect(merchant[:attributes][:name]).to be_a(String)
     end
   end
+
+  it 'returns a single merchant' do
+    first_merchant_id = MerchantsService.get_merchants[:data].first[:id]
+
+    first_merchant = MerchantsService.get_merchant(first_merchant_id)
+
+    expect(first_merchant).to be_a(Hash)
+    expect(first_merchant).to have_key(:data)
+    expect(first_merchant[:data]).to be_a(Hash)
+    expect(first_merchant[:data][:id]).to eq(first_merchant_id)
+    expect(first_merchant[:data][:type]).to eq("merchant")
+    expect(first_merchant[:data][:attributes]).to be_a(Hash)
+    expect(first_merchant[:data][:attributes]).to have_key(:name)
+    expect(first_merchant[:data][:attributes][:name]).to be_a(String)
+  end
 end
