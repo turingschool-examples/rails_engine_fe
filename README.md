@@ -46,7 +46,31 @@ Visit the [back-end application](https://github.com/Dominicod/rails-engine-lite/
 
 ## End Points
 
+### Merchants Index
 
+`http://localhost:5000/merchants`
+
+<img src="app/assets/images/merchant_index.png">
+
+### Merchant Show
+
+`http://localhost:5000/merchants/1`
+
+(This end point shows all of the Merchants Items)
+
+<img src="app/assets/images/merchant_items.png">
+
+### Items Index
+
+`http://localhost:5000/items`
+
+<img src="app/assets/images/item_index.png">
+
+### Item Show
+
+`http://localhost:5000/items/4`
+
+<img src="app/assets/images/item_show.png">
 
 ## Contributions
 <a href="https://github.com/Dominicod/rails-engine-lite/graphs/contributors">
