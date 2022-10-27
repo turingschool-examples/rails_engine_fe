@@ -1,68 +1,79 @@
-# Consuming your Rails Engine API
+<p align="center">
+  <img src="https://blog.dominwrites.com/wp-content/uploads/2022/07/cropped-cropped-cropped-D-1.png" />
+</p>
+<center><h1>Info</h1></center>
+ This project was created to give users access to several different API endpoints relating to Merchants, Items, and their show pages.
 
-Congratulations! You've written your first API. Just like the API you consumed for your week 1 project, your Rails Engine API can be used by other projects now, too. For this challenge, you will create a front end application that will make calls to your backend application, the Rails Engine API you have just created.
+## About the Project
+This Front-end application is a basic setup showing the capabilities of SOA so the functionality is currently limited to merchant index page, item index page, and their show pages.
 
-## Setup
+This application also has a backend API it is consuming as a service. That is located [here](https://github.com/Dominicod/rails-engine-lite/)
 
-Just like your week 1 project, this will be a new Rails app. You should fork this repository. 
+## Built With
+![RoR](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-316192?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-```sh
-git clone <Rails Engine FE SSH>
-cd rails_engine_fe
-bundle
-bundle exec rake db:create
-```
+## Gems
+![rspec](https://img.shields.io/gem/v/rspec-rails?label=rspec&style=flat-square)
+![shoulda](https://img.shields.io/gem/v/shoulda-matchers?label=shoulda-matchers&style=flat-square)
+![simplecov](https://img.shields.io/gem/v/simplecov?label=simplecov&style=flat-square)
+![spring](https://img.shields.io/gem/v/spring?color=blue&label=spring)
+![pry](https://img.shields.io/gem/v/pry?color=blue&label=pry)
+![webmock](https://img.shields.io/gem/v/webmock?color=blue&label=webmock)
+![vcr](https://img.shields.io/gem/v/vcr?color=blue&label=vcr)
+![launchy](https://img.shields.io/gem/v/launchy?color=blue&label=launchy)
 
-In `/config/puma.rb`, you'll notice that the port has changed from 3000 to 5000. This should be on or around line 12.
+## Set Up
+- Clone this repo
+- Change puma config port from 3000, to 5000.
+- `bundle install`
+- `rails s`
 
-We do this because Rails Engine is not in production or hosted somewhere other than localhost. If Rails Engine is running on port 3000, our front end will need to have a different port so they can run at the same time. Now, when we do `rails s`, our front end application will automatically use port 5000. You can also do this manually every time you start your server by passing the port number with a `-p` flag like so:
-`rails s -p 5000`. You should see that your server is "listening on tcp://localhost:5000" now instead of the usual 3000.
+Visit the [back-end application](https://github.com/Dominicod/rails-engine-lite/) to begin back-end setup.
 
-```ruby
-port        ENV.fetch("PORT") { 5000 }
-```
+## Database Creation
+- `rails db:{create}`
 
-**In order for your frontend to properly get data from your backend Rails Engine API, you must keep your backend server running locally at the same time.**
+## Deployment
+- `rails s`
 
-## The Challenge
+## Testing Instructions
 
-### User Story - Merchants
-As a visitor, <br>
-When I visit '/merchants' <br>
-I should see a list of merchants by name <br>
-and when I click the merchant's name <br>
-I should be on page '/merchants/:id' <br>
-And I should see a list of items that merchant sells.
+- Clone this repo
+- in terminal (apple or integrated)
+    * bundle install
+    * bundle exec rspec
 
-<br>
-<br>
+## End Points
 
-![Wireframe for /merchants index](/docs/rails_engine_challenge_merchants.png)
+### Merchants Index
 
-<br>
-<br>
+`http://localhost:5000/merchants`
 
-![Wireframe for /merchants show](/docs/rails_engine_challenge_merchants_show.png)
+<img src="app/assets/images/merchant_index.png">
 
+### Merchant Show
 
+`http://localhost:5000/merchants/1`
 
-## Extra Practice
-If you have time or want extra practice, complete this user story for Items
+(This end point shows all of the Merchants Items)
 
-### User Story - Items
-As a visitor, <br>
-When I visit '/items' <br>
-I should see a list of items by name <br>
-and when I click the item's name <br>
-I should be on page '/items/:id' <br>
-And I should see the name of the item, description, and unit price.
+<img src="app/assets/images/merchant_items.png">
 
-## Extension Ideas
-* Create a search form on your root path to consume one of your part 2 endpoints to search for one merchant or all merchants by a name fragment
+### Items Index
 
-![Wireframe for /merchants show](/docs/rails_engine_challenge_search.png)
+`http://localhost:5000/items`
 
-## Learning/Review Goals:
-* Practice TDD
-* Consuming an API
-* Gain familiarity with service oriented architecture
+<img src="app/assets/images/item_index.png">
+
+### Item Show
+
+`http://localhost:5000/items/4`
+
+<img src="app/assets/images/item_show.png">
+
+## Contributions
+<a href="https://github.com/Dominicod/rails-engine-lite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Dominicod/rails-engine-lite" />
+</a>
+<p>🔥 Github: <a href="https://github.com/Dominicod">https://github.com/Dominicod</a> LinkedIn: <a href="https://www.linkedin.com/in/dominic-odonnell/">https://www.linkedin.com/in/dominic-odonnell/</a>  </p>
