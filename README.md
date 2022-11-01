@@ -2,6 +2,17 @@
 
 Congratulations! You've written your first API. Just like the API you consumed for your week 1 project, your Rails Engine API can be used by other projects now, too. For this challenge, you will create a front end application that will make calls to your backend application, the Rails Engine API you have just created.
 
+## Gems
+![rspec](https://img.shields.io/gem/v/rspec-rails?label=rspec&style=flat-square)
+![shoulda](https://img.shields.io/gem/v/shoulda-matchers?label=shoulda-matchers&style=flat-square)
+![simplecov](https://img.shields.io/gem/v/simplecov?label=simplecov&style=flat-square)
+![spring](https://img.shields.io/gem/v/spring?color=blue&label=spring)
+!
+![webmock](https://img.shields.io/badge/webmock-v3.18.1-blue)
+![pry](https://img.shields.io/gem/v/pry?color=blue&label=pry)
+![vcr](https://img.shields.io/badge/vcr-v6.1.0-blue)
+![faraday](https://img.shields.io/badge/faraday-v2.6.0-blue)
+
 ## Setup
 
 Just like your week 1 project, this will be a new Rails app. You should fork this repository. 
