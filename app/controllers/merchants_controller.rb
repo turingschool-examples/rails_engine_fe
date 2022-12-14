@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MerchantsController < ApplicationController
   before_action :find_merchants, only: %i[index]
 

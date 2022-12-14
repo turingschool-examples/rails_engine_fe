@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Merchants Index Page', type: :feature do
@@ -30,7 +32,7 @@ RSpec.describe 'Merchants Index Page', type: :feature do
       within '#merchants' do
         expect(page).to have_content('Hand-Spencer')
         expect(page).to have_content('Hand, Boyer and Mitchell')
-      end 
+      end
 
       expect(page).to_not have_content('Schroeder-Jerde')
       expect(page).to_not have_content('Kozey Group')

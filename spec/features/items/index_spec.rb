@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Items Index Page', type: :feature do
@@ -16,7 +18,7 @@ RSpec.describe 'Items Index Page', type: :feature do
 
       click_on 'Item Nemo Facere'
 
-      expect(current_path).to eq("/items/#{4}")
+      expect(current_path).to eq('/items/4')
     end
   end
 end

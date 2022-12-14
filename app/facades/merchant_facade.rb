@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MerchantFacade
   def self.find_all_merchants(search)
     json = MerchantService.find_all_merchants(search)

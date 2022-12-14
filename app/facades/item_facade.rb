@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ItemFacade
   def self.get_item(id)
     json = ItemService.get_item(id)
