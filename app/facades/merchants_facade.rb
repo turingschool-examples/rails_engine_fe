@@ -3,7 +3,7 @@ class MerchantsFacade
   end
 
   def merchants
-    service.merchants.map do |data|
+    service.merchants[:data].map do |data|
       Merchant.new(data)
     end
   end
