@@ -1,4 +1,8 @@
 class MerchantService
+  def self.get_merchant_items(id)
+    get_url("/api/v1/merchants/#{id}/items")
+  end
+  
   def self.get_merchant(id)
     get_url("/api/v1/merchants/#{id}")
   end

@@ -4,7 +4,7 @@ RSpec.describe 'Merchants Index Page', type: :feature do
 
   describe 'the merchants index page' do
     it 'shows a list of merchants by name' do
-      visit '/merchants'
+      visit merchants_path
 
       within '#merchants' do
         expect(page).to have_content('Schroeder-Jerde')
@@ -13,7 +13,7 @@ RSpec.describe 'Merchants Index Page', type: :feature do
     end
 
     it 'when I click on a merchants name I am taken to their show page' do
-      visit '/merchants'
+      visit merchants_path
 
       click_on 'Schroeder-Jerde'
 
