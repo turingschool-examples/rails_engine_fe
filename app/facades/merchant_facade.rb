@@ -1,4 +1,11 @@
 class MerchantFacade
+  def self.find_all_merchants(search)
+    json = MerchantService.find_all_merchants(search)
+    merchants = json[:data].map do |merchant_data|
+      Merchant.new(merchant_data)
+    end
+  end
+
   def self.get_merchant_items(id)
     json = MerchantService.get_merchant_items(id)
     items = json[:data].map do |item_data|
