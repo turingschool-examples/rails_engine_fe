@@ -1,0 +1,5 @@
+<div class="row">
+  <% @merchant[:data].each do |item| %>
+    <%= render partial: 'partials/merchant_items_show', locals: { item: item } %>
+  <% end %>
+</div>
