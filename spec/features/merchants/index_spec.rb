@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'merchants index page' do
-  it 'shows all merchants by name' do
+  it 'shows all merchants by name', :vcr do
     visit merchants_path
 
     expect(page).to have_content("Schroeder-Jerde")
@@ -10,7 +10,7 @@ RSpec.describe 'merchants index page' do
     expect(page).to_not have_content("Item Nemo Facere")
   end 
 
-  it 'shows the merchants name as a link that goes to the merchant show page' do
+  it 'shows the merchants name as a link that goes to the merchant show page', :vcr do
     visit merchants_path
 
     expect(page).to have_content("Schroeder-Jerde")

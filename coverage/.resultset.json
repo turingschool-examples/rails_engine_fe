@@ -7,18 +7,16 @@
           null
         ]
       },
-      "/Users/darbysmith/turing_work/3mod/projects/rails_engine_fe/app/controllers/merchants_controller.rb": {
+      "/Users/darbysmith/turing_work/3mod/projects/rails_engine_fe/app/poros/merchant.rb": {
         "lines": [
           1,
           1,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/darbysmith/turing_work/3mod/projects/rails_engine_fe/app/controllers/application_controller.rb": {
-        "lines": [
           1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -30,8 +28,60 @@
         ],
         "branches": {
         }
+      },
+      "/Users/darbysmith/turing_work/3mod/projects/rails_engine_fe/app/facades/merchant_facade.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/darbysmith/turing_work/3mod/projects/rails_engine_fe/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/darbysmith/turing_work/3mod/projects/rails_engine_fe/app/controllers/merchants_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/darbysmith/turing_work/3mod/projects/rails_engine_fe/app/services/merchant_service.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1671048611
+    "timestamp": 1671063854
   }
 }
