@@ -14,6 +14,7 @@ RSpec.describe 'merchants index page' do
     visit merchants_path
 
     expect(page).to have_content("Schroeder-Jerde")
+    VCR.insert_cassette "goes_to_merchant_show_page"
     click_on "Schroeder-Jerde"
 
     expect(current_path).to eq(merchant_path(1))
@@ -24,5 +25,6 @@ RSpec.describe 'merchants index page' do
       expect(page).to have_content("Item Provident At")
       expect(page).to_not have_content("Item Adipisci Sint")
     end
+    VCR.eject_cassette
   end
 end
