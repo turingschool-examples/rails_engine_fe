@@ -9,4 +9,13 @@ RSpec.describe MerchantsFacade do
       expect(merchant).to be_an_instance_of(Merchant)
     end
   end
+
+  it 'can return the collection of merchant items' do 
+    merchant_items = MerchantsFacade.merchant_items(1)
+
+    expect(merchant_items).to be_an Array 
+    merchant_items.each do |item|
+      expect(item).to be_an_instance_of(Item)
+    end
+  end
 end
