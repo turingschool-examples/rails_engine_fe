@@ -1,7 +1,6 @@
 class MerchantsController < ApplicationController
   def index
     @merchants = MerchantFacade.all_merchants
-    # require 'pry'; binding.pry
   end
 
   def show
