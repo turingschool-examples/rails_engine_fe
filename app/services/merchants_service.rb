@@ -1,6 +1,6 @@
 class MerchantsService
   
-  def self.all_merchants
+  def self.get_all_merchants
     parse_data(conn.get("/api/v1/merchants"))
   end
 

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe MerchantsService do 
   it 'can return the merchants data' do 
-    response = MerchantsService.all_merchants 
+    response = MerchantsService.get_all_merchants 
 
     expect(response).to be_a Hash 
     expect(response).to have_key(:data)
