@@ -1,5 +1,5 @@
 class ItemService
-  def self.get_items(id)
+  def self.get_all_merchant_items(id)
     response = conn.get("api/v1/merchants/#{id}/items")
     JSON.parse(response.body, symbolize_names: true)
   end

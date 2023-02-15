@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe ItemService do
   it 'returns items response' do
-    items = ItemService.get_items(1)
+    items = ItemService.get_all_merchant_items(1)
 
     expect(items).to be_a(Hash)
     expect(items).to have_key(:data)
