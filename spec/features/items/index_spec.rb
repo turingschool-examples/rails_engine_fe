@@ -13,7 +13,7 @@ RSpec.describe 'Items Index' do
       expect(page).to have_content("Item Quo Magnam")
     end
 
-    xit 'has a link for each item name to item show page' do 
+    it 'has a link for each item name to item show page' do 
       visit items_path 
       
       expect(page.status_code).to eq 200
@@ -22,7 +22,7 @@ RSpec.describe 'Items Index' do
 
       expect(current_path).to eq item_path(9)
 
-      visit merchants_path 
+      visit items_path 
 
       click_link "Item Expedita Fuga"
 
