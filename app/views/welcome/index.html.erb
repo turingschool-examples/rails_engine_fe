@@ -1,0 +1,17 @@
+<%= link_to 'See All Items', items_path %><br>
+<%= link_to 'See All Merchants', merchants_path %><br>
+<hr>
+<%= form_with url: "/?q=#{:keyword}", method: :get, local: true do |form| %>
+  <% form.label :q %>
+  <%= form.text_field :q %>
+  <%= form.submit 'Find Merchants' %>
+<% end %>
+
+<% if @merchants %>
+  <ul>
+    <% @merchants.each do |merchant| %>
+      <li><%= link_to merchant.name, merchant_path(merchant.id) %></li>
+      <br><br>
+    <% end %>
+  </ul>
+<% end %>
