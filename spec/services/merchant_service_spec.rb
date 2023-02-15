@@ -35,7 +35,7 @@ RSpec.describe MerchantsService do
   end
 
   it 'can return one merchant' do 
-    response = MerchantsService.find_merchant(1)
+    response = MerchantsService.get_merchant(1)
 
     expect(response).to be_a Hash 
     expect(response).to have_key(:data)

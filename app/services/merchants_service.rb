@@ -8,7 +8,7 @@ class MerchantsService
     parse_data(conn.get("/api/v1/merchants/#{merchant_id}/items"))
   end
 
-  def self.find_merchant(merchant_id)
+  def self.get_merchant(merchant_id)
     parse_data(conn.get("/api/v1/merchants/#{merchant_id}"))
   end
 
