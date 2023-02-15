@@ -10,6 +10,8 @@ RSpec.describe StoreService do
     .to_return(status: 200, body: File.read('spec/fixtures/merchant1_items.json'))
   stub_request(:get, 'http://localhost:3000/api/v1/items')
     .to_return(status: 200, body: File.read('spec/fixtures/items.json'))
+  stub_request(:get, 'http://localhost:3000/api/v1/items/4')
+    .to_return(status: 200, body: File.read('spec/fixtures/item4.json'))
 
   end
 
@@ -65,7 +67,7 @@ RSpec.describe StoreService do
     end
   end
 
-  describe '#all_items()' do
+  describe '#all_items' do
     it 'returns a list of all items' do
       response = StoreService.all_items
 
@@ -83,6 +85,24 @@ RSpec.describe StoreService do
         expect(item[:attributes][:unit_price]).to be_a Float
         expect(item[:attributes][:merchant_id]).to be_a Integer
       end
+    end
+  end
+
+  describe '#item()' do
+    it 'returns a single item' do
+      response = StoreService.item(4)
+
+      expect(response).to be_a Hash
+      expect(response[:data]).to be_a Hash
+      expect(response[:data].keys.sort).to eq([:id, :type, :attributes].sort)
+      expect(response[:data][:id]).to be_a String
+      expect(response[:data][:id].to_i).to eq(4)
+      expect(response[:data][:type]).to eq('item')
+      expect(response[:data][:attributes].keys.sort).to eq([:name, :description, :unit_price, :merchant_id].sort)
+      expect(response[:data][:attributes][:name]).to be_a String
+      expect(response[:data][:attributes][:description]).to be_a String
+      expect(response[:data][:attributes][:unit_price]).to be_a Float
+      expect(response[:data][:attributes][:merchant_id]).to be_a Integer
     end
   end
 end

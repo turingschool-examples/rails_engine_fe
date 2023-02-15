@@ -1,0 +1,12 @@
+{
+  "data": {
+      "id": "4",
+      "type": "item",
+      "attributes": {
+          "name": "Item Nemo Facere",
+          "description": "Item description here",
+          "unit_price": 42.91,
+          "merchant_id": 1
+      }
+  }
+}

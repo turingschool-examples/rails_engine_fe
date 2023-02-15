@@ -6,6 +6,11 @@ class ItemFacade
     end
   end
 
+  def self.item(id)
+    item_data = StoreService.item(id)
+    Item.new(item_data[:data])
+  end
+
   def self.merchant_items(merchant_id)
     items_data = StoreService.merchant_items(merchant_id)
     items_data[:data].map do |item_data|
