@@ -15,4 +15,9 @@ class MerchantsFacade
       Item.new(item_data)
     end
   end
+
+  def self.find_merchant(merchant_id)
+    data = MerchantsService.get_merchant(merchant_id)
+    Merchant.new(data[:data])
+  end
 end

@@ -18,4 +18,10 @@ RSpec.describe MerchantsFacade do
       expect(item).to be_an_instance_of(Item)
     end
   end
+
+  it 'can return a single merchant' do 
+    merchant = MerchantsFacade.find_merchant(1)
+
+    expect(merchant).to be_an_instance_of(Merchant)
+  end
 end
