@@ -12,7 +12,7 @@ RSpec.describe 'merchant show page' do
     visit merchant_path(1)
 
     expect(page).to have_content('Schroeder-Jerde')
-    expect(page).to have_content('Item Nemo Facere')
-    expect(page).to have_content('Item Ea Voluptatum')
+    expect(page).to have_link('Item Nemo Facere', href: item_path(4))
+    expect(page).to have_link('Item Ea Voluptatum', href: item_path(2500))
   end
 end
