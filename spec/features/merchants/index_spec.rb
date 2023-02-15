@@ -16,9 +16,16 @@ RSpec.describe 'Merchant Index' do
       visit merchants_path 
       
       expect(page.status_code).to eq 200
-      expect(page).to have_link("Schroeder-Jerde")
-      expect(page).to have_link("Willms and Sons")
-      expect(page).to have_link("Pollich and Sons")
+
+      click_link "Schroeder-Jerde"
+
+      expect(current_path).to eq merchant_path(1)
+
+      visit merchants_path 
+
+      click_link "Pollich and Sons"
+
+      expect(current_path).to eq merchant_path(11)
     end
   end
 end
