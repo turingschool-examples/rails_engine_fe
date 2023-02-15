@@ -12,5 +12,19 @@ RSpec.describe 'merchant show page' do
       expect(page).to have_content("Item Expedita Fuga")
       expect(page).to have_content("Item Autem Minima")
     end
+
+    it 'has a link to the item show page for each item' do 
+      visit merchant_path(1)
+
+      click_link "Item Nemo Facere"
+
+      expect(current_path).to eq item_path(4)
+
+      visit merchant_path(8)
+
+      click_link "Item Commodi Vel"
+
+      expect(current_path).to eq item_path(130)
+    end
   end
 end
