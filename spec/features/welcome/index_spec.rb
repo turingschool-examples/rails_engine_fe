@@ -10,4 +10,23 @@ RSpec.describe 'welcome index page' do
     end
   end
   
+  describe 'searching for merchants on the landing page' do
+    before(:each) do
+      stub_request(:get, 'http://localhost:3000/api/v1/merchants/find_all?name=iLl')
+        .to_return(status: 200, body: File.read('spec/fixtures/merchant_query_iLl.json'))
+    end
+
+    it 'returns a list of merchants that have partial string match of query' do
+      visit root_path
+
+      fill_in :q, with: 'iLl'
+      click_button 'Find Merchants'
+
+      expect(current_path).to eq(root_path)
+      expect(page).to have_content("Willms and Sons")
+      expect(page).to have_content("Williamson Group").twice
+      expect(page).to have_content("Tillman Group")
+      expect(page).to have_content("Schiller, Barrows and Parker")
+    end
+  end
 end
