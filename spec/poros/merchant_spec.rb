@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Merchant do
   it 'exists and has attributes' do
-    merchants_data = MerchantFacade.merchant_data
+    merchants_data = MerchantFacade.all_merchants_data
 
     merchants_data.map do |merchant|
       expect(merchant.name).to be_a(String)
