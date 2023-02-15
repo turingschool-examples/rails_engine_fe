@@ -1,18 +1,20 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Item do
   it 'exists and has attributes' do
     item_data = {
-                  "id": '4',
-                  "type": 'item',
-                  "attributes": {
-                    "name": 'Bass-o-matic',
-                    "description": 'Blends fish for maximum protein',
-                    "unit_price": 42.91,
-                    "merchant_id": 1
-                  }
-                }
-    
+      "id": '4',
+      "type": 'item',
+      "attributes": {
+        "name": 'Bass-o-matic',
+        "description": 'Blends fish for maximum protein',
+        "unit_price": 42.91,
+        "merchant_id": 1
+      }
+    }
+
     item = Item.new(item_data)
 
     expect(item).to be_an Item
