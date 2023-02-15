@@ -1,11 +1,10 @@
 class MerchantFacade
-  def sell.all_merchants
+  def self.all_merchants
     response = RailsEngineService.get_all_merchants
-
     merchants = response[:data]
-
-    merchants = data.map do |merchant|
-      Merchant.new(merchant)
+    
+    merchants.map do |data|
+      Merchant.new(data)
     end
   end
 end

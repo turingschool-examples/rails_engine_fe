@@ -11,6 +11,7 @@ RSpec.describe MerchantFacade do
         expect(merchant).to be_instance_of(Merchant)
       end
       expect(merchants[0].name).to eq("Schroeder-Jerde")
+      expect(merchants[1].name).to eq("Klein, Rempel and Jones")
     end
   end
 end
