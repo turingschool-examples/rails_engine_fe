@@ -8,7 +8,7 @@ class StoreService
   end
 
   def self.merchants
-    response = conn.get("/api/v1/merchants")
+    response = conn.get('/api/v1/merchants')
     parse_json(response)
   end
 
