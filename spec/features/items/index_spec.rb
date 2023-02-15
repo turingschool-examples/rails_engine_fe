@@ -7,7 +7,7 @@ RSpec.describe 'Items Index' do
       
       expect(page.status_code).to eq 200
       expect(page).to have_content("Items")
-      expect(page).to have_content("Total Items: 100")
+      expect(page).to have_content("Total Items: 2483")
       expect(page).to have_content("Item Expedita Aliquam")
       expect(page).to have_content("Item Expedita Fuga")
       expect(page).to have_content("Item Quo Magnam")
