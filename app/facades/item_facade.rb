@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ItemFacade
   def self.all_items
     items_data = StoreService.all_items

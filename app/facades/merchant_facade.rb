@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MerchantFacade
   def self.all_merchants
     merchants_data = StoreService.merchants

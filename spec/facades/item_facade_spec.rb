@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe ItemFacade do
@@ -9,7 +11,7 @@ RSpec.describe ItemFacade do
     stub_request(:get, 'http://localhost:3000/api/v1/items/4')
       .to_return(status: 200, body: File.read('spec/fixtures/item4.json'))
   end
-  
+
   describe '#merchant_items()' do
     it 'returns all of a given merchants items as poros' do
       items = ItemFacade.merchant_items(1)

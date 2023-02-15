@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MerchantsController < ApplicationController
   def index
     @merchants = MerchantFacade.all_merchants
