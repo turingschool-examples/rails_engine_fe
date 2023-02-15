@@ -57,7 +57,7 @@ RSpec.describe StoreService do
       expect(response).to be_a Hash
       expect(response[:data]).to be_a Array
       response[:data].each do |merchant|
-        expect(merchant.keys.sort).to eq([:id, :type, :attributes].sort)
+        expect(merchant.keys.sort).to eq(%i[id type attributes].sort)
         expect(merchant[:id]).to be_a String
         expect(merchant[:id].to_i).to be_a Integer
         expect(merchant[:type]).to eq('merchant')

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'welcome index page' do
@@ -9,7 +11,7 @@ RSpec.describe 'welcome index page' do
       expect(page).to have_link('See All Merchants', href: merchants_path)
     end
   end
-  
+
   describe 'searching for merchants on the landing page' do
     before(:each) do
       stub_request(:get, 'http://localhost:3000/api/v1/merchants/find_all?name=iLl')
@@ -23,10 +25,10 @@ RSpec.describe 'welcome index page' do
       click_button 'Find Merchants'
 
       expect(current_path).to eq(root_path)
-      expect(page).to have_content("Willms and Sons")
-      expect(page).to have_content("Williamson Group").twice
-      expect(page).to have_content("Tillman Group")
-      expect(page).to have_content("Schiller, Barrows and Parker")
+      expect(page).to have_content('Willms and Sons')
+      expect(page).to have_content('Williamson Group').twice
+      expect(page).to have_content('Tillman Group')
+      expect(page).to have_content('Schiller, Barrows and Parker')
     end
   end
 end
