@@ -6,7 +6,8 @@ RSpec.describe 'merchant show page' do
       visit merchant_path(1)
 
       expect(page.status_code).to eq 200 
-      expect(page).to have_content("Shroeder-Jerde")
+      expect(page).to have_content("Schroeder-Jerde")
+      expect(page).to have_content("Total Merchant Items: 15")
       expect(page).to have_content("Item Nemo Facere")
       expect(page).to have_content("Item Expedita Fuga")
       expect(page).to have_content("Item Autem Minima")
