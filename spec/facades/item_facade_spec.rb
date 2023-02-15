@@ -9,4 +9,10 @@ RSpec.describe ItemsFacade do
       expect(item).to be_an_instance_of(Item)
     end
   end
+
+  it 'can return a single item' do 
+    item = ItemsFacade.find_item(24)
+
+    expect(item).to be_an_instance_of(Item)
+  end
 end 
