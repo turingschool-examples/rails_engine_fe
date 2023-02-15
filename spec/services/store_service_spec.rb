@@ -14,6 +14,8 @@ RSpec.describe StoreService do
       .to_return(status: 200, body: File.read('spec/fixtures/items.json'))
     stub_request(:get, 'http://localhost:3000/api/v1/items/4')
       .to_return(status: 200, body: File.read('spec/fixtures/item4.json'))
+    stub_request(:get, 'http://localhost:3000/api/v1/merchants/find_all?name=iLl')
+      .to_return(status: 200, body: File.read('spec/fixtures/merchant_query_iLl.json'))
   end
 
   describe '#merchants' do
@@ -44,6 +46,25 @@ RSpec.describe StoreService do
       expect(response[:data][:type]).to eq('merchant')
       expect(response[:data][:attributes]).to be_a Hash
       expect(response[:data][:attributes][:name]).to be_a String
+    end
+  end
+
+  describe '#find_merchants()' do
+    it 'returns an array of merchants with name that partially matches query' do
+      query = 'iLl'
+      response = StoreService.find_merchants(query)
+
+      expect(response).to be_a Hash
+      expect(response[:data]).to be_a Array
+      response[:data].each do |merchant|
+        expect(merchant.keys.sort).to eq([:id, :type, :attributes].sort)
+        expect(merchant[:id]).to be_a String
+        expect(merchant[:id].to_i).to be_a Integer
+        expect(merchant[:type]).to eq('merchant')
+        expect(merchant[:attributes].keys).to eq([:name])
+        expect(merchant[:attributes][:name]).to be_a String
+        expect(merchant[:attributes][:name].downcase).to include(query.downcase)
+      end
     end
   end
 

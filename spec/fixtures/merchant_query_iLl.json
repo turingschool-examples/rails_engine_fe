@@ -1,0 +1,39 @@
+{
+  "data": [
+      {
+          "id": "3",
+          "type": "merchant",
+          "attributes": {
+              "name": "Willms and Sons"
+          }
+      },
+      {
+          "id": "5",
+          "type": "merchant",
+          "attributes": {
+              "name": "Williamson Group"
+          }
+      },
+      {
+          "id": "6",
+          "type": "merchant",
+          "attributes": {
+              "name": "Williamson Group"
+          }
+      },
+      {
+          "id": "13",
+          "type": "merchant",
+          "attributes": {
+              "name": "Tillman Group"
+          }
+      },
+      {
+          "id": "28",
+          "type": "merchant",
+          "attributes": {
+              "name": "Schiller, Barrows and Parker"
+          }
+      }
+  ]
+}
