@@ -18,4 +18,18 @@ RSpec.describe ItemsService do
       expect(item_result[:attributes]).to have_key(:merchant_id)
     end
   end
+
+  it 'can return one item with data' do 
+    response = ItemsService.get_item(20)
+
+    expect(response).to be_a Hash
+    expect(response).to have_key(:data)
+    expect(response[:data]).to be_a Hash
+    expect(response[:data]).to have_key(:id)
+    expect(response[:data]).to have_key(:type)
+    expect(response[:data]).to have_key(:attributes)
+    expect(response[:data][:attributes]).to have_key(:name)
+    expect(response[:data][:attributes]).to have_key(:description)
+    expect(response[:data][:attributes]).to have_key(:unit_price)
+  end
 end

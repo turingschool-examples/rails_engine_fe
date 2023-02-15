@@ -4,6 +4,10 @@ class ItemsService
     parse_data(conn.get("/api/v1/items"))
   end
 
+  def self.get_item(item_id)
+    parse_data(conn.get("/api/v1/items/#{item_id}"))
+  end
+
   def self.parse_data(response)
     JSON.parse(response.body, symbolize_names: true)
   end
