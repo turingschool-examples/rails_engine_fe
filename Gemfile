@@ -45,6 +45,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'simplecov', require: false
+  gem 'launchy'
 end
 
 group :test do
