@@ -16,4 +16,9 @@ class StoreService
     response = conn.get("/api/v1/merchants/#{id}")
     parse_json(response)
   end
+
+  def self.merchant_items(merchant_id)
+    response = conn.get("/api/v1/merchants/#{merchant_id}/items")
+    parse_json(response)
+  end
 end
