@@ -33,4 +33,17 @@ RSpec.describe MerchantsService do
       expect(item_result[:attributes]).to have_key(:merchant_id)
     end 
   end
+
+  it 'can return one merchant' do 
+    response = MerchantsService.find_merchant(1)
+
+    expect(response).to be_a Hash 
+    expect(response).to have_key(:data)
+    expect(response[:data]).to be_a Hash 
+
+    expect(response[:data]).to have_key(:id)
+    expect(response[:data]).to have_key(:type)
+    expect(response[:data]).to have_key(:attributes)
+    expect(response[:data][:attributes]).to have_key(:name)
+  end
 end
