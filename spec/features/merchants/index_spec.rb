@@ -7,6 +7,7 @@ RSpec.describe 'Merchant Index' do
       
       expect(page.status_code).to eq 200
       expect(page).to have_content("Merchants")
+      expect(page).to have_content("Total Merchants: 100")
       expect(page).to have_content("Schroeder-Jerde")
       expect(page).to have_content("Willms and Sons")
       expect(page).to have_content("Pollich and Sons")
