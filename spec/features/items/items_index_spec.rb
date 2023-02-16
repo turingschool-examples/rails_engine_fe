@@ -15,4 +15,12 @@ RSpec.describe 'items index', type: :feature do
       expect(page).to have_content("Item Rerum Magni")
     end
   end
+
+  it 'can click on an items name and be directed to that items show page' do
+    visit '/items'
+
+    click_link "Item Nemo Facere"
+
+    expect(current_path).to eq("/items/4")
+  end
 end
