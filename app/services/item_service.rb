@@ -4,6 +4,16 @@ class ItemService
     JSON.parse(response.body, symbolize_names: true)
   end
   
+  def self.get_all_items
+    response = conn.get("api/v1/items")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.get_item(id)
+    response = conn.get("api/v1/items/#{id}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def self.conn
