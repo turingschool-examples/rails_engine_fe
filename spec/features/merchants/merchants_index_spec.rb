@@ -1,12 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe 'merchants index', type: :feature do
-  xdescribe 'visiting /merchants' do
+  describe 'visiting /merchants' do
     it 'see list of merchants by name' do
       visit '/merchants'
 
-      expect(page).to have_content(Merchant.first.name)
-      expect(page).to have_content(Merchant.second.name)
+      within "#merchants" do
+        expect(page).to have_content("Schroeder-Jerde")
+        expect(page).to have_content("Klein, Rempel and Jones")
+      end
     end
 
     it 'when a merchants name is clicked the user should be directed to /merchants/:id 
