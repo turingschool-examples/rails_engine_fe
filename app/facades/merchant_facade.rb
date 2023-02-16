@@ -1,7 +1,7 @@
 class MerchantFacade
   def self.all_merchants_data
     merchants_response = RailsEngineService.get_all_merchants
-    merchants = merchants_response[:data].map do |merchant|
+    merchants_response[:data].map do |merchant|
       Merchant.new(merchant)
     end
   end
