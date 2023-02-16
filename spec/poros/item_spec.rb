@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Item do
   it 'exists and has attributes' do
-    items = ItemFacade.items_data
+    items = ItemFacade.merchant_items
 
     items.each do |item|
       expect(item.name).to be_a(String)
