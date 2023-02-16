@@ -1,4 +1,14 @@
-class ItemService
+class RailsEngineService 
+  def self.get_all_merchants
+    response = conn.get('api/v1/merchants')
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.get_merchant(id)
+    response = conn.get("api/v1/merchants/#{id}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.get_all_merchant_items(id)
     response = conn.get("api/v1/merchants/#{id}/items")
     JSON.parse(response.body, symbolize_names: true)

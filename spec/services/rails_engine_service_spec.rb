@@ -1,8 +1,33 @@
 require 'rails_helper'
 
-RSpec.describe ItemService do
+RSpec.describe RailsEngineService do
+  it 'can return a response with all merchants' do
+    merchants = RailsEngineService.get_all_merchants
+
+    expect(merchants).to be_a(Hash)
+    expect(merchants).to have_key(:data)
+    expect(merchants[:data]).to be_a(Array)
+    
+    expect(merchants[:data][0]).to have_key(:attributes)
+
+    merchants_data = merchants[:data][0]
+    
+    expect(merchants_data[:attributes]).to have_key(:name)
+    expect(merchants_data[:attributes][:name]).to be_a(String)
+  end
+
+  it 'can return a response with one merchant by id' do
+    merchant = RailsEngineService.get_merchant(1)
+
+    expect(merchant).to be_a(Hash)
+    expect(merchant).to have_key(:data)
+    expect(merchant[:data]).to have_key(:attributes)
+    expect(merchant[:data][:attributes]).to have_key(:name)
+    expect(merchant[:data][:attributes][:name]).to be_a(String)
+  end
+
   it 'returns merchant items response' do
-    items = ItemService.get_all_merchant_items(1)
+    items = RailsEngineService.get_all_merchant_items(1)
 
     expect(items).to be_a(Hash)
     expect(items).to have_key(:data)
@@ -19,7 +44,7 @@ RSpec.describe ItemService do
   end
 
   it 'returns a response with all items' do
-    items = ItemService.get_all_items 
+    items = RailsEngineService.get_all_items 
 
     expect(items).to be_a(Hash)
     expect(items).to have_key(:data)
@@ -36,7 +61,7 @@ RSpec.describe ItemService do
   end
 
   it 'returns response of item by id' do
-    item = ItemService.get_item(4) 
+    item = RailsEngineService.get_item(4) 
 
     expect(item).to be_a(Hash)
     expect(item).to have_key(:data)
