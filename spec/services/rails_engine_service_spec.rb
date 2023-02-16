@@ -29,4 +29,24 @@ RSpec.describe RailsEngineService do
       expect(response[:data][:attributes][:name]).to eq("Glover Inc")
     end
   end
+
+  describe 'get_one_merchants_items' do
+    it 'can return all the items for an individual merchant' do
+      response = RailsEngineService.get_one_merchants_items(99)
+
+      expect(response).to have_key(:data)
+      expect(response[:data]).to be_a(Array)
+
+      response[:data].each do |item|
+        expect(item).to have_key(:id)
+        expect(item[:attributes]).to have_key(:name)
+        expect(item[:attributes]).to have_key(:description)
+        expect(item[:attributes]).to have_key(:unit_price)
+        expect(item[:attributes]).to have_key(:merchant_id)
+      end
+
+      expect(response[:data][0][:attributes][:name]).to eq("Item Excepturi Rem")
+      expect(response[:data][0][:attributes][:merchant_id]).to eq(99)
+    end
+  end
 end

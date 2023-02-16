@@ -18,11 +18,15 @@ RSpec.describe 'merchants index', type: :feature do
       click_link 'Schroeder-Jerde'
 
       expect(current_path).to eq('/merchants/1')
-      expect(page).to have_content("Item Nemo Facere")
-      expect(page).to have_content("Item Expedita Aliquam")
-      expect(page).to have_content("Item Provident At")
-      expect(page).to have_content("Item Expedita Fuga")
-      expect(page).to have_content("Item Est Consequuntur")
+      expect(page).to have_content("Schroeder-Jerde's Items")
+
+      within "#items" do
+        expect(page).to have_content("Item Nemo Facere")
+        expect(page).to have_content("Item Expedita Aliquam")
+        expect(page).to have_content("Item Provident At")
+        expect(page).to have_content("Item Expedita Fuga")
+        expect(page).to have_content("Item Est Consequuntur")
+      end
     end
   end
 end

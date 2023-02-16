@@ -18,7 +18,7 @@ RSpec.describe MerchantFacade do
       merchant = MerchantFacade.one_merchant(42)
 
       expect(merchant).to be_instance_of(Merchant)
-      expect(merchant.id).to eq(42)
+      expect(merchant.id).to eq("42")
       expect(merchant.name).to eq("Glover Inc")
     end
   end

@@ -8,7 +8,7 @@ class MerchantFacade
     end
   end
 
-  def self.one_merchant
+  def self.one_merchant(merchant_id)
     response = RailsEngineService.get_one_merchant(merchant_id)
     Merchant.new(response[:data])
   end
