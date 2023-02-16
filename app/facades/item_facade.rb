@@ -7,4 +7,9 @@ class ItemFacade
       Item.new(data)
     end
   end
+
+  def self.one_item(item_id)
+    response = RailsEngineService.get_one_item(item_id)
+    Item.new(response[:data])
+  end
 end
