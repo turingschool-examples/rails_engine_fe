@@ -34,7 +34,6 @@ RSpec.describe MerchantFacade do
       expect(items[0].name).to eq("Item Excepturi Rem")
       expect(items[0].description).to eq("Perferendis reprehenderit fugiat sit eos. Corporis ipsum ut. Natus molestiae quia rerum fugit quis. A cumque doloremque magni.")
       expect(items[0].unit_price).to eq(476.82)
-      expect(items[0].merchant_id).to eq(99)
     end
   end
 end

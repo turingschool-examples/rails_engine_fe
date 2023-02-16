@@ -5,6 +5,6 @@ class MerchantsController < ApplicationController
 
   def show
     @merchant = MerchantFacade.one_merchant(params[:id])
-    # binding.pry
+    @items = MerchantFacade.one_merchants_items(params[:id])
   end
 end
