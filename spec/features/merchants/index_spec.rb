@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Merchant index page' do
-  it 'displays the list of merchants by name as a link' do
+  it 'displays the list of merchants by name as a link', :vcr do
     visit merchants_path
 
     expect(page).to have_content("Merchants")

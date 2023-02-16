@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Item show page' do
-  it 'can return an item details' do
+  it 'can return an item details', :vcr do
     visit item_path(4)
 
     expect(page).to have_content("Item Nemo Facere")

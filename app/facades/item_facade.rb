@@ -1,7 +1,6 @@
 class ItemFacade
   def self.merchant_items
     items_response = RailsEngineService.get_all_merchant_items(1)
-
     items_response[:data].map do |item|
       Item.new(item)
     end
