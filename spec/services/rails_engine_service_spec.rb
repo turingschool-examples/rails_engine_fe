@@ -49,4 +49,37 @@ RSpec.describe RailsEngineService do
       expect(response[:data][0][:attributes][:merchant_id]).to eq(99)
     end
   end
+
+  describe 'get_all_items' do
+    it 'returns all items' do
+      response = RailsEngineService.get_all_items
+
+      expect(response).to have_key(:data)
+      expect(response[:data]).to be_a(Array)
+
+      response[:data].each do |item|
+        expect(item).to have_key(:id)
+        expect(item[:attributes]).to have_key(:name)
+        expect(item[:attributes]).to have_key(:description)
+        expect(item[:attributes]).to have_key(:unit_price)
+        expect(item[:attributes]).to have_key(:merchant_id)
+      end
+    end
+  end
+
+  describe 'get_one_item' do
+    it 'gets an item based on id' do
+      response = RailsEngineService.get_one_item(179)
+
+      expect(response).to have_key(:data)
+      expect(response[:data]).to be_a(Hash)
+      expect(response[:data]).to have_key(:id)
+      expect(response[:data][:attributes]).to have_key(:name)
+      expect(response[:data][:attributes]).to have_key(:description)
+      expect(response[:data][:attributes]).to have_key(:unit_price)
+
+      expect(response[:data][:id]).to eq("179")
+      expect(response[:data][:attributes][:name]).to eq("Item Qui Veritatis")
+    end
+  end
 end
