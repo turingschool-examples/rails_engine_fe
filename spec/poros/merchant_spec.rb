@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Merchant do
-  it 'exists and has attributes' do
+  it 'exists and has attributes', :vcr do
     merchants_data = MerchantFacade.all_merchants_data
 
     merchants_data.map do |merchant|

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Item do
-  it 'exists and has attributes' do
+  it 'exists and has attributes', :vcr do
     items = ItemFacade.merchant_items
 
     items.each do |item|

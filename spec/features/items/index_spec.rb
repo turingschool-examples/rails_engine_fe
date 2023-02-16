@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Items index page" do
-  it 'displays all items names by link' do
+  it 'displays all items names by link', :vcr do
     visit items_path
 
     within("#item-4") do
