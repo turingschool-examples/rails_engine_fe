@@ -21,5 +21,20 @@ RSpec.describe MerchantFacade do
       expect(merchant.id).to eq("42")
       expect(merchant.name).to eq("Glover Inc")
     end
+
+    it "one_merchants_items" do
+      items = MerchantFacade.one_merchants_items(99)
+
+      expect(items).to be_a(Array)
+
+      items.each do |item|
+        expect(item).to be_instance_of(Item)
+      end
+
+      expect(items[0].name).to eq("Item Excepturi Rem")
+      expect(items[0].description).to eq("Perferendis reprehenderit fugiat sit eos. Corporis ipsum ut. Natus molestiae quia rerum fugit quis. A cumque doloremque magni.")
+      expect(items[0].unit_price).to eq(476.82)
+      expect(items[0].merchant_id).to eq(99)
+    end
   end
 end

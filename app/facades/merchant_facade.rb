@@ -12,4 +12,13 @@ class MerchantFacade
     response = RailsEngineService.get_one_merchant(merchant_id)
     Merchant.new(response[:data])
   end
+
+  def self.one_merchants_items(merchant_id)
+    response = RailsEngineService.get_one_merchants_items(merchant_id)
+    items = response[:data]
+
+    items.map do |data|
+      Item.new(data)
+    end
+  end
 end
