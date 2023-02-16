@@ -11,4 +11,9 @@ class RailsEngineService
     response = conn.get('merchants')
     json_parse(response)
   end
+
+  def self.get_one_merchant(merchant_id)
+    response = conn.get("merchants/#{merchant_id}")
+    json_parse(response)
+  end
 end
